@@ -1,0 +1,14 @@
+:root {
+    --cor1: #04473A;
+    --cor2: #0B8E74;
+    --cor3: #3BA790;
+    --cor4: #84C382;
+    --cor5: #C8E5D7;
+    --amarelo: #DBC86C;
+    --vermelho: #B97788;
+    --cinza: #787878;
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
