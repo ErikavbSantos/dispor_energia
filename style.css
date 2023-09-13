@@ -12,3 +12,96 @@
 :root {
     scroll-behavior: smooth;
   }
+
+
+/* Estilos gerais para o corpo da página */
+body {
+    padding: 10px;
+    padding-top: 5px !important; /* Espaçamento superior com prioridade !important */
+    color: var(--cor2); /* Cor do texto */
+    font-family: Inter; /* Família de fontes */
+    font-size: 20px; /* Tamanho da fonte */
+    font-style: normal; /* Estilo da fonte */
+    font-weight: 700; /* Peso da fonte */
+    line-height: normal; /* Altura da linha da fonte */
+}
+
+/* Estilos para o rodapé (footer) */
+.footpoints {
+    background-color: var(--cor3); /* Cor de fundo do rodapé */
+    height: 63px; /* Altura do rodapé */
+    position: absolute; /* Define o posicionamento absoluto */
+    bottom: 0; /* Fixa o rodapé na parte inferior da seção */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da seção */
+    color: aliceblue; /* Cor do texto no rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    z-index: -200;
+    border-radius: 0px 0px 10px 10px; /* Borda arredondada */
+}
+
+/* Estilos para o texto no rodapé */
+.text-footer-points {
+    justify-content: center !important; /* Centraliza o conteúdo horizontalmente com prioridade !important */
+    text-align: center !important; /* Centraliza o texto com prioridade !important */
+    padding-top: 0px !important; /* Espaçamento superior zero com prioridade !important */
+    margin: 0% !important; /* Margem zero com prioridade !important */
+}
+
+/* Estilos para a linha vertical */
+.vertical-line {
+    width: 1px; /* Largura da linha vertical */
+    height: 90px; /* Altura da linha vertical (ajuste conforme necessário) */
+    background-color: #333; /* Cor da linha vertical */
+    margin: 0 20px; /* Margens horizontais para espaçamento entre a linha e as imagens */
+}
+
+/* Estilos para as divs dentro de .points, excluindo .vertical-line */
+.points > .icopoint,
+.points > div:not(.vertical-line) {
+    flex-grow: 1; /* Faz com que apenas as divs ocupem o mesmo espaço horizontalmente */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px; /* Adiciona espaço interno para o conteúdo */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/* Estilos para dispositivos com largura máxima de 412px */
+@media screen and (max-width: 412px) {
+    .points {
+        display: flex;
+        height: fit-content;
+        border-radius: 5%;
+        border-color: #0B8E74;
+        border: 3px solid;
+        flex-grow: 1;
+        justify-content: center;
+        padding: 10%;
+        text-align: center;
+        position: relative;
+    }
+
+    /* Estilos específicos para a linha vertical em dispositivos pequenos */
+    .vertical-line {
+        width: 5px !important; /* Largura da linha vertical */
+        border: 2px !important;
+        height: 200px; /* Altura da linha vertical (ajuste conforme necessário) */
+        background-color: #0B8E74; /* Cor da linha vertical */
+        margin: 0px 20px; /* Margens horizontais para espaçamento entre a linha e as imagens */
+        align-items: center;
+        text-indent: 100%;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    /* Estilos para .icocart */
+    .icocart {
+        width: 80px; /* Largura da imagem .icocart */
+    }
+
+    /* Estilos para .icopoint */
+    .icopoint {
+        margin: 10px;
+        justify-content: center; /* Centraliza verticalmente o conteúdo */
+        text-align: center; /* Centraliza o texto horizontalmente */
+       
+    }
+}
