@@ -1,12 +1,14 @@
 :root {
-    --cor1: #04473A;
-    --cor2: #0B8E74;
-    --cor3: #3BA790;
-    --cor4: #84C382;
-    --cor5: #C8E5D7;
+    --verde_mais_escuro: #04473A;
+    --verde_escuro: #0B8E74;
+    --verde: #3BA790;
+    --verde_claro: #84C382;
+    --verde_pastel: #C8E5D7;
     --amarelo: #DBC86C;
     --vermelho: #B97788;
     --cinza: #787878;
+
+    --inter: font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -18,7 +20,7 @@
 body {
     padding: 10px;
     padding-top: 5px !important; /* Espaçamento superior com prioridade !important */
-    color: var(--cor2); /* Cor do texto */
+    color: var(--verde_escuro); /* Cor do texto */
     font-family: Inter; /* Família de fontes */
     font-size: 20px; /* Tamanho da fonte */
     font-style: normal; /* Estilo da fonte */
@@ -33,7 +35,7 @@ body {
     position: absolute; /* Define o posicionamento absoluto */
     bottom: 0; /* Fixa o rodapé na parte inferior da seção */
     width: 100%; /* Garante que o rodapé ocupe toda a largura da seção */
-    color: aliceblue; /* Cor do texto no rodapé */
+    color: white; /* Cor do texto no rodapé */
     text-align: center; /* Centraliza o texto no rodapé */
     z-index: -200;
     border-radius: 0px 0px 10px 10px; /* Borda arredondada */
@@ -51,7 +53,7 @@ body {
 .vertical-line {
     width: 1px; /* Largura da linha vertical */
     height: 90px; /* Altura da linha vertical (ajuste conforme necessário) */
-    background-color: #333; /* Cor da linha vertical */
+    background-color: var(--verde_escuro); /* Cor da linha vertical */
     margin: 0 20px; /* Margens horizontais para espaçamento entre a linha e as imagens */
 }
 
@@ -70,7 +72,7 @@ body {
         display: flex;
         height: fit-content;
         border-radius: 5%;
-        border-color: #0B8E74;
+        border-color: var(--verde_escuro);
         border: 3px solid;
         flex-grow: 1;
         justify-content: center;
@@ -84,7 +86,7 @@ body {
         width: 5px !important; /* Largura da linha vertical */
         border: 2px !important;
         height: 200px; /* Altura da linha vertical (ajuste conforme necessário) */
-        background-color: #0B8E74; /* Cor da linha vertical */
+        background-color: var(--verde_escuro); /* Cor da linha vertical */
         margin: 0px 20px; /* Margens horizontais para espaçamento entre a linha e as imagens */
         align-items: center;
         text-indent: 100%;
