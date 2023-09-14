@@ -146,3 +146,41 @@ body {
     padding-left: 12px;
 }
 /* fim da subseção premio*/
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: var(--verde_escuro);
+    padding: 20 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone__casa {
+    height: 22px;
+    width: fit-content;
+    padding-left: 20px;
+}
+
+.icone__mapa {
+    height: 24px;
+    width: fit-content;
+}
+
+.icone__logo {
+    height: 24px;
+    width: fit-content;
+}
+
+.icone__carteira {
+    height: 18px;
+    width: fit-content;
+}
+.icone__pessoa {
+    height: 22px;
+    width: fit-content;
+    padding-right: 20;
+}

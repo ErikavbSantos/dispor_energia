@@ -18,8 +18,8 @@
 
 /* Estilos gerais para o corpo da página */
 body {
-    padding: 10px;
-    padding-top: 5px !important; /* Espaçamento superior com prioridade !important */
+    margin: 0;
+    padding: 0;
     color: var(--verde_escuro); /* Cor do texto */
     font-family: Inter; /* Família de fontes */
     font-size: 20px; /* Tamanho da fonte */
@@ -30,7 +30,7 @@ body {
 
 /* Estilos para o rodapé (footer) */
 .footpoints {
-    background-color: var(--cor3); /* Cor de fundo do rodapé */
+    background-color: var(--verde_escuro); /* Cor de fundo do rodapé */
     height: 63px; /* Altura do rodapé */
     position: absolute; /* Define o posicionamento absoluto */
     bottom: 0; /* Fixa o rodapé na parte inferior da seção */
@@ -64,6 +64,44 @@ body {
     text-align: center; /* Centraliza o conteúdo horizontalmente */
     padding: 10px; /* Adiciona espaço interno para o conteúdo */
     justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: var(--verde_escuro);
+    padding: 20 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone__casa {
+    height: 22px;
+    width: fit-content;
+    padding-left: 20px;
+}
+
+.icone__mapa {
+    height: 24px;
+    width: fit-content;
+}
+
+.icone__logo {
+    height: 24px;
+    width: fit-content;
+}
+
+.icone__carteira {
+    height: 18px;
+    width: fit-content;
+}
+.icone__pessoa {
+    height: 22px;
+    width: fit-content;
+    padding-right: 20;
 }
 
 /* Estilos para dispositivos com largura máxima de 412px */
@@ -107,3 +145,4 @@ body {
        
     }
 }
+

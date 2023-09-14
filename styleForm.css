@@ -1,0 +1,67 @@
+:root {
+    --verde_mais_escuro: #04473A;
+    --verde_escuro: #0B8E74;
+    --verde: #3BA790;
+    --verde_claro: #84C382;
+    --verde_pastel: #C8E5D7;
+    --amarelo: #DBC86C;
+    --vermelho: #B97788;
+    --cinza: #787878;
+
+    --inter: font-family: 'Inter', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+  }
+
+
+/* Estilos gerais para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--verde_escuro); /* Cor do texto */
+    font-family: Inter; /* Família de fontes */
+    font-size: 20px; /* Tamanho da fonte */
+    font-style: normal; /* Estilo da fonte */
+    font-weight: 700; /* Peso da fonte */
+    line-height: normal; /* Altura da linha da fonte */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: var(--verde_escuro);
+    padding: 20 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone__casa {
+    height: 22px;
+    width: fit-content;
+    padding-left: 20px;
+}
+
+.icone__mapa {
+    height: 24px;
+    width: fit-content;
+}
+
+.icone__logo {
+    height: 24px;
+    width: fit-content;
+}
+
+.icone__carteira {
+    height: 18px;
+    width: fit-content;
+}
+.icone__pessoa {
+    height: 22px;
+    width: fit-content;
+    padding-right: 20;
+}
