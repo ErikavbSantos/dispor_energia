@@ -18,8 +18,8 @@
 
 /* Estilos gerais para o corpo da página */
 body {
-    margin: 0;
-    padding: 0;
+    padding: 10px;
+    padding-top: 5px !important; /* Espaçamento superior com prioridade !important */
     color: var(--verde_escuro); /* Cor do texto */
     font-family: Inter; /* Família de fontes */
     font-size: 20px; /* Tamanho da fonte */
@@ -66,44 +66,6 @@ body {
     justify-content: center; /* Centraliza verticalmente o conteúdo */
 }
 
-/* Navbar */
-.navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    background-color: var(--verde_escuro);
-    padding: 20 0;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icone__casa {
-    height: 22px;
-    width: fit-content;
-    padding-left: 20px;
-}
-
-.icone__mapa {
-    height: 24px;
-    width: fit-content;
-}
-
-.icone__logo {
-    height: 24px;
-    width: fit-content;
-}
-
-.icone__carteira {
-    height: 18px;
-    width: fit-content;
-}
-.icone__pessoa {
-    height: 22px;
-    width: fit-content;
-    padding-right: 20;
-}
-
 /* Estilos para dispositivos com largura máxima de 412px */
 @media screen and (max-width: 412px) {
     .points {
@@ -145,4 +107,3 @@ body {
        
     }
 }
-
