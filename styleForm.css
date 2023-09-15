@@ -23,9 +23,6 @@ body {
     color: var(--verde_escuro); /* Cor do texto */
     font-family: Inter; /* Família de fontes */
     font-size: 20px; /* Tamanho da fonte */
-    font-style: normal; /* Estilo da fonte */
-    font-weight: 700; /* Peso da fonte */
-    line-height: normal; /* Altura da linha da fonte */
 }
 
 /* Navbar */
