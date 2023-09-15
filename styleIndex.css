@@ -188,6 +188,7 @@ body {
         padding: 10px ;
         text-align: center;
     }
+    
  .dropdown_ambientes{
     display: flex;
     margin: 26px 26px 0px 26px;
@@ -218,7 +219,7 @@ body {
         align-content: center;
         margin: 0 30 0 0;
         z-index: 100;
-        position: relative;
+        position: fixed;
         padding: 10 0 0 0;
         
     }
@@ -242,10 +243,15 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding: 1px 10px;
+    margin: 10px 10px;
     
     }
 
+    .cabeca h4{
+        margin: 0 2 4 5  !important;
+        padding:  0 0 0 0;
+    }
+*/
     .missoes{
         line-height: normal;
         padding: 1px 1px 0 0;
@@ -255,7 +261,10 @@ body {
         width: 360px;
         height: 188px;
     }
-    
+
+    .missoes p{
+        margin: 10 10;
+    }
 
     .points {
         display: flex;
@@ -268,6 +277,18 @@ body {
         position: relative;
         font-size: 10pt;
        
+        #card-amb{
+            display: flex;
+            margin: 26px 26px 0px 26px;
+            width: 308px;
+            height: 168px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 2px solid #0B8E74;
+            position: relative;
+            font-size: 10pt;
+           
+        }
     }
 
     /* Estilos específicos para a linha vertical em dispositivos pequenos */
