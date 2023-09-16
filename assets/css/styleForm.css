@@ -1,0 +1,118 @@
+
+header{
+    background-color: var(--verde_pastel);
+    padding: 2rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.forms-missao .titulo-missao{
+    font-size: 1.4rem;
+}
+.forms-missao .subtitulo-missao{
+    font-size: 1.125rem;
+}
+
+.forms-missao{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+}
+input, textarea, .select-progresso{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--verde_escuro);
+    font-family: var(--inter);
+    font-size: 15px;
+}
+input::placeholder, textarea::placeholder{
+    color: var(--verde_escuro);
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border: 1px solid var(--verde_mais_escuro);
+    background-color: var(--cinza-claro);
+}
+.cadastrar{
+    border: none;
+    padding: 0.5rem 2.5rem;
+    align-self: center;
+    border-top-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: var(--verde_claro);
+    color: var(--cinza-claro);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.custom-select select {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    
+}
+.custom-select{
+    display: flex;
+    position: relative;
+}
+
+.custom-select select {
+    background-color: var(--cinza-claro);
+}
+.custom-select select:invalid {
+    color: var(--verde_escuro);
+}
+.custom-select img{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    height: 10px;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+@media (min-width: 600px){
+    header{
+        padding: 2rem 7rem;
+    }
+    .forms-missao{
+        padding: 2rem 7rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        align-items: start;
+    }
+    input, textarea, .select-progresso{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .cadastrar{
+        grid-column: 2;
+        justify-self: flex-end;
+        padding: 0.7rem 4rem;
+        font-size: 1rem;
+    }
+    .titulo-missao{
+        font-size: 3rem;
+    }
+    .navbar {
+        display: none;
+    }
+    .custom-select img{
+        top: 20px;
+    }
+}
+@media (max-width: 900px) and (min-width: 600px) {
+    header{
+        padding: 2rem 2.5rem;
+    }
+    .forms-missao{
+        padding: 2rem 2.5rem;
+        
+    }
+   
+}
+
