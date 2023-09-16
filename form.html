@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <span></span>
+        <h1>Nova missão</h1>
+        <h2>Insira os detalhes:</h2>
+    </header>
+
+    <main>
+        <form class="forms-missao">
+
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="text" name="" id="" placeholder="Categoria">
+            <textarea name="" id="" cols="30" rows="3" placeholder="Descrição da missão"></textarea >
+            <input type="number" name="" id="" placeholder="Pontuação">
+            <p>icone da missão</p>
+            <input type="text" name="" id="" placeholder="Tempo limite">
+            <textarea name="" id="" cols="30" rows="3" placeholder="O que fazer?"></textarea >
+            <textarea name="" id="" cols="30" rows="3" placeholder="Como fazer?"></textarea >
+            <textarea name="" id="" cols="30" rows="3" placeholder="Quando fazer?"></textarea >
+            <textarea name="" id="" cols="30" rows="3" placeholder="Onde fazer?"></textarea >
+            <div class="custom-select">
+                <select id="estagio"            name="estagio" required>
+                    <option value="" disabled selected>Estágio de Progresso</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="PB">PB</option>
+                </select>
+                <img class="triangulo" src="/assets/dropdown__triangulo.svg" alt="triangulo">
+            </div>
+            
+
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </main>
     
     <div class="navbar">
         <a href="index.html"><img class="icone__casa" src="/assets/casa__nav.svg" alt="icone de casa"></a>

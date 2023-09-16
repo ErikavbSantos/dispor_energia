@@ -22,8 +22,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--verde_escuro); /* Cor do texto */
-    font-family: Inter; /* Família de fontes */
-    font-size: 20px; /* Tamanho da fonte */
+    font-family: Inter; /* Família de fontes */ /* Tamanho da fonte */
 }
 
 /* Navbar */
@@ -63,3 +62,78 @@ body {
     width: fit-content;
     padding-right: 20;
 }
+
+h1, h2{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background-color: var(--verde_pastel);
+    padding: 2rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.forms-missao h1{
+    font-size: 1.4rem;
+}
+.forms-missao h2{
+    font-size: 1.125rem;
+}
+
+.forms-missao{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+input, textarea, select{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--verde_escuro);
+    font-family: var(--inter);
+    font-size: 12px;
+}
+input::placeholder, textarea::placeholder{
+    color: var(--verde_escuro);
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border: 1px solid var(--verde_mais_escuro);
+    background-color: var(--cinza-claro);
+}
+button{
+    border: none;
+    padding: 0.5rem 2.5rem;
+    align-self: center;
+    border-top-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: var(--verde_claro);
+    color: var(--cinza-claro);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.custom-select select {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    
+}
+.custom-select{
+    display: flex;
+    position: relative;
+}
+select {
+    position: relative;
+    background-color: var(--cinza-claro);
+}
+select:invalid {
+    color: var(--verde_escuro);
+}
+.custom-select img{
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+
