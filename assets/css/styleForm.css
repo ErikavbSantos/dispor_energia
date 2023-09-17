@@ -54,23 +54,62 @@ input:focus, textarea:focus, select:focus{
 .custom-select{
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 .custom-select select {
     background-color: var(--cinza-claro);
+    position: relative;
 }
 .custom-select select:invalid {
     color: var(--verde_escuro);
 }
-.custom-select img{
+/* .custom-select img{
     position: absolute;
-    top: 3px;
+    bottom: 10px;
     right: 10px;
     height: 10px;
+} */
+
+.custom-select::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/img/dropdown__triangulo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 25px;
+    
 }
 .form-container{
     display: grid;
     grid-template-columns: 1fr;
+}
+input[type="file"]{
+    display: none;
+    
+}
+input[type="number"] + label{
+    padding: 16px 0px;
+    margin-bottom: 1rem;
+    color: var(--verde_escuro);
+    border-radius: 5px;
+    border: 1px solid var(--verde_escuro);
+    background-color: var(--cinza-claro);
+    display: flex;
+    align-items: center;
+    
+}
+input[type="number"] + label::before{
+    content: "";
+    width: 35px;
+    height: 28px;
+    display: inline-block;
+    background-image: url('/assets/img/Exclude.svg');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    margin-left: 15px;
 }
 
 
@@ -98,12 +137,8 @@ input:focus, textarea:focus, select:focus{
     .titulo-missao{
         font-size: 3rem;
     }
-    .navbar {
-        display: none;
-    }
-    .custom-select img{
-        top: 20px;
-    }
+    
+    
 }
 @media (max-width: 900px) and (min-width: 600px) {
     header{
