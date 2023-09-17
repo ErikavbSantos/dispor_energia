@@ -96,7 +96,6 @@ input[type="number"] + label{
     color: var(--verde_escuro);
     border-radius: 5px;
     border: 1px solid var(--verde_escuro);
-    background-color: var(--cinza-claro);
     display: flex;
     align-items: center;
     
@@ -111,7 +110,6 @@ input[type="number"] + label::before{
     background-size: 25px;
     margin-left: 15px;
 }
-
 
 
 @media (min-width: 600px){
@@ -140,7 +138,7 @@ input[type="number"] + label::before{
     
     
 }
-@media (max-width: 900px) and (min-width: 600px) {
+@media (max-width: 1000px) and (min-width: 600px) {
     header{
         padding: 2rem 2.5rem;
     }
