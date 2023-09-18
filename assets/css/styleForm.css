@@ -44,7 +44,6 @@ input:focus, textarea:focus, select:focus{
     color: var(--cinza-claro);
     cursor: pointer;
     font-weight: 600;
-    margin-bottom: 50px;
 }
 .custom-select select {
     -webkit-appearance: none;
@@ -161,3 +160,8 @@ input[type="number"] + label::before{
    
 }
 
+@media (max-width: 600px) {
+    .cadastrar {
+        margin-bottom: 50px;
+    }
+}
