@@ -292,7 +292,7 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--verde_claro);
-    border-radius: 10px;
+    border-radius: 10;
     color: white;
     padding: 18px;
     margin: 0 26 30 26;
@@ -353,25 +353,23 @@
     margin-bottom: 84px;
 }
 
-button { /*coloca uma classe aqui pq está interferindo no meu botão (karol)*/
-    border-radius: 10px;
+.nova__missao { /*coloca uma classe aqui pq está interferindo no meu botão (karol)*/
+    border-radius: 10px 0px;
     appearance: none;
     border: 0;
     padding: 8 40;
     background-color: var(--verde_claro);
     font-size: 18px;
     color: #fff;
+    cursor: pointer;
 }
    
-button:hover {
-    background: var(--verde_mais__claro);
+.nova__missao:hover {
+    background: var(--verde);
     transition: 0.3s;
 }
    
-button:active {
+.nova__missao:active {
     border: 0;
-    background: var(--verde_mais__claro);
+    background: var(--verde);
 }
-
-
-

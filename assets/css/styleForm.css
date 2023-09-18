@@ -24,6 +24,7 @@ input, textarea, .select-progresso{
     border: 1px solid var(--verde_escuro);
     font-family: var(--inter);
     font-size: 15px;
+    resize: none;
 }
 input::placeholder, textarea::placeholder{
     color: var(--verde_escuro);
@@ -132,6 +133,17 @@ input[type="number"] + label::before{
         padding: 0.7rem 4rem;
         font-size: 1rem;
     }
+
+    .cadastrar:hover {
+        background: var(--verde);
+        transition: 0.3s;
+    }
+       
+    .cadastrar:active {
+        border: 0;
+        background: var(--verde);
+    }
+
     .titulo-missao{
         font-size: 3rem;
     }
