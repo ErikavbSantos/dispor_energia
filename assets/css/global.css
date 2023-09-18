@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--verde_escuro); /* Cor do texto */
+    font-family: Inter; /* Família de fontes */
+    /*font-size: 20px;*/
+}
+

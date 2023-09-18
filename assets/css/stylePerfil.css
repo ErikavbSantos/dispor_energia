@@ -1,31 +1,3 @@
-:root {
-    --verde_mais_escuro: #04473A;
-    --verde_escuro: #0B8E74;
-    --verde: #3BA790;
-    --verde_mais__claro: #9ce798;
-    --verde_claro: #84C382;
-    --verde_pastel: #C8E5D7;
-    --amarelo: #DBC86C;
-    --vermelho: #B97788;
-    --cinza-claro: #F3F3F3;
-    --cinza-escuro: #787878;
-
-    --inter: font-family: 'Inter', sans-serif;
-}
-
-:root {
-    scroll-behavior: smooth;
-  }
-
-
-/* Estilos gerais para o corpo da página */
-body {
-    margin: 0;
-    padding: 0;
-    color: var(--verde_escuro); /* Cor do texto */
-    font-family: Inter; /* Família de fontes */
-    font-size: 20px; /* Tamanho da fonte */
-}
 
 /* Header com as informações do cliente*/
 .head {
@@ -361,7 +333,6 @@ body {
 /* Subseção premio*/
 .premio {
     display:inline-flex;
-
 }
 
 .valor__premio {
@@ -375,16 +346,20 @@ body {
 }
 
 /* Botão para sugerir nova missão */
-button {
-    width: 306px;
-    margin: 0 26 90 26;
+.div__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 84px;
+}
+
+button { /*coloca uma classe aqui pq está interferindo no meu botão (karol)*/
     border-radius: 10px;
     appearance: none;
     border: 0;
-    padding: 8 0;
+    padding: 8 40;
     background-color: var(--verde_claro);
     font-size: 18px;
-    font-weight: 500;
     color: #fff;
 }
    
@@ -398,41 +373,5 @@ button:active {
     background: var(--verde_mais__claro);
 }
 
-/* Navbar */
-.navbar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    background-color: var(--verde_escuro);
-    padding: 20 0;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.icone__casa {
-    height: 22px;
-    width: fit-content;
-    padding-left: 20px;
-}
-
-.icone__mapa {
-    height: 24px;
-    width: fit-content;
-}
-
-.icone__logo {
-    height: 24px;
-    width: fit-content;
-}
-
-.icone__carteira {
-    height: 18px;
-    width: fit-content;
-}
-.icone__pessoa {
-    height: 22px;
-    width: fit-content;
-    padding-right: 20;
-}
 
