@@ -1,17 +1,18 @@
 .navbar {
+    display: flex;
+    background-color: var(--verde_escuro);
+    padding: 20px 0px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: flex;
-    background-color: var(--verde_escuro);
-    padding: 20 0;
-    justify-content: space-between;
-    align-items: center;
+    
 }
 
 .icone__casa {
     height: 22px;
-    width: fit-content;
+    width: 22px;
     padding-left: 20px;
 }
 

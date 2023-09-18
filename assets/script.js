@@ -1,4 +1,4 @@
-/* window.onclick = function(event) {
+window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
@@ -8,7 +8,7 @@
             }
         }
     }
-} */
+} 
 
 const file = document.querySelector('#img-icone');
 const label = document.querySelector("label[for='img-icone']");

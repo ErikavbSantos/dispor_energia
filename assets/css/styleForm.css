@@ -36,15 +36,15 @@ input:focus, textarea:focus, select:focus{
 }
 .cadastrar{
     border: none;
-    padding: 0.5rem 2.5rem;
-    align-self: center;
+    padding: 0.5rem 3rem;
+    justify-self: center;
     border-top-left-radius: 14px;
     border-bottom-right-radius: 14px;
     background-color: var(--verde_claro);
     color: var(--cinza-claro);
     cursor: pointer;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 50px;
 }
 .custom-select select {
     -webkit-appearance: none;
