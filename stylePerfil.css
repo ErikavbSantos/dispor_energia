@@ -90,6 +90,7 @@ body {
 .card__ambientes {
     border: 2px solid var(--verde_escuro);
     margin: 0 26 30 26;
+    border-top: 2px solid var(--verde_escuro);
     border-radius: 0px 0px 12px 12px; /* Borda arredondada apenas embaixo*/
 }
 
@@ -297,7 +298,6 @@ body {
     justify-content: space-between;
     background-color: var(--verde);
     margin-top: 20px;
-    border-top: 2px solid;
     border-radius: 0px 0px 10px 10px; /* Borda arredondada apenas embaixo*/
 }
 
