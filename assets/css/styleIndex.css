@@ -61,7 +61,7 @@
 
 
 /* Estilos para dispositivos com largura máxima de 412px */
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 600px ) {
     .footpoints {
         position: absolute;
         width: 100% !important;
@@ -78,8 +78,10 @@
         align-items: center;
         display: flex;
         flex-shrink: 0;
+        z-index: -1000;
     }
 
+    
     
 
     .foot_ambientes {
@@ -197,6 +199,7 @@
         margin: 25 0 0 26;
         width: 360px;
         height: 188px;
+        display: flex;
     }
 
     .missoes p{
@@ -256,7 +259,9 @@
          white-space: nowrap;
          line-height: 0.2;
          
-         
        
+    }
+    .icopoint p{
+        padding-top: 10px;
     }
 }

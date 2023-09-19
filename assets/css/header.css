@@ -4,6 +4,7 @@
     top: 0;
     overflow: hidden;
     background: var(--verde);
+    z-index: 1000;
 }
   
 .topnav a {
