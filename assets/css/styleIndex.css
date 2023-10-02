@@ -138,7 +138,7 @@ margin: 10px 10px;
     padding: 1px 1px 0 0;
     font-family: Inter;
     font-size: 16px;
-    margin: 25 0 0 26;
+    margin: 25 5 25 26;
     width: 360px;
     height: 188px;
     display: flex;
@@ -228,9 +228,9 @@ padding: 10;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas igualmente espaçadas */
     gap: 10px; /* Espaçamento entre os itens do grid */
-   margin: 0px 0px 0px 0px;
-   grid-column-start: initial;
-  
+    margin: 5px 3px 70px 3px;
+    grid-column-start: initial;
+    
 }
 
 .grid-item {
