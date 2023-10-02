@@ -228,7 +228,7 @@ padding: 10;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas igualmente espaçadas */
     gap: 10px; /* Espaçamento entre os itens do grid */
-    margin: 5px 0px 70px 3px;
+    margin: 5px 0px 70px 7px;
     grid-column-start: initial;
     
 }
