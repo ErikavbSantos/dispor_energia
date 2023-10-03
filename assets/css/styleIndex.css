@@ -141,7 +141,7 @@ margin: 10px 10px;
 
 .points {
     display: flex;
-    margin: 26px 26px 0px 26px;
+    margin: 0 26 30 26;
     width: 308px;
     height: 168px;
     flex-shrink: 0;
