@@ -142,7 +142,7 @@ margin: 10px 10px;
 .points {
     display: flex;
     margin: 0 26 30 26;
-    width: 308px;
+    
     height: 168px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -157,7 +157,7 @@ margin: 10px 10px;
         margin: 0 26 30 26;
         border-top: 2px solid var(--verde_escuro);
         border-radius: 0px 0px 12px 12px;
-        width: 308px;
+       
        
     }
 
