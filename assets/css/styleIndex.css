@@ -1,3 +1,6 @@
+
+
+
 @media screen and (max-width: 440px ) {
 .footpoints {
     position: absolute;
@@ -13,7 +16,7 @@
     text-overflow: ellipsis;
     justify-content: center;
     align-items: center;
-
+    border-radius: 5%;
     
  
     
@@ -331,8 +334,8 @@ padding: 10;
     border-radius: 0px 0px 10px 10px;
     }
     .footico{
-        width: 20px;
-        height: 20px;
+        width: 5%; /* Largura em porcentagem */
+        height: auto; /* A altura ajustará automaticamente para manter a proporção */
         margin: 0;
         padding: 0;
         
@@ -341,39 +344,37 @@ padding: 10;
     }
     
     #tam_ico{
-        width: 40px;
-        height: 30px;
-        background-color: #04473A;
-        align-items: center;
-        align-content: center;
-        margin: 0 30 0 0;
-        z-index: 100;
-        position: fixed;
-        padding: 10 0 0 0;
+    width: 10%; /* Largura em porcentagem */
+    height: 5%; /* Altura em porcentagem */
+    background-color: #04473A;
+    align-items: center;
+    align-content: center;
+    margin: 0 5%; /* Margens em porcentagem */
+    z-index: 100;
+    position: fixed;
+    padding: 1%; /* Padding em porcentagem */
+    border-radius: 2%; /* Arredondamento de borda em porcentagem */
         
     }
     
     #tam_ico_ambiente{
-        width: 20px;
-        height: 27px;
+        width: 5%; /* Largura em porcentagem */
+        height: 5%; /* Altura em porcentagem */
         background-color: #04473A;
         align-items: center;
         align-content: center;
-        margin: 19 0 0 15;
+        margin: 2% 2%; /* Margens em porcentagem */
         z-index: 100;
         position: relative;
-        padding: 10 10 5 10;
-        border-radius: 2;
-        
+        padding: 2%; /* Padding em porcentagem */
+        border-radius: 2%; /* Arredondamento de borda em porcentagem */
     }
-    .cabeca{
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 10px 10px;
-    
+    .cabeca {
+        font-size: 2em; /* Use 'em' para definir o tamanho da fonte em relação ao elemento pai */
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 1em 1em; /* Use 'em' para margens */
     }
     
     .cabeca h4{
@@ -383,12 +384,12 @@ padding: 10;
     */
     .missoes{
         line-height: normal;
-        padding: 1px 1px 0 0;
+        padding: 0.1em 0.1em 0 0; /* Use 'em' para padding */
         font-family: Inter;
-        font-size: 16px;
-        margin: 25 5 25 26;
-        width: 360px;
-        height: 188px;
+        font-size: 1em; /* Tamanho de fonte relativo */
+        margin: 2.5% 1% 2.5% 2.5%;
+        width: 100%; /* Use 100% para que o elemento ocupe a largura total do pai */
+        height: auto; /* Deixe a altura se ajustar ao conteúdo */
         display: flex;
     }
     
@@ -487,7 +488,6 @@ padding: 10;
         padding: 10px;
         text-align: center;
         margin: 50  10 16 0;
-        width: 100px;
         height: 109px;
         flex-shrink: 0;
         border-radius: 20px;
