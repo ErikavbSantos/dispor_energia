@@ -84,7 +84,10 @@ html{
         color: white;
         width: 264px;
         height: 50px;
-        border: white 2px;
+        border: none;
+        -webkit-appearance: none; /* Remove estilos padrão do iOS */
+        -moz-appearance: none; /* Remove estilos padrão do Firefox */
+        appearance: none;
         border-bottom-right-radius: 20px ;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0;
