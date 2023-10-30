@@ -26,10 +26,10 @@
 
 
     <section id="formlogin">
-        <form action="/seu-script-de-autenticacao" method="post">
+        <form onsubmit="validar(); return false;">
             <div class="camp">
                 <div class="input-container">
-                    <img class='imgformlogin' src="assets/img/user/apple-touch-icon.png" style="width: 75px; margin-top: -25px; height: 80px; margin-left: -19px;">
+                    <img class='imgformlogin' src="assets/img/user/apple-touch-icon.png" style="width: 78px; margin-top: -28px; height: 83px; margin-left: -19px;">
                     <input type="text" id="username" name="username" placeholder="E-mail">
                 </div>
             </div>
@@ -37,7 +37,7 @@
             <div class="camp">
                 <div class="input-container">
                     <img class='imgformlogin' src="assets/img/senha/apple-touch-icon.png" style="width: 95px; height: 82px; margin-left:-33px; margin-top: -31px; " alt="">
-                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                    <input type="password" id="password" name="password"  placeholder="Senha" required>
                 </div>
             </div>
     
@@ -53,12 +53,16 @@
                 </div>
             </div>
     
+            
             <div>
-                <input id="enviar" type="submit" value="Entrar">
+                
+                <input id="enviar" type="submit" value="Entrar" onclick="validar()">
+            
             </div>
+            
         </form>
         <h6  style="color: white ; padding:15px;">Esqueceu a senha?</h6>
     </section>
-    
+ 
 </body>
 </html>

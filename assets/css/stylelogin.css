@@ -137,6 +137,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #c3e6cb; /* Cor de fundo verde */
+    text-align: center;
 }
 
 /* Estilize o select */

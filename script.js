@@ -21,3 +21,32 @@ file.addEventListener('change', () =>{
     label.textContent = fileName;
 })
 
+var enviar = document.getElementById('enviar')
+
+ async function validar(){
+
+ var usuario = 'teste@gmail.com'
+ var senha = 'teste'
+
+ var user = document.getElementById('username').value
+ var password = document.getElementById('password').value
+ var tipoUser = document.getElementById('role').value
+ 
+
+
+ if (user == usuario && password == senha){
+ window.location.href = 'index.html'
+
+ }
+
+ else{
+    alert('Credenciais invalidas.');
+ }
+
+ if (tipoUser == 'default'){
+    alert('Por favor, selecione uma categoria de usuario.')
+
+    window.location.reload()
+ }
+ 
+}
