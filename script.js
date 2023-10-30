@@ -41,6 +41,7 @@ var enviar = document.getElementById('enviar')
 
  else{
     alert('Credenciais invalidas.');
+    window.location.reload()
  }
 
  if (tipoUser == 'default'){

@@ -108,7 +108,7 @@ html{
 
   form ::placeholder{
         color: white;
-        text-align: center !important;
+        text-align: left !important;
     }
     
     input:hover {
@@ -138,7 +138,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #c3e6cb; /* Cor de fundo verde */
-    text-align: center;
+    text-align: left;
 }
 
 /* Estilize o select */
@@ -195,9 +195,11 @@ form {
 #enviar{
     background-color: aliceblue;
     color: #006400;
-    margin: 10px 0 0 0 ;
-    width: 263px;
+    margin-left: -50px;
+    margin-top: 10px;
+    width: 335px;
     height: 50px;
+    text-align: center;
     
 }
 
@@ -223,20 +225,20 @@ form input {
     opacity:1;
     margin-left: 0px;
     padding-left: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #role{
     background-color: rgb(131, 194, 154);
     color: white;
-    width: 275px;
+    width: 295px;
     height: 50px;
     border: white 2px;
     border-bottom-right-radius: 20px ;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 20px;
-    text-align: center;
+    text-align: left;
     margin-top: 0px !important;
     padding: 10px !important;
     
@@ -254,13 +256,13 @@ form input {
 
 form ::placeholder{
     color: white;
-    text-align: center;
+    text-align: left;
 }
 #role::placeholder{
     color: white;
-    text-align: right!important;
-    align-items: center !important;
-    justify-content: center;
+    text-align: left!important;
+    align-items: left !important;
+    justify-content: left;
 }
 input:hover {
     background-color: #c2efc2;
