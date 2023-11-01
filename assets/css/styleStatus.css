@@ -1,0 +1,91 @@
+#titulo-status{
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 1rem 0rem 0.5rem 1.5rem;
+}
+.status-missao{
+    background-color: #FFFDFF;
+    max-width: 1400px;
+    border: 0.5px solid #DCDCDC;
+    border-radius: 10px;
+    margin: 1.5rem;
+    padding: 37px;
+    height: calc(100vh - 240px);
+    overflow-y: scroll;
+    
+}
+.status-missao::-webkit-scrollbar {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.status-missao::-webkit-scrollbar-thumb{
+    background-color: #DCDCDC;
+}
+
+.filter{
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+}
+.filter input{
+    padding: 0.3rem;
+    width: 350px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 0.5px solid #000000;
+    color: black;
+    font-size: 14px;
+}
+.filter input:focus{
+    outline: none;
+    background-color: #FFFDFF;
+}
+.filter input::placeholder{
+    font-size: 14px;
+    color: #484848;
+}
+
+
+.filter button{
+    background-color: #FFFDFF;
+    border: none;
+    border: 1px solid #8F8F8F;
+    padding: 6px 20px 6px 20px;
+    font-size: 12px;
+    border-radius: 7px;
+    color: #484848;
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 0.5px solid #8F8F8F;
+    margin-top: 1.5rem; 
+   
+} 
+
+th{
+    color: #484848;
+    font-weight: 600;
+    font-size: 12px;
+    height: 40px;
+}
+
+td, th{
+    border-bottom: 0.5px solid #8F8F8F;
+    text-align: start;
+    padding-left: 24px;
+}
+
+td{
+    height: 45px;
+    font-size: 12px;
+    width: 200px;
+    color: black;
+    cursor: pointer;
+}
+
+td:nth-child(4) {
+    width: 40%;
+}

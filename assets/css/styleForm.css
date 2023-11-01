@@ -64,12 +64,7 @@ input:focus, textarea:focus, select:focus{
 .custom-select select:invalid {
     color: var(--verde_escuro);
 }
-/* .custom-select img{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    height: 10px;
-} */
+
 
 .custom-select::after{
     content: "";

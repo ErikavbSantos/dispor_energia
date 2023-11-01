@@ -1,4 +1,4 @@
-window.onclick = function(event) {
+/* window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
@@ -50,4 +50,26 @@ var enviar = document.getElementById('enviar')
     window.location.reload()
  }
  
-}
+} */
+
+//STATUS DE MISSÃO
+
+const inputSearch = document.querySelector('#search-filter');
+
+inputSearch.addEventListener('input', function (){
+    const data = inputSearch.value.toLowerCase();
+    const items = document.querySelector('table');
+    const trs = items.querySelectorAll(' tr');
+
+    
+    trs.forEach((tr, index) => {
+        if(index > 0){
+            if (tr.textContent.toLowerCase().includes(data)) {
+                tr.style.display = 'table-row';
+              } else {
+                tr.style.display = 'none';
+            }
+        }
+    });
+
+})
