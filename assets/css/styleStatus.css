@@ -89,3 +89,12 @@ td{
 td:nth-child(4) {
     width: 40%;
 }
+
+td div {
+    background-color:#484848;
+    padding: 4px;
+    border-radius: 5px;
+    width: fit-content;
+    color: white;
+    font-size: 13px;
+}
