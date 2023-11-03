@@ -1,7 +1,7 @@
 #titulo-status{
     color: black;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 35px;
     padding: 1rem 0rem 0.5rem 1.5rem;
 }
 .status-missao{
@@ -46,23 +46,11 @@
     color: #484848;
 }
 
-
-.filter button{
-    background-color: #FFFDFF;
-    border: none;
-    border: 1px solid #8F8F8F;
-    padding: 6px 20px 6px 20px;
-    font-size: 12px;
-    border-radius: 7px;
-    color: #484848;
-    cursor: pointer;
-}
 table{
     border-collapse: collapse;
     width: 100%;
     border-top: 0.5px solid #8F8F8F;
     margin-top: 1.5rem; 
-   
 } 
 
 th{
@@ -80,7 +68,7 @@ td, th{
 
 td{
     height: 45px;
-    font-size: 12px;
+    font-size: 14px;
     width: 200px;
     color: black;
     cursor: pointer;
@@ -97,4 +85,55 @@ td div {
     width: fit-content;
     color: white;
     font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    thead{
+        display: none;
+    }
+    table{
+        border-top: none;
+    }
+    tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid #F3F3F3;
+        border-radius: 2px;
+        margin-bottom: 1rem;
+        padding: 1rem 0.3rem 1.2rem 0.3rem;
+        overflow: hidden;
+    }
+    td{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 100%;
+        height: 57px;
+        font-size: 14px;
+        padding-left: 15px; 
+    }
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: #04473A;
+        
+    }
+    td div {
+        display: block;
+        width: 100%;
+        padding: 6px 7px 6px 7px;
+        border-radius: 2px;
+        word-wrap: break-word;
+        font-weight: 500; 
+    }
+   
+    .status-missao{
+        padding: 20px;
+        overflow-x: hidden;
+        height: calc(100vh - 210px);
+        margin: 1.2rem;
+    }
 }
