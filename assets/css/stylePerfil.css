@@ -3,8 +3,7 @@
 .head {
     background: var(--verde_pastel); /* cor de fundo*/
     border-radius: 0px 0px 20px 20px; /* Borda arredondada apenas embaixo*/
-    padding: 40 24 22 24;
-    margin-bottom: 30px;
+    padding: 2rem 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -20,7 +19,7 @@
     width: 100px;
     height: 100px;
     border: 2px solid white;
-    border-radius: 50px; /* para deixar a imagem arredondada*/
+    border-radius: 50px;
 }
 
 .nome__foto p {
@@ -57,13 +56,21 @@
     padding: 18 0 0 0;
 }
 
+.wrapper {
+    display:flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 2%;
+    align-items: center;
+}
 
 /* Card dos ambientes */
 .card__ambientes {
     border: 2px solid var(--verde_escuro);
-    margin: 0 26 30 26;
     border-top: 2px solid var(--verde_escuro);
-    border-radius: 0px 0px 12px 12px; /* Borda arredondada apenas embaixo*/
+    border-radius: 0px 0px 12px 12px;
+    box-sizing: border-box;
+    width: 300px;
 }
 
 .topo {
@@ -287,7 +294,45 @@
     padding-right: 18px;
 }
 
+/* Botão para sugerir nova missão */
+.nova__missao {
+    background-color: var(--verde_claro);
+    padding: 50px 30px;
+    border-radius: 10px 0px;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+   
+.nova__missao:hover {
+    background: var(--verde);
+    transition: 0.3s;
+}
+   
+.nova__missao:active {
+    border: 0;
+    background: var(--verde);
+}
+
+
 /* Cards das missões*/
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.card {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
 .card__missao {
     display: flex;
     justify-content: space-between;
@@ -295,7 +340,6 @@
     border-radius: 10;
     color: white;
     padding: 18px;
-    margin: 0 26 30 26;
 }
 
 .card__missao p {
@@ -345,37 +389,9 @@
     padding-left: 12px;
 }
 
-/* Botão para sugerir nova missão */
-.div__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.nova__missao { 
-    border-radius: 10px 0px;
-    appearance: none;
-    border: 0;
-    padding: 8 40;
-    background-color: var(--verde_claro);
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-}
-   
-.nova__missao:hover {
-    background: var(--verde);
-    transition: 0.3s;
-}
-   
-.nova__missao:active {
-    border: 0;
-    background: var(--verde);
-}
 
 @media (max-width: 600px){
     .div__btn {
-        margin-bottom: 84px;
+        margin-bottom: 30px;
     }
 }
