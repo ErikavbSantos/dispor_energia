@@ -391,7 +391,15 @@
 
 
 @media (max-width: 600px){
-    .div__btn {
-        margin-bottom: 30px;
+    .wrapper {
+        flex-direction: column;
+        margin-top: 30px;
+
+    }
+
+    .nova__missao {
+        z-index: -1;
+        margin-top: 40px;
+        padding: 10px 50px;
     }
 }
