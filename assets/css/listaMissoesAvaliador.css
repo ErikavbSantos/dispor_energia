@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+}
+
+.side__menu {
+    position: fixed;
+    background-color: var(--verde_pastel);
+    width: 190px;
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.side__menu button {
+    position: fixed;
+    bottom: 20;
+    left: 30;
+    width: 130px;
+    height: 38px;
+    border-radius: 6px;
+    color: black;
+    background-color: var(--verde_claro);
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.side__menu button:hover {
+    background-color: var(--verde);
+}
+.section__missoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-left: 190px;
+}
+
+.missao__card {
+    background-color: var(--verde_claro);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 16px;
+    width: 300px;
+    height: 150px;
+}
+
+.missao__card h1 {
+    font-size: 18px;
+    padding: 0;
+}
+
+.missao__card p {
+    font-size: 16px;
+    padding-top: 4px;
+}
