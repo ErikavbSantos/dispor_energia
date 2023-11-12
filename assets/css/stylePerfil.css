@@ -424,7 +424,6 @@
     .wrapper {
         flex-direction: column;
         margin-top: 30px;
-
     }
 
     .nova__missao {
@@ -434,6 +433,10 @@
         padding-bottom: 40px;
         padding-left: 45px;
         padding-right: 45px;
+    }
+
+    .main__section {
+        margin-bottom: 60px;
     }
 }
 
