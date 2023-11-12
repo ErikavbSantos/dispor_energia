@@ -15,11 +15,16 @@
 }
 
 /* Sub seção nome/foto */
+.nome__foto {
+    display: flex;
+    align-items: center;
+}
 .nome__foto img {
     width: 100px;
     height: 100px;
     border: 2px solid white;
     border-radius: 50px;
+    margin: 10px;
 }
 
 .nome__foto p {
@@ -59,8 +64,10 @@
 .wrapper {
     display:flex;
     box-sizing: border-box;
-    justify-content: space-evenly;
-    margin: 2%;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 6rem;
+    margin-right: 6rem;
     align-items: center;
 }
 
@@ -116,6 +123,7 @@
     background: var(--cinza-claro);
     align-items: center;
     padding-bottom: 2px;
+    margin: 4px;
 }
 
 .ambiente img {
@@ -296,14 +304,19 @@
 
 /* Botão para sugerir nova missão */
 .nova__missao {
-    background-color: var(--verde_claro);
-    padding: 50px 30px;
+    background-color: var(--verde_escuro);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 4rem;
+    padding-right: 4rem;
     border-radius: 10px 0px;
     border: none;
     font-size: 22px;
     color: #fff;
     cursor: pointer;
-    margin: auto;
+    white-space: nowrap;
+    text-decoration: none;
 }
    
 .nova__missao:hover {
@@ -318,10 +331,13 @@
 
 
 /* Cards das missões*/
-.main-section {
+.main__section {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-left: 6%;
+    margin-right: 6%;
     padding-top: 30px;
 }
 
@@ -389,6 +405,20 @@
     padding-left: 12px;
 }
 
+@media (max-width: 880px) and (min-width: 601px){
+    .nova__missao {
+        padding-top: 56px;
+        padding-bottom: 56px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 30px;
+        
+    }
+    .main__section {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
 
 @media (max-width: 600px){
     .wrapper {
@@ -399,7 +429,27 @@
 
     .nova__missao {
         z-index: -1;
-        margin-top: 40px;
-        padding: 10px 50px;
+        margin-top: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+@media (max-width: 425px) {
+    .nome__foto {
+        flex-direction: column;
+    }
+
+    .nome__foto img {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nome__foto img {
+        width: 80px;
+        height: 80px;
     }
 }
