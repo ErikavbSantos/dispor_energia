@@ -118,4 +118,28 @@ fetch("missoes.json").then((response)=> {
     })
 })
 
+// Função para desabilitar todos os checkbox, exceto um
+function desabilitarCheckboxExcetoUm(nomeDoCampo) {
+  // Obtém todos os checkbox do campo
+  const checkboxs = document.querySelectorAll(`input[name="${nomeDoCampo}"]`);
 
+  // Desabilita todos os checkbox
+  checkboxs.forEach((checkbox) => {
+    checkbox.disabled = true;
+  });
+
+  // Habilita o primeiro checkbox
+  checkboxs[0].disabled = false;
+}
+
+// Ouvinte de evento para o click de um checkbox
+document.addEventListener("click", (event) => {
+  // Verifica se o evento foi causado por um checkbox
+  if (event.target.type === "checkbox") {
+    // Obtém o nome do campo do checkbox
+    const nomeDoCampo = event.target.name;
+
+    // Chama a função para desabilitar todos os checkbox, exceto um
+    desabilitarCheckboxExcetoUm(nomeDoCampo);
+  }
+});

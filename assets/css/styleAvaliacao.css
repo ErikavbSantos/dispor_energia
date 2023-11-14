@@ -1,0 +1,84 @@
+@import 'style.css';
+
+.algin-campo{
+    display: flex;
+    flex-direction: row;
+}
+
+.campos-esquerda{
+   float: left;
+   flex: 1;
+
+}
+
+.form-validacao{
+margin: 30 5%;
+display: flex;
+
+}
+
+
+.inputtext{
+    width: 332px;
+    height: 60px;
+    text-align: left;
+    align-content: first baseline;
+    
+}
+
+.check{
+    width: 15.44px;
+    height: 15.44px;
+    flex-shrink: 0; 
+    margin: 2;
+    border-radius: 4px;
+    background: #D9D9D9;
+
+
+}
+
+.checkbox-group{
+    margin-left: 4;
+    margin-right:40;
+}
+
+.campo{
+    display: flex;
+    
+}
+
+.campos-direita{
+    float: right;
+    margin-left: 100px;
+
+    margin-top:-565;
+}
+.campo-esquerda-direita{
+    display: flex;
+}
+
+.campo-direita-direita{
+    float: right;
+    display: flex;
+    margin-right: 10px;
+   
+}
+.inputtext-direita{
+    width: 331px;
+    height: 140px;
+}
+
+.algin-campo--esquerda-direita{
+    flex: 2;
+}
+
+.inputtext-direita-direita{
+    width: 352px;
+    height: 137px;
+    
+}
+
+.algin-campo-direita{
+    display: flex;
+}
+
