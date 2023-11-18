@@ -25,7 +25,7 @@
     </div>
 <body>
     <div class="form-validacao" >
-        <form action="/" method="post" id="avaliacaoForm">
+        <form action="/" method="post" class="avaliacaoForm">
 
             <!-- Início itens da esquerda-->
             <div class="campos-esquerda">
@@ -36,11 +36,11 @@
                             <input class="inputtext" disabled="true" type="text" name="Nome" placeholder="Nome" style=" color: green;">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_name" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_name" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_name" value="Rejeitado"><br>
                             </div>
                         </div>
                     </div>
@@ -51,11 +51,11 @@
                             <input class="inputtext" type="text" name="categoria" placeholder="Categoria" disabled="true" style=" color: green;">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_categoria" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_categoria" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_categoria" value="Rejeitado"><br>
                             </div>
                         </div>
                     </div>
@@ -66,11 +66,11 @@
                             <input class="inputtext" type="text" name="Tempo-limite" placeholder="Tempo limite"  disabled="true" style=" color: green;">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_tempo" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_tempo" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_tempo" value="Rejeitado"><br>
                             </div>
                         </div>
                     </div>
@@ -82,11 +82,11 @@
                             <input class="inputtext" type="text" name="nivel-usuario" placeholder="Nível do usuário" disabled="true" style=" color:green;">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_nivel" value="Aprovado" > <br>
                                    
-                                <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                <input class="radio_ressalvas" type="radio" name="status_nivel" value="Aprovado com ressalvas"><br>
 
-                                <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                <input class="radio_rejeitado" type="radio" name="status_nivel" value="Rejeitado"><br>
                             </div>
                         </div>
                     </div>
@@ -98,11 +98,11 @@
                             <input class="inputtext" type="text" name="pontuacao" placeholder="Pontuação" disabled="true" style=" color: green;">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_pontuacao" value="Aprovado" > <br>
                                    
-                                <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                <input class="radio_ressalvas" type="radio" name="status_pontuacao" value="Aprovado com ressalvas"><br>
 
-                                <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                <input class="radio_rejeitado" type="radio" name="status_pontuacao" value="Rejeitado"><br>
                             </div>
                         </div>
                     </div>
@@ -113,15 +113,15 @@
                         height: 60px;">
                             
                         
-                            <input class="inputtext" type="image"  contenteditable="icone" name="pontuacao" disabled="true" placeholder="Icone" style="width: 100%;
+                            <input class="inputtext" type="image"  contenteditable="icone" name="icone" disabled="true" placeholder="Icone" style="width: 100%;
                             height: 132px;">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_icone" value="Aprovado" > <br>
                                    
-                                <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                <input class="radio_ressalvas" type="radio" name="status_icone" value="Aprovado com ressalvas"><br>
 
-                                <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                <input class="radio_rejeitado" type="radio" name="status_icone" value="Rejeitado"><br>
                             </div>
                         </div>
                     </div>
@@ -139,11 +139,11 @@
                                 <input class="inputtext-direita" disabled="true" type="text" name="oqfzr" placeholder="O que fazer?" >
         
                                 <div class="checkbox-group">
-                                    <input class="radio_aprovado" type="radio" name="status" value="Aprovado" data-tooltip="Aprovado"> <br>
+                                    <input class="radio_aprovado" type="radio" name="status_oqfzr" value="Aprovado" data-tooltip="Aprovado"> <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_oqfzr"  value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_oqfzr" value="Rejeitado"><br>
 
                                 </div>
                             </div>
@@ -152,11 +152,11 @@
                                 <input class="inputtext-direita-direita" disabled="true" type="text" name="ComoFzr" placeholder="Como fazer?" >
         
                                 <div class="checkbox-group">
-                                    <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                    <input class="radio_aprovado" type="radio" name="status_comofzr" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas"  type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas"  type="radio" name="status_comofzr" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_comofzr" value="Rejeitado"><br>
 
                                 </div>
                             </div>
@@ -171,11 +171,11 @@
                                 <input class="inputtext-direita" type="text" name="ondeFzr" placeholder="Onde fazer?" disabled="true" >
         
                                 <div class="checkbox-group">
-                                    <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                    <input class="radio_aprovado" type="radio" name="status_ondefzr" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_ondefzr" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_ondefzr" value="Rejeitado"><br>
 
                                 </div>
                             </div>
@@ -184,11 +184,11 @@
                                 <input class="inputtext-direita-direita" type="text" name="quandoFzr" disabled="true" placeholder="Quando fazer ?" >
         
                                 <div class="checkbox-group">
-                                    <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                    <input class="radio_aprovado" type="radio" name="status_quandofzr" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_quandofzr" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_quandofzr" value="Rejeitado"><br>
 
                                 </div>
                             </div>
@@ -197,17 +197,17 @@
                         
                         </div>
 
-                            <div class="campo-esquerda-direita" id="desc-missao">
-                                <input class="inputtext-direita" type="text" name="desc-missao" placeholder="Descrição da missão" disabled="true" style=" width: 200%;
+                            <div class="campo-esquerda-direita" >
+                                <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" placeholder="Descrição da missão" disabled="true" style=" width: 200%;
                                 height: 200;" >
         
                                 <div class="checkbox-group">
                                     
-                                    <input class="radio_aprovado" type="radio" name="status" value="Aprovado" > <br>
+                                    <input class="radio_aprovado" type="radio" name="status_descrição" value="Aprovado" > <br>
                                    
-                                    <input class="radio_ressalvas" type="radio" name="status" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_ressalvas" type="radio" name="status_descrição" value="Aprovado com ressalvas"><br>
 
-                                    <input class="radio_rejeitado" type="radio" name="status" value="Rejeitado"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_descrição" value="Rejeitado"><br>
 
 
                                 </div>
