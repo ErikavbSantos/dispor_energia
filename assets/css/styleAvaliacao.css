@@ -8,21 +8,30 @@
 .campos-esquerda{
    float: left;
    flex: 1;
+   margin: 35 5 10 10;
+   
+   
 
 }
 
 .form-validacao{
-margin: 30 5%;
+margin: 0;
 display: flex;
+flex-direction: row;
+width: 100%;
+
+
+
 
 }
 
 
 .inputtext{
-    width: 332px;
-    height: 60px;
+    width: 100%;
+    height: 80%;
     text-align: left;
     align-content: first baseline;
+    
     
 }
 
@@ -37,34 +46,37 @@ display: flex;
 
 }
 
-.checkbox-group{
-    margin-left: 4;
-    margin-right:40;
-}
+
+
 
 .campo{
     display: flex;
+    margin-bottom: 20;
+    margin-top: 0;
+    
     
 }
 
 .campos-direita{
-    float: right;
-    margin-left: 100px;
-
-    margin-top:-565;
+    float: right !important;
+    flex: 2;
+    flex-direction: row;
+    margin: 15 0 0 30;
+ 
 }
 .campo-esquerda-direita{
     display: flex;
+    margin-right: 5;
 }
 
 .campo-direita-direita{
     float: right;
     display: flex;
-    margin-right: 10px;
+    margin-right: 0px;
    
 }
 .inputtext-direita{
-    width: 331px;
+    width: 247px;
     height: 140px;
 }
 
@@ -73,12 +85,223 @@ display: flex;
 }
 
 .inputtext-direita-direita{
-    width: 352px;
+    width: 275px;
     height: 137px;
+    margin: 0 5 5 5 
     
 }
 
 .algin-campo-direita{
     display: flex;
+    margin-top: 20;
 }
 
+/* Adicione estilos CSS para cada classe de status */
+
+  
+
+input[type="radio"].radio_aprovado {
+    -webkit-appearance: none;
+    background-color: greenyellow;
+    padding: 8;
+    margin: 0 4 3 4;
+}
+
+input[type="radio"].radio_aprovado:checked {
+    background-color: green !important;
+    border-color: black;
+}
+
+input.radio_aprovado,
+input.radio_ressalvas,
+input.radio_rejeitado {
+    position: relative;
+}
+
+input.radio_aprovado::after {
+    content: "Aprovado";
+}
+
+input.radio_ressalvas::after {
+    content: "Aprovado com Ressalvas";
+}
+
+input.radio_rejeitado::after {
+    content: "Rejeitado";
+}
+
+input[type="radio"]::after {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+input[type="radio"]:hover::after {
+    opacity: 1;
+}
+
+input[type="radio"].radio_ressalvas {
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 0, 0.366);
+    padding: 8;
+    margin: 0 4 3 4;
+}
+
+input[type="radio"].radio_ressalvas:checked {
+    background-color: yellow;
+    border-color: black;
+}
+
+input[type="radio"].radio_rejeitado {
+    -webkit-appearance: none;
+    background-color: rgba(219, 28, 28, 0.645);
+    padding: 8;
+    margin: 0 4 3 4;
+}
+
+input[type="radio"].radio_rejeitado:checked {
+    background-color: red;
+    border-color: black
+}
+
+
+@media only screen and (min-width:1366px) {
+
+
+  input[type="radio"].radio_aprovado {
+    -webkit-appearance: none;
+    background-color: greenyellow;
+    padding: 8;
+    margin: 0 4 3 4;
+}
+
+input[type="radio"].radio_aprovado:checked {
+    background-color: green !important;
+    border-color: black;
+}
+
+
+
+input[type="radio"].radio_ressalvas {
+    -webkit-appearance: none;
+    background-color: rgba(255, 255, 0, 0.366);
+    padding: 8;
+    margin: 0 4 3 4;
+}
+
+input[type="radio"].radio_ressalvas:checked {
+    background-color: yellow;
+    border-color: black;
+}
+
+input[type="radio"].radio_rejeitado {
+    -webkit-appearance: none;
+    background-color: rgba(219, 28, 28, 0.645);
+    padding: 8;
+    margin: 0 4 3 4;
+}
+
+input[type="radio"].radio_rejeitado:checked {
+    background-color: red;
+    border-color:black;
+
+
+    .algin-campo {
+        display: flex;
+       
+    }
+    
+    .campos-esquerda{
+       float: left;
+       flex: 1;
+       margin-right: 0;
+       
+       
+    
+    }
+    
+    .form-validacao{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    
+    
+    
+    }
+    
+    
+    .inputtext{
+        width: 390px !important;
+        height: 100;
+        text-align: initial;
+        margin-top: 0;
+        
+        
+    }
+    
+    
+  
+    
+    
+    }
+    
+    .checkbox-group{
+        margin-left: 4;
+        margin-right:40;
+    }
+    
+    .campo{
+        display: flex;
+        margin-bottom: 20;
+        width: 380px;
+        
+    }
+    
+    .campos-direita{
+        float: right !important;
+        margin-top:0;
+        flex: 2;
+        flex-direction: row;
+        
+     
+    }
+    .campo-esquerda-direita{
+        display: flex;
+    }
+    
+    .campo-direita-direita{
+        float: right;
+        display: flex;
+        margin-right: 10px;
+       
+    }
+    .inputtext-direita{
+        width: 330px;
+        height: 140px;
+    }
+    
+    .algin-campo--esquerda-direita{
+        flex: 2;
+    }
+    
+    .inputtext-direita-direita{
+        width: 360px;
+        height: 137px;
+        
+    }
+    
+    .algin-campo-direita{
+        display: flex;
+    }
+}

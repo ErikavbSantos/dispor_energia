@@ -1,0 +1,49 @@
+{
+    "dados": {
+      "Nome": {
+        "campo": "inputtext",
+        "valor": "MIssão de teste"
+      },
+      "categoria": {
+        "campo": "inputtext",
+        "valor": "Teste Categoria"
+      },
+      "Tempo-limite": {
+        "campo": "inputtext",
+        "valor": "Teste Tempo Limite"
+      },
+      "nivel-usuario": {
+        "campo": "inputtext",
+        "valor": "teste Nível do Usuário"
+      },
+      "pontuacao": {
+        "campo": "inputtext",
+        "valor": " teste Pontuação"
+      },
+      "pontuacao-icone": {
+        "campo": "inputimage",
+        "valor": "../assets/img/user.png"
+      },
+      "oqfzr": {
+        "campo": "inputtext",
+        "valor": "O que fazer"
+      },
+      "ComoFzr": {
+        "campo": "inputtext",
+        "valor": "Como fazer"
+      },
+      "ondeFzr": {
+        "campo": "inputtext",
+        "valor": "Onde fazer"
+      },
+      "quandoFzr": {
+        "campo": "inputtext",
+        "valor": "Quando fazer"
+      },
+      "desc-missao": {
+        "campo": "inputtext",
+        "valor": "Descrição da Missão"
+      }
+    }
+  }
+  
