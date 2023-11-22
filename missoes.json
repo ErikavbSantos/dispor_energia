@@ -5,7 +5,8 @@
             "titulo": "titulo 1",
             "dataSubmissao": "22/10/2023",
             "status": "Aprovado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     
         },
         {
@@ -13,49 +14,57 @@
             "titulo": "titulo 2",
             "dataSubmissao": "13/10/2020",
             "status": "Aprovado com ressalvas",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "333",
             "titulo": "titulo 3",
             "dataSubmissao": "22/11/2023",
             "status": "Rejeitado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "444",
             "titulo": "titulo 4",
             "dataSubmissao": "01/04/2022",
             "status": "Rejeitado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "555",
             "titulo": "titulo 5",
             "dataSubmissao": "12/10/2023",
             "status": "Aprovado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "666",
             "titulo": "titulo 6",
             "dataSubmissao": "22/10/2023",
             "status": "Aprovado com ressalvas",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "777",
             "titulo": "titulo 7",
             "dataSubmissao": "20/10/2023",
             "status": "Em avaliação",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "888",
             "titulo": "titulo 8",
             "dataSubmissao": "12/10/2023",
             "status": "Aprovado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "999",
@@ -76,49 +85,56 @@
             "titulo": "titulo 11",
             "dataSubmissao": "12/10/2023",
             "status": "Aprovado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "112",
             "titulo": "titulo 12",
             "dataSubmissao": "22/10/2023",
             "status": "Aprovado com ressalvas",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "113",
             "titulo": "titulo 13",
             "dataSubmissao": "20/10/2023",
             "status": "Em avaliação",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "114",
             "titulo": "titulo 14",
             "dataSubmissao": "12/10/2023",
             "status": "Aprovado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "115",
             "titulo": "titulo 15",
             "dataSubmissao": "22/10/2023",
             "status": "Aprovado com ressalvas",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "116",
             "titulo": "titulo 16",
             "dataSubmissao": "20/10/2023",
             "status": "Em avaliação",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "117",
             "titulo": "titulo 17",
             "dataSubmissao": "12/10/2023",
             "status": "Aprovado",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
     ]
 }
