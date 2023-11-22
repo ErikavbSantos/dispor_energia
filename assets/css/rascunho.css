@@ -1,0 +1,35 @@
+.rascunho ul{
+    border: 1.5px solid #DCDCDC;
+    border-radius: 4px;
+    list-style: none;
+    width: 350px;
+    padding: 20px;
+}
+.ul-img img{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.ul-img{
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+}
+.rascunho ul li{
+    margin-bottom: 20px;
+    color: #04473A;
+    font-weight: 600;
+}
+.rascunho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+}
+.rascunho ul li span{
+    color: black;
+    font-weight: 400;
+}
+.rascunho-main{
+    padding: 37px;
+}
