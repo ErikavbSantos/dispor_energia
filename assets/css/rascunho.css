@@ -21,10 +21,9 @@
     font-weight: 600;
 }
 .rascunho {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 40px;   
 }
 .rascunho ul li span{
     color: black;
@@ -32,4 +31,25 @@
 }
 .rascunho-main{
     padding: 37px;
+}
+
+@media (max-width: 600px){
+    .rascunho-main{
+        padding: 25px;
+    }
+    .rascunho {
+        justify-content: center;
+    }
+    .rascunho ul{
+        width: initial;
+    }
+}
+@media (max-width: 770px ){
+    .rascunho {
+        justify-content: center;
+    }
+    .rascunho ul{
+        width: 400px;
+        padding: 20px;
+    }
 }
