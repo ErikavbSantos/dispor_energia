@@ -28,7 +28,7 @@
 .side__menu button:hover {
     background-color: var(--verde);
 }
-.section__missoes {
+#cards__missao {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -36,23 +36,21 @@
     padding-top: 40px;
     padding-bottom: 10px;
     margin-left: 190px;
+    gap: 20px;
 }
 
-.missao__card {
+#cards__missao ul {
     background-color: var(--verde_claro);
     border-radius: 20px;
-    margin-bottom: 30px;
     padding: 16px;
     width: 300px;
     height: 150px;
 }
-
-.missao__card h1 {
-    font-size: 18px;
-    padding: 0;
+#cards__missao ul li {
+    list-style: none;
+    color: black;
+    margin-bottom: 10px;
 }
-
-.missao__card p {
-    font-size: 16px;
-    padding-top: 4px;
+#cards__missao ul li:first-child {
+    font-size: 18px;
 }
