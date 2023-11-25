@@ -31,7 +31,6 @@
             "dataSubmissao": "01/04/2022",
             "status": "Rejeitado",
             "categoria": "categoria 1",
-            "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
@@ -71,14 +70,16 @@
             "titulo": "titulo 9",
             "dataSubmissao": "22/10/2023",
             "status": "Aprovado com ressalvas",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "110",
             "titulo": "titulo 10",
             "dataSubmissao": "20/10/2023",
             "status": "Em avaliação",
-            "categoria": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "categoria": "categoria 1",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
             "id": "111",
