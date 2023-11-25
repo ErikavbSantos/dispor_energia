@@ -7,7 +7,7 @@
         display: flex;
         background-color: var(--verde_escuro);
         padding: 20px 0px 20px 0px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: fixed;
         bottom: 0;
@@ -19,7 +19,6 @@
     .icone__casa {
         height: 22px;
         width: 22px;
-        padding-left: 20px;
     }
     
     .icone__mapa {
@@ -40,6 +39,5 @@
     .icone__pessoa {
         height: 22px;
         width: fit-content;
-        padding-right: 20;
     }
 }

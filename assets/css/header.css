@@ -1,10 +1,12 @@
 .topnav {
+    display: flex;
     position: -webkit-sticky; /* Necessário para funcionar no Safari */
     position: sticky;
     top: 0;
     overflow: hidden;
     background: var(--verde);
     z-index: 1000;
+    justify-content: center;
 }
   
 .topnav a {
@@ -13,13 +15,15 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
+    margin: 10px;
+    border-radius: 8px;
     text-decoration: none;
     font-size: 20px;
     transition: 0.5s;
 }
   
-.topnav a:hover {
-    background-color: rgba(255, 255, 255, 0.192);
+.topnav .active {
+    background-color: #04473A;
 }
   
 

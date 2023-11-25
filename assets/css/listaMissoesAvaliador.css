@@ -1,20 +1,17 @@
-.container {
+.top__menu {
+    position: fixed;
     display: flex;
-}
-
-.side__menu {
-    position: fixed;
     background-color: var(--verde_pastel);
-    width: 190px;
-    height: 100%;
-    padding-top: 20px;
-    text-align: center;
+    width: 100%;
+    padding: 16px 30px;
+    align-items: center;
 }
 
-.side__menu button {
-    position: fixed;
-    bottom: 20;
-    left: 30;
+.top__menu p {
+    margin-right: 20;
+}
+
+.top__menu button {
     width: 130px;
     height: 38px;
     border-radius: 6px;
@@ -25,7 +22,7 @@
     transition: ease-in-out 0.2s;
 }
 
-.side__menu button:hover {
+.top__menu button:hover {
     background-color: var(--verde);
 }
 #cards__missao {
@@ -33,9 +30,8 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-left: 190px;
+    padding-top: 110px;
+    padding-bottom: 30px;
     gap: 20px;
 }
 
