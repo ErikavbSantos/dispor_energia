@@ -23,7 +23,8 @@
 .rascunho {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px 40px;   
+    gap: 15px 40px;  
+    margin-bottom: 100px;
 }
 .rascunho ul li span{
     color: black;
