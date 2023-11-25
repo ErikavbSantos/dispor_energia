@@ -104,6 +104,7 @@ var enviar = document.getElementById('enviar')
         .then(data => preencherFormulario(data))
         .catch(error => console.error('Erro ao carregar dados:', error));
   });
+  //axios.get('dadosMissoes.json').then((response) => preencherFormulario(response.data)).cath((error) => console.error('Erro ao carregar dados:', error))
 
   async function preencherFormulario(dados) {
     for (let campo in dados) {

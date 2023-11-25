@@ -1,29 +1,30 @@
 const divRascunho = document.getElementById('rascunho');
 
-fetch("missoes.json").then((response)=> {
-    response.json().then((dados) => {
-        const dataRascunho = dados.missoes;
-        dataRascunho.map((rascunho) => {
-            
 
-          const ul = document.createElement('ul');
-          divRascunho.appendChild(ul);
+axios.get('missoes.json')
+.then(( response ) => {
+    const dataRascunho = response.data.missoes;
+    dataRascunho.map((rascunho) => {
+              
+      const ul = document.createElement('ul');
+      divRascunho.appendChild(ul);
 
-          const div = document.createElement('div');
-          ul.appendChild(div);
-          div.classList.add('ul-img');
+      const div = document.createElement('div');
+      ul.appendChild(div);
+      div.classList.add('ul-img');
 
-          div.innerHTML+= `<a href="teste.html"><img src='/assets/img/icone editar.svg'></a>`;
-          div.innerHTML+= `<img src='/assets/img/icone deletar.svg'>`;
+      div.innerHTML+= `<a href="teste.html"><img src='/assets/img/icone editar.svg'></a>`;
+      div.innerHTML+= `<img src='/assets/img/icone deletar.svg'>`;
 
-          ul.innerHTML+= `<li>Data: <span>${rascunho.dataSubmissao}</span></li>`;
-          ul.innerHTML+= `<li>Título: <span>${rascunho.titulo}</span></li>`;
-          ul.innerHTML+= `<li>Categoria: <span>${rascunho.categoria}</span></li>`;
-          ul.innerHTML+= `<li>Descrição: <span>${rascunho.descricao}</span></li>`;
+      ul.innerHTML+= `<li>Data: <span>${rascunho.dataSubmissao}</span></li>`;
+      ul.innerHTML+= `<li>Título: <span>${rascunho.titulo}</span></li>`;
+      ul.innerHTML+= `<li>Categoria: <span>${rascunho.categoria}</span></li>`;
+      ul.innerHTML+= `<li>Descrição: <span>${rascunho.descricao}</span></li>`;
 
-        }
-    )})
-})
+    });
+}).catch(( err ) => {
+  console.log(err);
+});
 
 //pesquisa 
 
