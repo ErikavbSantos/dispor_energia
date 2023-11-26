@@ -1,7 +1,7 @@
 const divRascunho = document.getElementById('rascunho');
 
 
-axios.get('missoes.json')
+/* axios.get('missoes.json')
 .then(( response ) => {
     const dataRascunho = response.data.missoes;
     dataRascunho.map((rascunho) => {
@@ -24,7 +24,33 @@ axios.get('missoes.json')
     });
 }).catch(( err ) => {
   console.log(err);
-});
+}); */
+
+axios.get('missoes.json')
+  .then((response) => {
+    const dataRascunho = response.data.missoes;
+    dataRascunho
+      .filter((rascunho) => rascunho.rascunho === true)
+      .forEach((rascunho) => {
+        const ul = document.createElement('ul');
+        divRascunho.appendChild(ul);
+
+        const div = document.createElement('div');
+        ul.appendChild(div);
+        div.classList.add('ul-img');
+
+        div.innerHTML += `<a href="teste.html"><img src='/assets/img/icone editar.svg'></a>`;
+        div.innerHTML += `<img src='/assets/img/icone deletar.svg'>`;
+
+        ul.innerHTML += `<li>Data: <span>${rascunho.dataSubmissao}</span></li>`;
+        ul.innerHTML += `<li>Título: <span>${rascunho.titulo}</span></li>`;
+        ul.innerHTML += `<li>Categoria: <span>${rascunho.categoria}</span></li>`;
+        ul.innerHTML += `<li>Descrição: <span>${rascunho.descricao}</span></li>`;
+      });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 //pesquisa 
 
