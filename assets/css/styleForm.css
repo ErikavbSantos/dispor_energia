@@ -15,7 +15,7 @@
 .forms-missao{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
 }
 input, textarea, .select-progresso{
     margin-bottom: 1rem;
@@ -105,9 +105,29 @@ input[type="number"] + label::before{
     background-size: 25px;
     margin-left: 15px;
 }
-
+.rascunho-btn{
+    padding: 0.4rem 20px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid var(--verde_claro);;
+    border-radius: 5px;
+    color: var(--verde_claro);;
+}
+.buttons-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+} 
 
 @media (min-width: 600px){
+    .buttons-form{
+        gap: 20px;
+        grid-column: 2;
+        justify-self: flex-end;
+        align-items: center;
+    } 
     header{
         padding: 2rem 7rem;
     }
