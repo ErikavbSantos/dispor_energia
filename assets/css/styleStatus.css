@@ -6,7 +6,7 @@
 }
 .status-missao{
     background-color: #FFFDFF;
-    max-width: 1400px;
+    /* max-width: 1500px; */
     border: 0.5px solid #DCDCDC;
     border-radius: 10px;
     margin: 1.5rem;
@@ -152,6 +152,7 @@ td div {
     background-color: var(--verde_claro);
 }
 #btn-rascunho{
+    text-decoration: none;
     border: none;
     width: 100%;
     padding: 10px 0px;
@@ -159,9 +160,18 @@ td div {
     font-size: 16px;
     background-color: #D9D9D9;
     color: black;
+    text-align: center;
 }
 
-#close img{
+#close-aprovado img{
+    height: 12px;
+    cursor: pointer;
+}
+#close-aprovadoR img{
+    height: 12px;
+    cursor: pointer;
+}
+#close-rejeitado img{
     height: 12px;
     cursor: pointer;
 }
@@ -169,6 +179,7 @@ td div {
     display: flex;
     justify-content: space-between;
 }
+
   
 
 @media (max-width: 600px) {

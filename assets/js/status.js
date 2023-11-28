@@ -61,35 +61,34 @@ axios.get('missoes.json')
 
 
                     //fechar modal quando clicar em fechar
-                    document.getElementById('close').addEventListener('click', () => {
+                    document.getElementById('close-aprovado').addEventListener('click', () => {
                         console.log('clicou em cancelar')
                         modal_aprovado.style.display = 'none';
+                        modal_rejeitado.style.display = 'none';
+                        modal_aprovadoR.style.display = 'none';
                     });
                 }
                 //abre o modal que estiver com status rejeitado
                 else if(missao.status === "Rejeitado"){
-                    console.log('clicou em rejeitado')
                     const modal_rejeitado = document.getElementById('modal-rejeitado');
                     modal_rejeitado.style.display = 'block';
 
                     //fechar modal quando clicar em fechar
-                    document.getElementById('close').addEventListener('click', () => {
-                        console.log('clicou em cancelar')
+                    document.getElementById('close-rejeitado').addEventListener('click', () => {
                         modal_rejeitado.style.display = 'none';
                     });
                 }
                 //abre o modal que estiver com status aprovado com ressalvas
                 else if(missao.status === "Aprovado com ressalvas"){
-                    console.log('clicou em aprovado com ressalvas')
                     const modal_aprovadoR = document.getElementById('modal-aprovadoR');
                     modal_aprovadoR.style.display = 'block';
 
                     //fechar modal quando clicar em fechar
-                    document.getElementById('close').addEventListener('click', () => {
-                        console.log('clicou em cancelar')
+                    document.getElementById('close-aprovadoR').addEventListener('click', () => {
                         modal_aprovadoR.style.display = 'none';
                     });
                 }
+                
             })
             
             const div = tr.querySelector('td div');

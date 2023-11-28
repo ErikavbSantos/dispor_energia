@@ -33,6 +33,50 @@
             
         </div>
         <div class="table-status">
+            <div id="modal-aprovado">
+                <div class="modal-aprovado">
+                    <div class="titulo-close">
+                        <h1>Confirmação</h1>
+                        <span id="close-aprovado"><img src="/assets/img/letra-x.png" alt="letra x"></span>
+                    </div>
+                  
+                    <p>Sua missão foi <span>APROVADA</span> com sucesso!</p>
+                    <div class="btn-modal">
+                        <button id="btn-negociar-apv">Negociar bonificação</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-aprovadoR">
+                <div class="modal-aprovadoR">
+                    <div class="titulo-close">
+                        <h1>Confirmação</h1>
+                        <span id="close-aprovadoR"><img src="/assets/img/letra-x.png" alt="letra x"></span>
+                    </div>
+                    <p>Sua missão foi <span>APROVADA COM RESSALVAS.</span></p>
+                    <div class="btn-modal">
+                        <button id="btn-negociar">Negociar bonificação</button>
+                        <a href="rascunho.html" id="btn-rascunho">Ir para rascunhos</a>
+                    </div>
+                      
+                </div>
+            </div>
+
+            <div id="modal-rejeitado">
+                <div class="modal-rejeitado">
+                    <div class="titulo-close">
+                        <h1>Confirmação</h1>
+                        <span id="close-rejeitado"><img src="/assets/img/letra-x.png" alt="letra x"></span>
+                    </div>
+                    <p>Sua missão foi <span>REJEITADA.</span></p>
+                    <div class="btn-modal">
+                        <button id="btn-recurso">Pedir recurso</button>
+                        <a href="rascunho.html" id="btn-rascunho">ir para rascunhos</a>
+                    </div>
+                </div>
+            </div> 
+
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -45,50 +89,7 @@
                 
                 <tbody id="items">
 
-                    <div id="modal-aprovado">
-                        <div class="modal-aprovado">
-                            <div class="titulo-close">
-                                <h1>Confirmação</h1>
-                                <span id="close"><img src="/assets/img/letra-x.png" alt="letra x"></span>
-                            </div>
-                          
-                            <p>Sua missão foi <span>APROVADA</span> com sucesso!</p>
-                            <div class="btn-modal">
-                                <button id="btn-negociar-apv">Negociar bonificação</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="modal-aprovadoR">
-                        <div class="modal-aprovadoR">
-                            <div class="titulo-close">
-                                <h1>Confirmação</h1>
-                                <span id="close"><img src="/assets/img/letra-x.png" alt="letra x"></span>
-                            </div>
-                            <p>Sua missão foi APROVADA COM RESSALVAS.</p>
-                            <div class="btn-modal">
-                                <button id="btn-negociar">Negociar bonificação</button>
-                                <button id="btn-rascunho">Ir para rascunhos</button>
-                            </div>
-                              
-                        </div>
-                    </div>
-
-                    <div id="modal-rejeitado">
-                        <div class="modal-rejeitado">
-                            <div class="titulo-close">
-                                <h1>Confirmação</h1>
-                                <span id="close"><img src="/assets/img/letra-x.png" alt="letra x"></span>
-                            </div>
-                            <p>Sua missão foi REJEITADA.</p>
-                            <div class="btn-modal">
-                                <button id="btn-recurso">Pedir recurso</button>
-                                <button id="btn-rascunho">ir para rascunhos</button>
-                            </div>
-                        </div>
-                    </div> 
-        
-                    </div>
+                    
                 </tbody>
                
             </table>
