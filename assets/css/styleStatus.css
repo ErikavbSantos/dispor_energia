@@ -179,7 +179,12 @@ td div {
     display: flex;
     justify-content: space-between;
 }
-
+.rejeitada{
+    color: #DD3F3F;
+}
+.aprovadaR{
+    color: #FFD300;
+}
   
 
 @media (max-width: 600px) {

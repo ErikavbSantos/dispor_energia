@@ -52,20 +52,16 @@ axios.get('missoes.json')
 
             //quando clicar na linha da tabela vai abrir um modal
             tr.addEventListener('click', () => {
-                console.log('clicou na linha')
+                
                 //abre o modal que estiver com status aprovado
                 if (missao.status === "Aprovado"){
-                    console.log('clicou em aprovado')
                     const modal_aprovado = document.getElementById('modal-aprovado');
                     modal_aprovado.style.display = 'block';
 
 
                     //fechar modal quando clicar em fechar
                     document.getElementById('close-aprovado').addEventListener('click', () => {
-                        console.log('clicou em cancelar')
                         modal_aprovado.style.display = 'none';
-                        modal_rejeitado.style.display = 'none';
-                        modal_aprovadoR.style.display = 'none';
                     });
                 }
                 //abre o modal que estiver com status rejeitado
