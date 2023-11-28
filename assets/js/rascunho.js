@@ -1,34 +1,10 @@
 const divRascunho = document.getElementById('rascunho');
 
 
-/* axios.get('missoes.json')
-.then(( response ) => {
-    const dataRascunho = response.data.missoes;
-    dataRascunho.map((rascunho) => {
-              
-      const ul = document.createElement('ul');
-      divRascunho.appendChild(ul);
-
-      const div = document.createElement('div');
-      ul.appendChild(div);
-      div.classList.add('ul-img');
-
-      div.innerHTML+= `<a href="teste.html"><img src='/assets/img/icone editar.svg'></a>`;
-      div.innerHTML+= `<img src='/assets/img/icone deletar.svg'>`;
-
-      ul.innerHTML+= `<li>Data: <span>${rascunho.dataSubmissao}</span></li>`;
-      ul.innerHTML+= `<li>Título: <span>${rascunho.titulo}</span></li>`;
-      ul.innerHTML+= `<li>Categoria: <span>${rascunho.categoria}</span></li>`;
-      ul.innerHTML+= `<li>Descrição: <span>${rascunho.descricao}</span></li>`;
-
-    });
-}).catch(( err ) => {
-  console.log(err);
-}); */
-
 axios.get('missoes.json')
   .then((response) => {
     const dataRascunho = response.data.missoes;
+
     dataRascunho
       .filter((rascunho) => rascunho.rascunho === true)
       .forEach((rascunho) => {
@@ -39,13 +15,53 @@ axios.get('missoes.json')
         ul.appendChild(div);
         div.classList.add('ul-img');
 
-        div.innerHTML += `<a href="teste.html"><img src='/assets/img/icone editar.svg'></a>`;
-        div.innerHTML += `<img src='/assets/img/icone deletar.svg'>`;
+        //criando img do icone deletar
+        const deleteIcon = document.createElement('img');
+        deleteIcon.src = '/assets/img/icone_deletar.svg';
+        deleteIcon.classList.add('delete-icon');
+        
+
+        //eventos do modal
+        ul.addEventListener('click', (event) => {
+          const clickedElement = event.target;
+        
+          if (clickedElement.classList.contains('delete-icon')) {
+              console.log('Clicou no ícone');
+              const modal = document.getElementById('modal');
+              modal.style.display = 'block';
+
+
+            //adicionar a lógica
+
+            document.getElementById('cancelDelete').addEventListener('click', () => {
+                console.log('clicou em cancelar')
+                modal.style.display = 'none';
+            });
+
+            document.getElementById('confirmDelete').addEventListener('click', () => {
+                console.log('clicou em deletar')
+              
+              //deleteRascunho(rascunho); // Supondo que exista uma função deleteRascunho
+                modal.style.display = 'none'; // Fecha o modal após a confirmação
+            });
+          }
+        });
+       
+
+
+        const editarIcon = document.createElement('a');
+        editarIcon.href = 'teste.html';
+        editarIcon.innerHTML = `<img src='/assets/img/icone editar.svg'>`; // Corrigi o caminho da imagem
+
+        div.appendChild(editarIcon);
+        div.appendChild(deleteIcon);
+        
 
         ul.innerHTML += `<li>Data: <span>${rascunho.dataSubmissao}</span></li>`;
         ul.innerHTML += `<li>Título: <span>${rascunho.titulo}</span></li>`;
         ul.innerHTML += `<li>Categoria: <span>${rascunho.categoria}</span></li>`;
         ul.innerHTML += `<li>Descrição: <span>${rascunho.descricao}</span></li>`;
+        
       });
   })
   .catch((err) => {

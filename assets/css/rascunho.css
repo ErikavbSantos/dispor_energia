@@ -34,6 +34,60 @@
     padding: 37px;
 }
 
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 47%);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 25% auto;
+    padding: 20px;
+    border: 2px solid #787878;
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+.modal-content h1{
+    font-size: 25px;
+    color: black;
+}
+.modal-content p{
+    font-size: 18px;
+    color: black;
+    margin-top: 12px;
+ }
+.btn-modal{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+#cancelDelete, #confirmDelete{
+    border: none;
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+}
+#cancelDelete{
+    background-color: var(--verde_claro);
+}
+#confirmDelete{
+    background-color: #DD3F3F;
+}
+
+
+
+
 @media (max-width: 600px){
     .rascunho-main{
         padding: 25px;
