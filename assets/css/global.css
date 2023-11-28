@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     color: var(--verde_escuro); /* Cor do texto */
-    font-family: var(--inter); /* Família de fontes */
+    font-family: 'Inter', sans-serif;
    
 }
 
