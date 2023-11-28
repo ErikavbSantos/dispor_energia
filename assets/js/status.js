@@ -49,6 +49,48 @@ axios.get('missoes.json')
             tr.innerHTML+= `<td data-label="TÍTULO"> ${missao.titulo} </td>`;
             tr.innerHTML+= `<td data-label="DATA DE SUBMISSÃO"> ${missao.dataSubmissao} </td>`;
             tr.innerHTML+= `<td data-label="STATUS"> <div> ${missao.status}</div> </td>`;
+
+            //quando clicar na linha da tabela vai abrir um modal
+            tr.addEventListener('click', () => {
+                console.log('clicou na linha')
+                //abre o modal que estiver com status aprovado
+                if (missao.status === "Aprovado"){
+                    console.log('clicou em aprovado')
+                    const modal_aprovado = document.getElementById('modal-aprovado');
+                    modal_aprovado.style.display = 'block';
+
+
+                    //fechar modal quando clicar em fechar
+                    document.getElementById('close').addEventListener('click', () => {
+                        console.log('clicou em cancelar')
+                        modal_aprovado.style.display = 'none';
+                    });
+                }
+                //abre o modal que estiver com status rejeitado
+                else if(missao.status === "Rejeitado"){
+                    console.log('clicou em rejeitado')
+                    const modal_rejeitado = document.getElementById('modal-rejeitado');
+                    modal_rejeitado.style.display = 'block';
+
+                    //fechar modal quando clicar em fechar
+                    document.getElementById('close').addEventListener('click', () => {
+                        console.log('clicou em cancelar')
+                        modal_rejeitado.style.display = 'none';
+                    });
+                }
+                //abre o modal que estiver com status aprovado com ressalvas
+                else if(missao.status === "Aprovado com ressalvas"){
+                    console.log('clicou em aprovado com ressalvas')
+                    const modal_aprovadoR = document.getElementById('modal-aprovadoR');
+                    modal_aprovadoR.style.display = 'block';
+
+                    //fechar modal quando clicar em fechar
+                    document.getElementById('close').addEventListener('click', () => {
+                        console.log('clicou em cancelar')
+                        modal_aprovadoR.style.display = 'none';
+                    });
+                }
+            })
             
             const div = tr.querySelector('td div');
             if (missao.status === "Aprovado"){
