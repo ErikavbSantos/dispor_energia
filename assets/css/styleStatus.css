@@ -99,7 +99,7 @@ td div {
 
 .modal-aprovado, .modal-aprovadoR, .modal-rejeitado{
     background-color: #fefefe;
-    margin: 25% auto;
+    margin: 23% auto;
     padding: 20px;
     border: 2px solid #787878;
     width: 400px;
@@ -116,7 +116,7 @@ td div {
     font-size: 18px;
     color: black;
     margin-top: 12px;
- }
+}
 .btn-modal{
     display: flex;
     gap: 20px;
@@ -185,7 +185,13 @@ td div {
 .aprovadaR{
     color: #FFD300;
 }
-  
+@media (min-width: 760px) and (max-width: 800px){
+    .modal-aprovado, .modal-aprovadoR, .modal-rejeitado{
+        margin: 30% auto;
+    }
+}
+
+
 
 @media (max-width: 600px) {
     thead{
@@ -229,11 +235,50 @@ td div {
         word-wrap: break-word;
         font-weight: 500; 
     }
-   
     .status-missao{
         padding: 20px;
         overflow-x: hidden;
         height: calc(100vh - 210px);
         margin: 1.2rem;
     }
+    .modal-aprovado, .modal-aprovadoR, .modal-rejeitado{
+        margin: 50% auto;
+        width: 260px;
+        height: 150px; 
+    }
+    
+    
+    #btn-recurso{
+        font-size: 12px;
+        
+    }
+    #btn-rascunho{
+        font-size: 12px;
+        
+    }
+    #btn-negociar{
+        font-size: 11px;
+        
+    }
+    .btn-modal{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        flex-basis: 0;
+    }
+    .modal-aprovado p, .modal-aprovadoR p, .modal-rejeitado p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    #btn-negociar-apv{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .btn-modal-rej{
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+        flex-basis: 0;
+    }
+    
 }
