@@ -63,7 +63,7 @@
     font-size: 18px;
     color: black;
     margin-top: 12px;
- }
+}
 .btn-modal-r{
     display: flex;
     gap: 30px;
@@ -98,6 +98,28 @@
     .rascunho ul{
         width: initial;
     }
+    .modal-content{
+        margin: 50% auto;
+        width: 260px;
+        height: 150px;
+    }
+    .modal-content p{
+        font-size: 15px;
+        color: black;
+        margin-top: 12px;
+    }
+    .btn-modal-r{
+        gap: 20px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    #cancelDelete, #confirmDelete{
+        border: none;
+        padding: 13px 30px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+    }
 }
 @media (max-width: 770px ){
     .rascunho {
@@ -106,5 +128,10 @@
     .rascunho ul{
         width: 400px;
         padding: 20px;
+    }
+}
+@media (min-width: 760px) and (max-width: 800px){
+    .modal-content{
+        margin: 35% auto;
     }
 }
