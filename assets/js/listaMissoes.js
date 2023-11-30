@@ -6,13 +6,18 @@ axios.get('missoes.json')
     datalistMissoes
       .filter((missao) => missao.rascunho === false)
       .forEach((missao => {
+        
         const ul = document.createElement('ul');
         cards.appendChild(ul);
+
         ul.id = missao.id;
         ul.classList.add ("missaocardindividual");
+        
+
         //criando div do overlay
         const div = document.createElement('div');
         ul.appendChild(div);
+
         //adicionando classe na div
         div.classList.add('overlay');
 
@@ -28,19 +33,25 @@ axios.get('missoes.json')
         ul.innerHTML+= `<li>${missao.descricao}</li>`;
         ul.innerHTML+= `<li>${missao.dataSubmissao}</li>`;
         
-        const button = document.getElementById("btn-selecionar")
-        console.log(button)
-        button.addEventListener("click", ()=>{
-          console.log("oi");
-          var minhaDiv = document.getElementById(missao.id);
-          console.log(minhaDiv)
-          /*minhaDiv.forEach((div) => {
-            div.classList.add("bordaAtivada");
-          })*/
-          
-          /*minhaDiv.style.border="2px solid red";*/
-          
-        } );
+        
+
+        ul.addEventListener('click', (event) => {
+          const clicked = event.target;
+      
+          if (clicked.tagName === 'BUTTON' && clicked.id === 'btn-selecionar') {
+
+              const ulPai = clicked.closest('ul');
+              ulPai.classList.toggle('bordaAtivada')
+              
+            if (missao.selected) {
+                missao.selected = false; 
+            } else {
+                missao.selected = true;
+            }
+          }
+        });
+
+        
       }))
 
 }).catch(( err ) => {
