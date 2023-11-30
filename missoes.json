@@ -7,7 +7,8 @@
             "status": "Aprovado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": true
+            "rascunho": true,
+            "selected": false
     
         },
         {
@@ -17,7 +18,8 @@
             "status": "Aprovado com ressalvas",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": true
+            "rascunho": true,
+            "selected": false
     
         },
         {
@@ -27,7 +29,8 @@
             "status": "Aprovado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": true
+            "rascunho": true,
+            "selected": false
     
         },
         {
@@ -37,7 +40,8 @@
             "status": "Aprovado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -47,7 +51,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": true
+            "rascunho": true,
+            "selected": false
     
         },
         {
@@ -57,7 +62,8 @@
             "status": "Aprovado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": true
+            "rascunho": true,
+            "selected": false
     
         },
         {
@@ -67,7 +73,8 @@
             "status": "Aprovado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -77,7 +84,8 @@
             "status": "Aprovado com ressalvas",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -87,7 +95,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": true
+            "rascunho": true,
+            "selected": false
     
         },
         {
@@ -97,7 +106,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -107,7 +117,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -117,7 +128,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -127,7 +139,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         },
         {
@@ -137,7 +150,8 @@
             "status": "Rejeitado",
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "rascunho": false
+            "rascunho": false,
+            "selected": false
     
         }
 
