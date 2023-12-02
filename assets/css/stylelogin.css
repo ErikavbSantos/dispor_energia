@@ -1,20 +1,134 @@
-
-
-
-
-html{
-    background:linear-gradient(to bottom,#84c382, #2C917E) ;
-    align-items: center;
+#login{
+    background: linear-gradient(to right, rgba(132, 195, 130, 1), rgba(60, 167, 144, 1));
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: auto;
+    align-items: center;
+    height: 100vh;
+    
+}
+.img-dispor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.imglogo{
+    height: 100px;
+   
+}
+#disporlogo h1{
+    margin-top: 25px;
 }
 
-@media (max-widht:600px) {
+#disporlogo h1 span{
+    color: white;
+}
+
+#formlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-top: 30px;
+}
+#formlogin .imgformlogin1{
+    height: 95px;
+    position: absolute;
+    bottom: -1px;
+    left: -38px;
+}
+#formlogin .imgformlogin2{
+    height: 99px;
+    position: absolute;
+    bottom: 2px;
+    left: -55px;
+   
+}
+#formlogin .imgformlogin3{
+    height: 100px;
+    position: absolute;
+    left: -36px;
+    top: -23px;
+    
+    
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+
+
+#formlogin button{
+    border: none;
+    background-color: aliceblue;
+    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px;
+    color: #0B8E74;
+    width: 295px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+#formlogin button:hover{
+    background-color: #84de81;
+}
+
+
+#formlogin input {
+    border: 1px solid white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px;
+    background-color: rgb(131, 194, 154);
+    color: white;
+    width: 264px;
+    height: 25px;
+    opacity:1;
+    padding-left: 35px;
+}
+#formlogin input::placeholder{
+    color: white;
+}
+#formlogin select{
+    background-color: rgb(131, 194, 154);
+    color: white;
+    width: 320px;
+    height: 60px;
+    border: 1px solid white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px;
+    text-align: left;
+    padding-left: 35px; 
+    
+    font-size: 16px;
+}
+.p-senha{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+    
+
+
+/* @media (max-widht:600px) {
     
 
     #loginlogos {
-        text-align: center; /* Centralizar o conteúdo horizontalmente */
+        text-align: center; 
        
     }
     
@@ -32,15 +146,7 @@ html{
         
     }
 
-    body {
-        text-align: center;
-    }
-
-    h2 {
-        margin: 20px 0;
-    }
-
-    form {
+    #formlogin form {
         display: inline-block;
         text-align: left;
         text-align: center;
@@ -62,12 +168,12 @@ html{
         background-color: #84de81;
     }
 
-    label {
+    #formlogin label {
         display: block;
         margin: 10px 0;
     }
 
-    form input {
+    #formlogin input {
         border: white 2px;
         border-bottom-right-radius: 20px ;
         border-top-right-radius: 0;
@@ -86,8 +192,8 @@ html{
         width: 264px;
         height: 50px;
         border: none;
-        -webkit-appearance: none; /* Remove estilos padrão do iOS */
-        -moz-appearance: none; /* Remove estilos padrão do Firefox */
+        -webkit-appearance: none; 
+        -moz-appearance: none; 
         appearance: none;
         border-bottom-right-radius: 20px ;
         border-top-right-radius: 0;
@@ -106,168 +212,15 @@ html{
     
     }
 
-  form ::placeholder{
+    #formlogin form::placeholder{
         color: white;
         text-align: left !important;
     }
     
-    input:hover {
+    #formlogin input:hover {
         background-color: #006400;
         transition: 0.3s;
     }
 
 
-}
-
-.camp {
-    margin-bottom: 15px;
-}
-
-.input-container {
-    position: relative;
-    display: inline-block;
-}
-
-.imgformlogin {
-    position: absolute;
-    left: 10px; /* Ajuste a posição horizontal conforme necessário */
-    top: 10px; /* Ajuste a posição vertical conforme necessário */
-}
-
-/* Estilize o texto do input e adicione um fundo verde */
-input {
-    padding: 10px 10px 10px 40px; /* Ajuste o padding conforme necessário */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #c3e6cb; /* Cor de fundo verde */
-    text-align: left;
-}
-
-/* Estilize o select */
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #c3e6cb; /* Cor de fundo verde */
-    width: 100%;
-}
-
-/* Centralize o texto dentro do select */
-select {
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-#imgs {
-  margin-top: 10;
-  color: darkgreen;
-
-}
-
-
-
-.imglogo{
-    width: 500;
-    box-shadow: 100 black ;
-}
-
-body {
-    text-align: center;
-}
-
-h2 {
-    margin: 20px 0;
-}
-
-form {
-    display: inline-block;
-    text-align: left;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    
-}
-
-#enviar{
-    background-color: aliceblue;
-    color: #006400;
-    margin-left: -50px;
-    margin-top: 10px;
-    width: 335px;
-    height: 50px;
-    text-align: center;
-    
-}
-
-#enviar:hover{
-    background-color: #84de81;
-}
-
-label {
-    display: block;
-    margin: 10px 0;
-}
-
-form input {
-    border: white 2px;
-    border-bottom-right-radius: 20px ;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 20px;
-    background-color: rgb(131, 194, 154);
-    color: white;
-    width: 264px;
-    height: 30px;
-    opacity:1;
-    margin-left: 0px;
-    padding-left: 20px;
-    text-align: left;
-}
-
-#role{
-    background-color: rgb(131, 194, 154);
-    color: white;
-    width: 295px;
-    height: 50px;
-    border: white 2px;
-    border-bottom-right-radius: 20px ;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 20px;
-    text-align: left;
-    margin-top: 0px !important;
-    padding: 10px !important;
-    
-}
-#username ::before{
-    content: url("../img/Bar_Comodos.ico");
-    width: 20px;
-    height: 20px;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-
-
-}
-
-form ::placeholder{
-    color: white;
-    text-align: left;
-}
-#role::placeholder{
-    color: white;
-    text-align: left!important;
-    align-items: left !important;
-    justify-content: left;
-}
-input:hover {
-    background-color: #c2efc2;
-    transition: 0.3s;
-    
-}
+} */
