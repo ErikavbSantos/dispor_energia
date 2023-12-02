@@ -81,17 +81,41 @@
                     
 
                         <div class="campo">
-                            <input class="inputtext" type="text" name="nivel-usuario" placeholder="Nível do usuário" disabled="true">
+                            <input class="inputtext" type="text" name="dado-interesse" placeholder="dado de interesse" disabled="true">
 
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status_nivel" value="Aprovado" > <br>
+                                <input class="radio_aprovado" type="radio" name="status_dado" value="Aprovado" > <br>
                                    
-                                <input class="radio_ressalvas" type="radio" name="status_nivel" value="Aprovado com ressalvas"><br>
+                                <input class="radio_ressalvas" type="radio" name="status_dado" value="Aprovado com ressalvas"><br>
 
-                                <input class="radio_rejeitado" type="radio" name="status_nivel" value="Rejeitado"><br>
+                                <input class="radio_rejeitado" type="radio" name="status_dado" value="Rejeitado"><br>
                             </div>
                         </div>
-                    
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" name="frequencia" placeholder="Frequência de reativação" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_frequencia" value="Aprovado" > <br>
+                                   
+                                <input class="radio_ressalvas" type="radio" name="status_frequencia" value="Aprovado com ressalvas"><br>
+
+                                <input class="radio_rejeitado" type="radio" name="status_frequencia" value="Rejeitado"><br>
+                            </div>
+                        </div>
+
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" name="frequencia" placeholder="Estágio de progresso" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_estagio" value="Aprovado" > <br>
+                                   
+                                <input class="radio_ressalvas" type="radio" name="status_estagio" value="Aprovado com ressalvas"><br>
+
+                                <input class="radio_rejeitado" type="radio" name="status_estagio" value="Rejeitado"><br>
+                            </div>
+                        </div>  
 
 
                     
@@ -166,17 +190,6 @@
                                 </div>
                             </div>
 
-                            
-                            <div class="input-check">
-                                <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" placeholder="Descrição da missão" disabled="true" >
-                                <div class="checkbox-group">
-                                    <input class="radio_aprovado" type="radio" name="status_descrição" value="Aprovado" > <br>
-                                   
-                                    <input class="radio_ressalvas" type="radio" name="status_descrição" value="Aprovado com ressalvas"><br>
-                                    <input class="radio_rejeitado" type="radio" name="status_descrição" value="Rejeitado"><br>
-                                </div>
-                            </div>
-
                             <div class="campo campo-img">
                                 <input class="inputtext-img" type="image"  contenteditable="icone" name="icone" disabled="true" placeholder="Icone">
     
@@ -188,8 +201,22 @@
                                     <input class="radio_rejeitado" type="radio" name="status_icone" value="Rejeitado"><br>
                                 </div>
                             </div>
-            </div>
+                            
+                            <div class="input-check">
+                                <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" placeholder="Descrição da missão" disabled="true" >
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_descrição" value="Aprovado" > <br>
+                                   
+                                    <input class="radio_ressalvas" type="radio" name="status_descrição" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_descrição" value="Rejeitado"><br>
+                                </div>
+                            </div>
 
+                            
+
+                            
+            </div>
+            <button class="btn-validar">Validar</button>
                 
            
             </div>

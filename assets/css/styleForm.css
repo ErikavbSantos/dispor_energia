@@ -17,7 +17,7 @@
     grid-template-columns: 1fr;
     padding: 2rem 0.5rem;
 }
-input, textarea, .select-progresso{
+.forms-missao input, .forms-missao textarea, .select-progresso{
     margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 5px;
@@ -119,6 +119,7 @@ input[type="number"] + label::before{
     justify-content: center;
     align-items: start;
     gap: 20px;
+    
 } 
 
 @media (min-width: 600px){
