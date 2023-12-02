@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     
 }
 .img-dispor{
@@ -14,7 +15,6 @@
 }
 .imglogo{
     height: 100px;
-   
 }
 #disporlogo h1{
     margin-top: 25px;
@@ -112,7 +112,6 @@
     border-top-left-radius: 20px;
     text-align: left;
     padding-left: 35px; 
-    
     font-size: 16px;
 }
 .p-senha{
@@ -124,103 +123,67 @@
     
 
 
-/* @media (max-widht:600px) {
-    
-
-    #loginlogos {
-        text-align: center; 
+@media (max-width: 600px) {
+    .imglogo{
+        height: 80px;
+    }
+    .imglogo-nome{
+        height: 60px;
+    }
+    #disporlogo h1{
+        margin-top: 20px;
+        font-size: 27px;
+        text-align: center;
+    }
+    #formlogin input {
+        width: 230px;
+        height: 30px;
+        
+    }
+    #formlogin select{
+        width: 280px;
+        height: 45px;
+        
+    }
+    #formlogin button{
+        width: 290px;
+        height: 45px;
+    }
+    #formlogin .imgformlogin1{
+        height: 81px;
+        position: absolute;
+        bottom: -1px;
+        left: -26px;
+    }
+    #formlogin .imgformlogin2{
+        height: 83px;
+        position: absolute;
+        bottom: 2px;
+        left: -40px;
        
     }
-    
-    #imgs {
-      margin-top: 10;
-      color: darkgreen;
-      box-shadow: black 10 10;
-    }
-    
-
-   
-    .imglogo{
-        width: 300px;
-        
-        
-    }
-
-    #formlogin form {
-        display: inline-block;
-        text-align: left;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-        
-    }
-
-    #enviar{
-        background-color: aliceblue;
-        color: #006400;
-        margin: 10px 0 0 0 ;
-        width: 263px;
-        height: 50px;
-        
-    }
-
-    #enviar:hover{
-        background-color: #84de81;
-    }
-
-    #formlogin label {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #formlogin input {
-        border: white 2px;
-        border-bottom-right-radius: 20px ;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 20px;
-        background-color: #4dbba5;
-        color: white;
-        width: 264px;
-        height: 50px;
-        text-align: center;
-    }
-
-    #role{
-        background-color: #4dbba5;
-        color: white;
-        width: 264px;
-        height: 50px;
-        border: none;
-        -webkit-appearance: none; 
-        -moz-appearance: none; 
-        appearance: none;
-        border-bottom-right-radius: 20px ;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 20px;
-        background-color: #4dbba5;
-    }
-    #username ::before{
-        content: url("/assets/img/arvores.jpeg");
-        width: 20px;
-        height: 20px;
+    #formlogin .imgformlogin3{
+        height: 79px;
         position: absolute;
-        left: 10px;
-        top: 10px;
-    
-    
+        left: -23px;
+        top: -18px;
+        
+        
     }
 
-    #formlogin form::placeholder{
-        color: white;
-        text-align: left !important;
+}
+@media (max-width: 770px){
+    #formlogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
-    
-    #formlogin input:hover {
-        background-color: #006400;
-        transition: 0.3s;
+    .input-container{
+        margin-left: 20px;
     }
-
-
-} */
+    #formlogin select{
+        margin-right: 4px;
+    }
+}
