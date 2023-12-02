@@ -7,6 +7,7 @@
     background: var(--verde);
     z-index: 1000;
     justify-content: center;
+    width: 100%;
 }
   
 .topnav a {

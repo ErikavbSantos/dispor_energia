@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/styleAvaliacao.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Avaliação de missão</title>
 
 
@@ -32,10 +32,10 @@
             <!-- Início itens da esquerda-->
             <div class="campos-esquerda">
 
-                    <div class="algin-campo">
+            
 
                         <div class="campo">
-                            <input class="inputtext" disabled="true" type="text" name="Nome" placeholder="Nome" style=" color: green;">
+                            <input class="inputtext" disabled="true" type="text" name="Nome" placeholder="Nome">
 
                             <div class="checkbox-group">
                                 <input class="radio_aprovado" type="radio" name="status_name" value="Aprovado" > <br>
@@ -45,12 +45,12 @@
                                     <input class="radio_rejeitado" type="radio" name="status_name" value="Rejeitado"><br>
                             </div>
                         </div>
-                    </div>
+                  
 
-                    <div class="algin-campo">
+                   
 
                         <div class="campo">
-                            <input class="inputtext" type="text" name="categoria" placeholder="Categoria" disabled="true" style=" color: green;">
+                            <input class="inputtext" type="text" name="categoria" placeholder="Categoria" disabled="true" >
 
                             <div class="checkbox-group">
                                 <input class="radio_aprovado" type="radio" name="status_categoria" value="Aprovado" > <br>
@@ -60,12 +60,12 @@
                                     <input class="radio_rejeitado" type="radio" name="status_categoria" value="Rejeitado"><br>
                             </div>
                         </div>
-                    </div>
+                   
 
-                    <div class="algin-campo">
+                    
 
                         <div class="campo">
-                            <input class="inputtext" type="text" name="Tempo-limite" placeholder="Tempo limite"  disabled="true" style=" color: green;">
+                            <input class="inputtext" type="text" name="Tempo-limite" placeholder="Tempo limite"  disabled="true" >
 
                             <div class="checkbox-group">
                                 <input class="radio_aprovado" type="radio" name="status_tempo" value="Aprovado" > <br>
@@ -75,13 +75,13 @@
                                     <input class="radio_rejeitado" type="radio" name="status_tempo" value="Rejeitado"><br>
                             </div>
                         </div>
-                    </div>
+                 
 
 
-                    <div class="algin-campo">
+                    
 
                         <div class="campo">
-                            <input class="inputtext" type="text" name="nivel-usuario" placeholder="Nível do usuário" disabled="true" style=" color:green;">
+                            <input class="inputtext" type="text" name="nivel-usuario" placeholder="Nível do usuário" disabled="true">
 
                             <div class="checkbox-group">
                                 <input class="radio_aprovado" type="radio" name="status_nivel" value="Aprovado" > <br>
@@ -91,13 +91,13 @@
                                 <input class="radio_rejeitado" type="radio" name="status_nivel" value="Rejeitado"><br>
                             </div>
                         </div>
-                    </div>
+                    
 
 
-                    <div class="algin-campo">
+                    
 
                         <div class="campo">
-                            <input class="inputtext" type="text" name="pontuacao" placeholder="Pontuação" disabled="true" style=" color: green;">
+                            <input class="inputtext" type="text" name="pontuacao" placeholder="Pontuação" disabled="true">
 
                             <div class="checkbox-group">
                                 <input class="radio_aprovado" type="radio" name="status_pontuacao" value="Aprovado" > <br>
@@ -107,26 +107,20 @@
                                 <input class="radio_rejeitado" type="radio" name="status_pontuacao" value="Rejeitado"><br>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="algin-campo">
-
-                        <div class="campo" style="width: 150%;
-                        height: 60px;">
-                            
-                        
-                            <input class="inputtext" type="image"  contenteditable="icone" name="icone" disabled="true" placeholder="Icone" style="width: 100%;
-                            height: 132px;">
-
+                        <div class="input-check">
+                            <input class="inputtext-direita input-oq" disabled="true" type="text" name="oqfzr" placeholder="O que fazer?" >
                             <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status_icone" value="Aprovado" > <br>
-                                   
-                                <input class="radio_ressalvas" type="radio" name="status_icone" value="Aprovado com ressalvas"><br>
-
-                                <input class="radio_rejeitado" type="radio" name="status_icone" value="Rejeitado"><br>
+                                <input class="radio_aprovado" type="radio" name="status_oqfzr" value="Aprovado" data-tooltip="Aprovado"> <br>
+                               
+                                <input class="radio_ressalvas" type="radio" name="status_oqfzr"  value="Aprovado com ressalvas"><br>
+                                <input class="radio_rejeitado" type="radio" name="status_oqfzr" value="Rejeitado"><br>
                             </div>
                         </div>
-                    </div>
+
+                   
+
+                        
+                    
 
             </div>
 <!--Final dos itens da esquerda-->
@@ -135,23 +129,12 @@
 <!--Início itens da direita-->
             <div class="campos-direita">
 
-                        <div class="algin-campo-direita">
+               
 
-                            <div class="campo-esquerda-direita">
-                                <input class="inputtext-direita" disabled="true" type="text" name="oqfzr" placeholder="O que fazer?" >
-        
-                                <div class="checkbox-group">
-                                    <input class="radio_aprovado" type="radio" name="status_oqfzr" value="Aprovado" data-tooltip="Aprovado"> <br>
-                                   
-                                    <input class="radio_ressalvas" type="radio" name="status_oqfzr"  value="Aprovado com ressalvas"><br>
+                            
 
-                                    <input class="radio_rejeitado" type="radio" name="status_oqfzr" value="Rejeitado"><br>
-
-                                </div>
-                            </div>
-
-                            <div class="campo-direita-direita">
-                                <input class="inputtext-direita-direita" disabled="true" type="text" name="ComoFzr" placeholder="Como fazer?" >
+                            <div class="input-check">
+                                <input class="inputtext-direita" disabled="true" type="text" name="ComoFzr" placeholder="Como fazer?" >
         
                                 <div class="checkbox-group">
                                     <input class="radio_aprovado" type="radio" name="status_comofzr" value="Aprovado" > <br>
@@ -164,57 +147,48 @@
                             </div>
 
                             
-                        
-                        </div>
 
-                        <div class="algin-campo-direita">
-
-                            <div class="campo-esquerda-direita">
+                            <div class="input-check">
                                 <input class="inputtext-direita" type="text" name="ondeFzr" placeholder="Onde fazer?" disabled="true" >
-        
                                 <div class="checkbox-group">
                                     <input class="radio_aprovado" type="radio" name="status_ondefzr" value="Aprovado" > <br>
-                                   
                                     <input class="radio_ressalvas" type="radio" name="status_ondefzr" value="Aprovado com ressalvas"><br>
-
                                     <input class="radio_rejeitado" type="radio" name="status_ondefzr" value="Rejeitado"><br>
-
                                 </div>
                             </div>
 
-                            <div class="campo-direita-direita">
-                                <input class="inputtext-direita-direita" type="text" name="quandoFzr" disabled="true" placeholder="Quando fazer ?" >
-        
+                            <div class="input-check">
+                                <input class="inputtext-direita" type="text" name="quandoFzr" disabled="true" placeholder="Quando fazer ?" >
                                 <div class="checkbox-group">
                                     <input class="radio_aprovado" type="radio" name="status_quandofzr" value="Aprovado" > <br>
-                                   
                                     <input class="radio_ressalvas" type="radio" name="status_quandofzr" value="Aprovado com ressalvas"><br>
-
                                     <input class="radio_rejeitado" type="radio" name="status_quandofzr" value="Rejeitado"><br>
-
                                 </div>
                             </div>
 
                             
-                        
-                        </div>
-
-                            <div class="campo-esquerda-direita" >
-                                <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" placeholder="Descrição da missão" disabled="true" style=" width: 200%;
-                                height: 200;" >
-        
+                            <div class="input-check">
+                                <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" placeholder="Descrição da missão" disabled="true" >
                                 <div class="checkbox-group">
-                                    
                                     <input class="radio_aprovado" type="radio" name="status_descrição" value="Aprovado" > <br>
                                    
                                     <input class="radio_ressalvas" type="radio" name="status_descrição" value="Aprovado com ressalvas"><br>
-
                                     <input class="radio_rejeitado" type="radio" name="status_descrição" value="Rejeitado"><br>
-
-
                                 </div>
                             </div>
-                        </div>
+
+                            <div class="campo campo-img">
+                                <input class="inputtext-img" type="image"  contenteditable="icone" name="icone" disabled="true" placeholder="Icone">
+    
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_icone" value="Aprovado" > <br>
+                                    
+                                    <input class="radio_ressalvas" type="radio" name="status_icone" value="Aprovado com ressalvas"><br>
+    
+                                    <input class="radio_rejeitado" type="radio" name="status_icone" value="Rejeitado"><br>
+                                </div>
+                            </div>
+            </div>
 
                 
            
@@ -222,6 +196,13 @@
             
       <!--Fim itens da direita-->
         </form>
+        <div class="navbar">
+            <a href="index.html"><img class="icone__casa" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
+            <a href="perfil.html"><img class="icone__mapa" src="./assets/img/mapa__nav.svg" alt="icone de mapa"></a>
+            <img class="icone__logo" src="./assets/img/logo__dispor__nav.svg" alt="icone logo dispor">
+            <a href="statusmissao.html"><img class="icone__carteira" src="./assets/img/carteira__nav.svg" alt="icone carteira"></a>
+            <a href="login.html"><img  class="icone__pessoa" src="./assets/img/pessoa__nav.svg" alt="icone pessoa"></a>
+        </div>
     </div>
     <script src="assets/js/script.js" defer></script>
     </body>
