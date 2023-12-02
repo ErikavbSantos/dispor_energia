@@ -50,7 +50,7 @@ axios.get('missoes.json')
 
 
         const editarIcon = document.createElement('a');
-        editarIcon.href = 'teste.html';
+        editarIcon.href = 'form_rascunho.html';
         editarIcon.innerHTML = `<img src='/assets/img/icone editar.svg'>`; // Corrigi o caminho da imagem
 
         div.appendChild(editarIcon);
