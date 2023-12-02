@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/stylelogin.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Dispor Energia</title>
     
 
@@ -13,56 +13,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <header id="loginlogos">
-        <div id="imgs">
-            <div id="disporlogo">
-                <img class='imglogo' src="assets/img/logologin.png" alt="">
-            </div>
-          
-        </div>
-    </header>
-
-
-    <section id="formlogin" style="margin-left: 35px;">
-        <form onsubmit="validar(); return false;">
-            <div class="camp">
-                <div class="input-container">
-                    <img class='imgformlogin' src="assets/img/user/apple-touch-icon.png" style="width: 78px; margin-top: -27px; height: 85px; margin-left: -65px;">
-                    <input type="text" id="username" name="username" placeholder="E-mail">
+<body id="login">
+    <main>
+        <header id="loginlogos">
+            <div id="imgs">
+                <div id="disporlogo">
+                    <div class="img-dispor">
+                        <img class='imglogo' src="assets/img/logo__dispor__favicon.svg" alt="">
+                        <img src="/assets/img/disporenergia.svg" alt="">
+                    </div>
+                    
+                    <h1>Submissão de <span>Missões</span></h1>
                 </div>
+              
             </div>
+        </header>
     
-            <div class="camp">
-                <div class="input-container">
-                    <img class='imgformlogin' src="assets/img/senha/apple-touch-icon.png" style="width: 100px; height: 95px; margin-left:-85px; margin-top: -35px; " alt="">
-                    <input type="password" id="password" name="password"  placeholder="Senha" required>
-                </div>
-            </div>
     
-            <div class="camp">
-                <div class="input-container">
-                    <img class='imgformlogin' src="assets/img/tipoUser/apple-touch-icon.png" style="width: 90px; margin-top:-32px; margin-left: -75px; height: 95px;" alt="">
-                    <select id="role" name="role">
-                        <option value="default">Categoria de usuário</option>
-                        <option value="user">Cliente</option>
-                        <option value="admin">Avaliador</option>
-                        <option value="admin">Admin</option>
-                    </select>
-                </div>
-            </div>
-    
-            
-            <div>
+        <section>
+            <form onsubmit="validar(); return false" id="formlogin">
                 
-                <input id="enviar" type="submit" value="Entrar">
-            
-            </div>
-            
-        </form>
-        <h6  style="color: white ; padding:15px; margin-left: -35px;">Esqueceu a senha?</h6>
-    </section>
+                    <div class="input-container">
+                        <img class='imgformlogin1' src="assets/img/user.png">
+                        <input type="text" id="username" name="username" placeholder="E-mail">
+                    </div>
+                
+                    <div class="input-container">
+                        <img class='imgformlogin2' src="assets/img/senha.png">
+                        <input type="password" id="password" name="password"  placeholder="Senha" required>
+                    </div>
+                
+                    <div class="input-container">
+                        <img class='imgformlogin3' src="assets/img/tipo-user.png">
+                        <select id="role" name="role">
+                            <option value="default">Categoria de usuário</option>
+                            <option value="user">Cliente</option>
+                            <option value="admin">Avaliador</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                
+                    <button>LOGIN</button>
+            </form>
+            <p class="p-senha">Esqueceu a senha?</p>
+        </section>
+    </main>
+    
     <script src="assets/js/script.js" defer></script>
 </body>
 </html>

@@ -3,6 +3,7 @@ const cards = document.getElementById('cards__missao');
 axios.get('missoes.json')
 .then(( response ) => {
     const datalistMissoes = response.data.missoes;
+    let selecionada = 0;
     datalistMissoes
       .filter((missao) => missao.rascunho === false)
       .forEach((missao => {
@@ -26,33 +27,41 @@ axios.get('missoes.json')
           <button id="btn-detalhes">Detalhes</button>
           <button id="btn-selecionar">Selecionar</button></div>
       `;
-        
-        ul.innerHTML+= `<li>${missao.id}</li>`;
+
+       
         ul.innerHTML+= `<li>${missao.titulo}</li>`;
         ul.innerHTML+= `<li>${missao.categoria}</li>`;
         ul.innerHTML+= `<li>${missao.descricao}</li>`;
         ul.innerHTML+= `<li>${missao.dataSubmissao}</li>`;
         
         
-
+        
         ul.addEventListener('click', (event) => {
           const clicked = event.target;
-      
+         
           if (clicked.tagName === 'BUTTON' && clicked.id === 'btn-selecionar') {
 
               const ulPai = clicked.closest('ul');
               ulPai.classList.toggle('bordaAtivada')
               
             if (missao.selected) {
-                missao.selected = false; 
+                missao.selected = false;
+                selecionada -= 1;
             } else {
                 missao.selected = true;
+                selecionada += 1;
+                console.log(selecionada)
             }
+            const seleciona = document.querySelector('.selecionada');
+            seleciona.innerHTML = ` ${selecionada}`;
           }
         });
 
+
         
       }))
+      
+      
 
 }).catch(( err ) => {
   console.log(err);

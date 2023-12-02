@@ -1,22 +1,20 @@
 .top__menu {
     position: fixed;
     display: flex;
-    z-index: 1;
-    background-color: var(--verde_pastel);
+    z-index: 1000;
+    border-bottom: 1px solid var(--cinza-escuro);
     width: 100%;
     padding: 16px 30px;
     align-items: center;
-}
-
-.top__menu p {
-    margin-right: 20;
+    background-color: white;
+    gap: 20px;
 }
 
 .top__menu button {
     width: 130px;
     height: 38px;
     border-radius: 6px;
-    color: black;
+    color: white;
     background-color: var(--verde_claro);
     border: none;
     cursor: pointer;
@@ -26,6 +24,7 @@
 .top__menu button:hover {
     background-color: var(--verde);
 }
+
 #cards__missao {
     display: flex;
     align-items: center;
@@ -47,6 +46,7 @@
     list-style: none;
     color: black;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 #cards__missao ul li:first-child {
     font-size: 18px;
@@ -100,8 +100,6 @@
 #btn-detalhes:hover, #btn-selecionar:hover {
     color: black;
 }
-
-
 
 .bordaAtivada {
     border: 2px solid black;
