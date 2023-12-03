@@ -1,7 +1,7 @@
 .avaliacaoForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem 7rem;
+    padding: 1.5rem 7rem;
     gap: 20px;
 }
 .campo{
@@ -11,7 +11,6 @@
 .input-check{
     display: flex;
     height: 90px;
-      
 }
 .inputtext{
     width: 100%;
@@ -33,7 +32,6 @@
     border-radius: 5px;
     padding: 0.5rem;
     border: 1px solid var(--verde_escuro);
-    margin-top: 10px;
 }
 
 .inputtext-img{
@@ -51,22 +49,11 @@
     height: 130px;
 }
 
-input[type="radio"].radio_aprovado {
-    --webkit-appearance: none;
-    background-color: gainsboro;
-    border-color: white;
-    padding: 8;
-    margin: 0 4 3 4;
-}
-
-input[type="radio"].radio_aprovado:checked {
-    background-color: green;
-}
-
 input.radio_aprovado,
 input.radio_ressalvas,
 input.radio_rejeitado {
     position: relative;
+    border-radius: 3px;
 }
 
 input.radio_aprovado::after {
@@ -89,7 +76,7 @@ input[type="radio"]::after {
     padding: 5px;
     background-color: #333;
     color: #fff;
-    width: 200px;
+    width: max-content;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
@@ -100,65 +87,39 @@ input[type="radio"]:hover::after {
     opacity: 1;
 }
 
-input[type="radio"].radio_ressalvas {
-    -webkit-appearance: none;
-    background-color:gainsboro;
-    padding: 8;
-    margin: 0 4 3 4;
-    border-color: white;
-}
-
-input[type="radio"].radio_ressalvas:checked {
-    background-color: yellow;
-  
-}
-
-input[type="radio"].radio_rejeitado {
-    -webkit-appearance: none;
-    background-color:gainsboro;
-    border-color: white;
-    padding: 8;
-    margin: 0 4 3 4;
-}
-
-input[type="radio"].radio_rejeitado:checked {
-    background-color: red;
-   
-}
-
-
 input[type="radio"].radio_aprovado {
     -webkit-appearance: none;
     background-color: gainsboro;
-    border-color: white;
-    padding: 8;
+    height: 17;
+    width: 17;
     margin: 0 4 3 4;
 }
 
 input[type="radio"].radio_aprovado:checked {
-    background-color: green !important;
- 
+    background-color: green;
+    
 }
 
 input[type="radio"].radio_ressalvas {
     -webkit-appearance: none;
     background-color: gainsboro;
     border-color: white;
-    padding: 8;
-    margin: 0 4 3 4;
+    height: 17;
+    width: 17;
+    margin: 0 4 4 4;
 }
 
 input[type="radio"].radio_ressalvas:checked {
-    background-color: yellow;
- 
+    background-color: yellow;  
 }
 
 input[type="radio"].radio_rejeitado {
     -webkit-appearance: none;
     background-color: gainsboro;
     border-color: white;
-    padding: 8;
-    margin: 0 4 3 4;
+    height: 17;
+    width: 17;
+    margin: 0 4 4 4;
 }
 
 input[type="radio"].radio_rejeitado:checked {
