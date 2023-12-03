@@ -11,7 +11,7 @@
     border-radius: 10px;
     margin: 1.5rem;
     padding: 37px;
-    height: calc(100vh - 240px);
+    height: calc(100vh - 190px);
     overflow-y: scroll;
     
 }
@@ -97,15 +97,25 @@ td div {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-aprovado, .modal-aprovadoR, .modal-rejeitado{
+.modal-aprovado,  .modal-rejeitado{
     background-color: #fefefe;
-    margin: 23% auto;
+    margin: 30% auto;
     padding: 20px;
     border: 2px solid #787878;
     width: 400px;
-    height: 150px;
+    height: 160px;
     border-radius: 10px;
     
+}
+
+.modal-aprovadoR{
+    background-color: #fefefe;
+    margin: 30% auto;
+    padding: 20px;
+    border: 2px solid #787878;
+    width: 400px;
+    height: 180px;
+    border-radius: 10px;
 }
 
 .modal-aprovado h1, .modal-aprovadoR h1, .modal-rejeitado h1{
@@ -120,7 +130,7 @@ td div {
 .btn-modal{
     display: flex;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     flex-basis: 0;
 }
 #btn-negociar{
@@ -223,7 +233,7 @@ td div {
         content: attr(data-label);
         font-weight: bold;
         margin-bottom: 5px;
-        font-size: 15px;
+        font-size: 14px;
         color: #04473A;
         
     }
@@ -236,17 +246,21 @@ td div {
         font-weight: 500; 
     }
     .status-missao{
-        padding: 20px;
+        padding: 10px;
         overflow-x: hidden;
         height: calc(100vh - 210px);
-        margin: 1.2rem;
+        margin: 5px;
     }
-    .modal-aprovado, .modal-aprovadoR, .modal-rejeitado{
+    .modal-aprovado, .modal-aprovadoR{
         margin: 50% auto;
-        width: 260px;
-        height: 150px; 
+        width: 290px;
+        height: 170px; 
     }
-    
+    .modal-rejeitado{
+        margin: 50% auto;
+        width: 290px;
+        height: 160px; 
+    }
     
     #btn-recurso{
         font-size: 12px;
@@ -263,7 +277,7 @@ td div {
     .btn-modal{
         display: flex;
         gap: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
         flex-basis: 0;
     }
     .modal-aprovado p, .modal-aprovadoR p, .modal-rejeitado p{
@@ -277,8 +291,11 @@ td div {
     .btn-modal-rej{
         display: flex;
         gap: 20px;
-        margin-top: 40px;
+        margin-top: 20px;
         flex-basis: 0;
+    }
+    #titulo-status{
+        font-size: 25px;
     }
     
 }
