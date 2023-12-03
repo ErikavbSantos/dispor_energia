@@ -3,20 +3,18 @@
     position: -webkit-sticky; /* Necessário para funcionar no Safari */
     position: sticky;
     top: 0;
-    overflow: hidden;
     background: var(--verde);
     z-index: 1000;
     justify-content: center;
     width: 100%;
+    gap: 30px;
+    align-items: center;
+    height: 60px;
 }
   
 .topnav a {
-    float: left;
-    display: block;
+    padding: 10px 15px;
     color: white;
-    text-align: center;
-    padding: 10px 16px;
-    margin: 10px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 17px;
@@ -27,10 +25,6 @@
     background-color: #04473A;
 }
   
-
-#right_side {
-    float: right;
-}
 
 @media screen and (max-width: 600px) {
 /* NAVBAR */
