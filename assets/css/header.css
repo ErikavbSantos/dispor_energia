@@ -25,7 +25,11 @@
     background-color: #04473A;
 }
   
-
+@media (max-width: 770px) {
+    .topnav {
+        gap: 10px;
+    }
+}
 @media screen and (max-width: 600px) {
 /* NAVBAR */
 .topnav {
