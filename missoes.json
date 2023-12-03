@@ -8,7 +8,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": true,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "2024-10-20",
+            "dado": "Equipamento",
+            "frequencia": "Horária",
+            "oque": "Teste",
+            "como": "Teste",
+            "quando": "Teste",
+            "onde": "Teste",
+            "estagio": "Sênior"
     
         },
         {
@@ -19,7 +28,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": true,
-            "selected": false
+            "selected": false,
+            "pontuacao": 20,
+            "tempoLimite": "21/03/2024",
+            "dado": "Ambiente",
+            "frequencia": "semanal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "Júnior"
     
         },
         {
@@ -30,7 +48,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": true,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado":"fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -41,7 +68,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -52,7 +88,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": true,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -63,7 +108,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": true,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -74,7 +128,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -85,7 +148,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -96,7 +168,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": true,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "quinzenal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -107,7 +188,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "meta",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -118,7 +208,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "meta",
+            "frequencia": "quinzenal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -129,7 +228,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "quinzenal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -140,7 +248,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "fatura",
+            "frequencia": "mensal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         },
         {
@@ -151,7 +268,16 @@
             "categoria": "categoria 1",
             "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "rascunho": false,
-            "selected": false
+            "selected": false,
+            "pontuacao": 100,
+            "tempoLimite": "30/05/2024",
+            "dado": "meta",
+            "frequencia": "quinzenal",
+            "oque": "teste",
+            "como": "teste",
+            "quando": "teste",
+            "onde": "teste",
+            "estagio": "guru"
     
         }
 
