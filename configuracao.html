@@ -1,54 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Em elaboração</title>
+    
+    <title>Configurações</title>
 
     <!-- Fontes usadas no projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    
     <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
         <a href="perfil.html">Perfil</a>
         <a href="login.html"> Login</a>
         <a href="statusmissao.html"> Status</a>
-        <a  class="active" href="rascunho.html">Rascunho</a>
+        <a href="rascunho.html">Rascunho</a>
         <a href="listaMissoesAvaliador.html">Missões</a>
         <a href="avaliaçãoMissão.html">Avaliação</a>
-        <a href="configuracao.html">Configurações</a>
+        <a class="active" href="configuracao.html">Configurações</a>
           <i class="fa fa-bars"></i>
         </a>
     </div>
 
-    <h1 id="titulo-status">Em elaboração</h1>
+    <div class="user_info">
+        <img src="/assets/img/profile_image_placeholder.png" alt="placeholder">
+        <h1>Nome do Usuário</h1>
+    </div>
 
-    <main class="rascunho-main">
-        <div class="filter">
-            <input type="search" name="filter-rascunho" id="filter-rascunho" placeholder="Pesquisar">
+    <div class="botoes">
+        <div class="btns">
+            <a href="">
+                <svg width="100" height="92" viewBox="0 0 100 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M75 25C75 38.8071 63.8071 50 50 50C36.1929 50 25 38.8071 25 25C25 11.1929 36.1929 0 50 0C63.8071 0 75 11.1929 75 25Z" class="config-icon" fill="#0B8E74"/>
+                <path d="M100 92C79 92 77.6142 92 50 92C22.3858 92 31 92 0 92C8 67.5 22.3858 56 50 56C77.6142 56 92 68 100 92Z" fill="#0B8E74"/>
+                </svg>
+                <h1>Editar perfil</h1>
+            </a>
+
+            <a href="">
+                <img src="/assets/img/metas-icon.svg" alt="">
+                <h1>Metas</h1>
+            </a>
+                
+            <a href="">
+                <img src="/assets/img/notificacao-icon.svg" alt="">
+                <h1>Notificações</h1>
+            </a>
+
+            <a href="login.html">
+                <img src="/assets/img/sair-icon.svg" alt="icone sair">
+                <h1>Sair</h1>
+            </a>
         </div>
-        <div class="rascunho" id="rascunho">
-            <div id="modal">
-
-                <div class="modal-content">
-                  <h1>Confirmação</h1>
-                  <p>Você tem certeza que deseja excluir?</p>
-                  <div class="btn-modal-r">
-                    <button id="cancelDelete">Cancelar</button>
-                    <button id="confirmDelete">Deletar</button>
-                  </div>
-                  
-                </div>
-
-            </div>
         </div>
-    </main>
+    </div>
+
     <div class="navbar">
         <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
         <a href="perfil.html"><img class="icone__nav" src="./assets/img/mapa__nav.svg" alt="icone de mapa"></a>
@@ -56,6 +67,6 @@
         <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
         <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
     </div>
-    <script src="/js/rascunho.js" defer></script>
+
 </body>
 </html>
