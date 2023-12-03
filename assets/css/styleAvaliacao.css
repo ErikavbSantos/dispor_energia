@@ -176,7 +176,12 @@ input[type="radio"].radio_rejeitado:checked {
     justify-self: end;
     grid-column: 2/3;
 }
-
+@media (max-width: 1000px){
+    .avaliacaoForm {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 2rem;
+    }
+}
 @media (max-width: 770px){
     .avaliacaoForm {
         grid-template-columns: 1fr 1fr;
