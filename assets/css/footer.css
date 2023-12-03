@@ -16,28 +16,8 @@
         
     }
     
-    .icone__casa {
-        height: 22px;
-        width: 22px;
-    }
-    
-    .icone__mapa {
+    .icone__nav {
         height: 24px;
-        width: fit-content;
-    }
-    
-    .icone__logo {
-        height: 24px;
-        width: fit-content;
-    }
-    
-    .icone__carteira {
-        height: 18px;
-        width: fit-content;
-    }
-    
-    .icone__pessoa {
-        height: 22px;
         width: fit-content;
     }
 }
