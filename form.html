@@ -34,19 +34,22 @@
     </header>
 
     <main>
-        <form class="forms-missao">
+        <form class="forms-missao" id="forms-missao" method="POST">
+
 
             <div class="form-container">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 <input type="text" name="categoria" id="categoria" placeholder="Categoria" required>
-                <textarea name="categoria" id="categoria" cols="30" rows="3" placeholder="Descrição da missão" required></textarea >
+                <textarea name="descricao" id="descricao" cols="30" rows="3" placeholder="Descrição da missão" required></textarea >
                 <input type="number" name="pontuacao" id="pontuacao" placeholder="Pontuação" required>
-                <label for="img-icone">Add ícone da missão</label>
+                <label for="img-icone" id="label-file">Add ícone da missão</label>
                 <input type="file" name="img-icone" id="img-icone" accept="image/*" required>
+                <p id="erroData" style="display: none; color: red;">A data não pode ser anterior à data de hoje.</p>
                 <input type="datetime" name="tempo" id="tempo" placeholder="Tempo limite" required>
+                
 
                 <div class="custom-select">
-                    <select id="estagio" name="estagio" required class="select-progresso">
+                    <select id="dado-interesse" name="dado" required class="select-progresso">
                         <option value="" disabled selected>Dado de interesse</option>
                         <option value="consumo">Consumo</option>
                         <option value="fatura">Fatura</option>
@@ -57,14 +60,14 @@
                         <option value="interesse">Interesse</option>
                         <option value="contato">Contato</option>
                     </select>
-                    <!-- <img class="triangulo" src="./assets/img/dropdown__triangulo.svg" alt="triangulo"> -->
+                
                 </div>
 
             </div>
             
             <div class="form-container">
                 <div class="custom-select">
-                    <select id="estagio" name="estagio" required class="select-progresso">
+                    <select id="frequencia" name="frequencia" required class="select-progresso">
                         <option value="" disabled selected>Frequência de reativação</option>
                         <option value="horaria">Horária</option>
                         <option value="turno">Turno</option>
@@ -99,8 +102,8 @@
                 
             </div>
             <div class="buttons-form">
-                <button class="rascunho-btn" type="submit">Rascunho</button>
-                <button class="cadastrar" type="submit">CADASTRAR</button>
+                <button class="rascunho-btn" id="rascunho-btn" type="submit">Rascunho</button>
+                <button class="cadastrar" id="cadastrar-btn" type="submit">CADASTRAR</button>
             </div>
             
             
@@ -114,6 +117,6 @@
         <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
         <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
     </div>
-    <script src="/js/script.js" defer></script>
+    <script src="/js/form.js" defer></script>
 </body>
 </html>
