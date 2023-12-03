@@ -30,25 +30,26 @@
     justify-content: center;
     align-items: end;
     margin-top: 30px;
+    gap: 15px;
 }
-#formlogin .imgformlogin1{
-    height: 98px;
+.imgformlogin1{
+    height: 89px;
     position: absolute;
-    bottom: -1px;
-    left: -38px;
+    left: -32px;
+    top: -18px;
 }
-#formlogin .imgformlogin2{
-    height: 99px;
+.imgformlogin2{
+    height: 95px;
     position: absolute;
-    bottom: 2px;
-    left: -55px;
+    left: -50px;
+    top: -25px;
    
 }
-#formlogin .imgformlogin3{
-    height: 100px;
+.imgformlogin3{
+    height: 96px;
     position: absolute;
     left: -36px;
-    top: -23px;
+    top: -22px;
     
     
 }
@@ -83,7 +84,7 @@
     background-color: #84de81;
 }
 
-
+ 
 #formlogin input {
     border: 1px solid white;
     border-bottom-right-radius: 20px;
@@ -92,19 +93,21 @@
     border-top-left-radius: 20px;
     background-color: rgb(131, 194, 154);
     color: white;
-    width: 264px;
-    height: 25px;
+    width: 320px;
+    height: 55px;
     opacity:1;
     padding-left: 35px;
 }
+
 #formlogin input::placeholder{
     color: white;
+    font-size: 16px;
 }
 #formlogin select{
     background-color: rgb(131, 194, 154);
     color: white;
     width: 320px;
-    height: 60px;
+    height: 58px;
     border: 1px solid white;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 0;
@@ -136,8 +139,8 @@
         text-align: center;
     }
     #formlogin input {
-        width: 230px;
-        height: 30px;
+        width: 280px;
+        height: 45px;
         
     }
     #formlogin select{
@@ -150,26 +153,25 @@
         height: 45px;
     }
     #formlogin .imgformlogin1{
-        height: 81px;
+        height: 73px;
         position: absolute;
-        bottom: -1px;
-        left: -26px;
+        top: -15px;
+        left: -20px;
     }
     #formlogin .imgformlogin2{
-        height: 83px;
+        height: 76px;
         position: absolute;
-        bottom: 2px;
-        left: -40px;
-       
+        top: -20px;
+        left: -32px;
     }
+
     #formlogin .imgformlogin3{
-        height: 79px;
+        height: 75px;
         position: absolute;
-        left: -23px;
+        left: -18px;
         top: -18px;
-        
-        
     }
+    
 
 }
 @media (max-width: 770px){
@@ -185,5 +187,9 @@
     }
     #formlogin select{
         margin-right: 4px;
+    }
+    .imgformlogin3{
+        height: 97px;
+        top: -23px;
     }
 }

@@ -138,7 +138,7 @@ input[type="number"] + label::before{
         gap: 15px;
         align-items: start;
     }
-    input, textarea, .select-progresso{
+    .forms-missao input, .forms-missao textarea, .select-progresso{
         padding: 1rem;
         font-size: 1rem;
     }
@@ -166,7 +166,7 @@ input[type="number"] + label::before{
     
 }
 @media (max-width: 1000px) and (min-width: 600px) {
-    header{
+    #headform{
         padding: 2rem 2.5rem;
     }
     .forms-missao{
