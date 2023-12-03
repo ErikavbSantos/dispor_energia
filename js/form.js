@@ -30,16 +30,14 @@ document.getElementById("forms-missao")
     let onde = document.getElementById("onde").value;
     let estagioProgresso = document.getElementById("estagio").value;
 
-    /* let campos = document.getElementById("forms-missao").querySelectorAll("input, textarea, select");
+    const dataAtual = new Date();
 
-    let todosVazios = false;
-    campos.forEach((campo) => {
-        if (campo.value.trim() === '') {
-            todosVazios = true;
-        }
-    });
-
-    if(todosVazios === false){
+    if (tempoDate < dataAtual) {
+        erroData.style.display = 'block'; // Exibe a mensagem de erro
+        setTimeout(function() {
+            erroData.style.display = 'none'; // Esconde a mensagem após 3 segundos
+        }, 5000);
+    }else{
         let dados = {
             nome: nome,
             categoria: categoria,
@@ -60,27 +58,9 @@ document.getElementById("forms-missao")
           let dadosJSON = JSON.stringify(dados);
       
           console.log(dadosJSON);
-    } */
-    let dados = {
-        nome: nome,
-        categoria: categoria,
-        descricao: descricao,
-        pontuacao: pontuacao,
-        imgIcone: imgIcone,
-        tempo: tempoDate,
-        dadoInteresse: dadoInteresse,
-        frequencia: frequencia,
-        oque: oque,
-        como: como,
-        quando: quando,
-        onde: onde,
-        estagioProgresso: estagioProgresso,
-        rascunho: valorRascunho,
-      };
-  
-      let dadosJSON = JSON.stringify(dados);
-  
-      console.log(dadosJSON);
+    }
+    
+    
     
   });
 
