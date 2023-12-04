@@ -1,13 +1,13 @@
 const divRascunho = document.getElementById("rascunho");
 
 axios
-  .get("missoes.json")
+  .get("http://localhost:8080/listaMissao")
   .then((response) => {
-    const dataRascunho = response.data.missoes;
+    const dataRascunho = response.data;
 
     dataRascunho
-      .filter((rascunho) => rascunho.rascunho === true)
-      .forEach((rascunho) => {
+      .filter((rascunho) => rascunho.rascunho)
+      .forEach((rascunho, index) => {
         const ul = document.createElement("ul");
         divRascunho.appendChild(ul);
 
@@ -54,53 +54,54 @@ axios
 
         const editarIcon = document.createElement("a");
         editarIcon.classList.add("icone-editar");
+        editarIcon.id = "btn-editar";
+        editarIcon.innerHTML = `<img src='/assets/img/icone editar.svg'>`;
+
         editarIcon.href = `form_rascunho.html?nome=${encodeURIComponent(
-          rascunho.titulo
+          rascunho.nome_missao
         )}&categoria=${encodeURIComponent(
           rascunho.categoria
         )}&descricao=${encodeURIComponent(
           rascunho.descricao
         )}&pontuacao=${encodeURIComponent(
           rascunho.pontuacao
-        )}&tempoLimite=${encodeURIComponent(
-          rascunho.tempoLimite
+        )}&tempo=${encodeURIComponent(
+          rascunho.tempo_execucao
         )}&dado=${encodeURIComponent(
           rascunho.dado
         )}&frequencia=${encodeURIComponent(
-          rascunho.frequencia
-        )}&oque=${encodeURIComponent(rascunho.oque)}&como=${encodeURIComponent(
-          rascunho.como
-        )}&quando=${encodeURIComponent(
-          rascunho.quando
-        )}&onde=${encodeURIComponent(
-          rascunho.onde
-        )}&estagio=${encodeURIComponent(rascunho.estagio)}`;
+          rascunho.frequencia_reativacao
+        )}&orientacao1=${encodeURIComponent(
+          rascunho.orientacao1
+        )}&orientacao2=${encodeURIComponent(
+          rascunho.orientacao2
+        )}&orientacao3=${encodeURIComponent(
+          rascunho.orientacao3
+        )}&orientacao4=${encodeURIComponent(
+          rascunho.orientacao4
+        )}&estagio=${encodeURIComponent(
+          rascunho.progresso
+        )}&img-icone=${encodeURIComponent(rascunho.img)}`;
 
-        editarIcon.innerHTML = `<img src='/assets/img/icone editar.svg'>`; // Corrigi o caminho da imagem
-        /* editarIcon.setAttribute("data-nome", rascunho.titulo);
-        editarIcon.setAttribute("data-categoria", rascunho.categoria);
-        editarIcon.setAttribute("data-descricao", rascunho.descricao); */
+        
+
+        /* editarIcon.addEventListener("click", () => {
+
+          
+
+          axios
+            .put(`http://localhost:8080/missao/${rascunho.id}`, rascunho)
+            .then((response) => console.log(response));
+        });
+ */
+
+        // Corrigi o caminho da imagem
 
         div.appendChild(editarIcon);
-
-        /* ul.addEventListener("click", (event) => {
-          const clickedLink = event.target.closest("a");
-
-          if (clickedLink && clickedLink.classList.contains("icone-editar")) {
-            const elementoPai = clickedLink.closest("ul");
-            elementoPai.id = rascunho.id;
-            const nome = clickedLink.getAttribute("data-nome");
-            const categoria = clickedLink.getAttribute("data-categoria");
-            const descricao = clickedLink.getAttribute("data-descricao");
-            console.log(nome, categoria, descricao);
-            window.location.href = `form_rascunho.html?nome=${nome}&categoria=${categoria}&descricao=${descricao}`;
-          }
-        }); */
-
         div.appendChild(deleteIcon);
 
-        ul.innerHTML += `<li>Data: <span>${rascunho.dataSubmissao}</span></li>`;
-        ul.innerHTML += `<li>Título: <span>${rascunho.titulo}</span></li>`;
+        ul.innerHTML += `<li>Data: <span>${rascunho.data_criacao}</span></li>`;
+        ul.innerHTML += `<li>Título: <span>${rascunho.nome_missao}</span></li>`;
         ul.innerHTML += `<li>Categoria: <span>${rascunho.categoria}</span></li>`;
         ul.innerHTML += `<li>Descrição: <span>${rascunho.descricao}</span></li>`;
       });

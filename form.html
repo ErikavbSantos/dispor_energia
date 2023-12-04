@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="topnav" id="myTopnav">
@@ -41,7 +42,7 @@
                 <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 <input type="text" name="categoria" id="categoria" placeholder="Categoria" required>
                 <textarea name="descricao" id="descricao" cols="30" rows="3" placeholder="Descrição da missão" required></textarea >
-                <input type="number" name="pontuacao" id="pontuacao" placeholder="Pontuação" required>
+                <input type="number" name="pontuacao" id="pontuacao" placeholder="Pontuação">
                 <label for="img-icone" id="label-file">Add ícone da missão</label>
                 <input type="file" name="img-icone" id="img-icone" accept="image/*" required>
                 <p id="erroData" style="display: none; color: red;">A data não pode ser anterior à data de hoje.</p>
@@ -81,10 +82,10 @@
                     </select>
                     <!-- <img class="triangulo" src="./assets/img/dropdown__triangulo.svg" alt="triangulo"> -->
                 </div>
-                <textarea name="oque" id="oque" cols="30" rows="3" placeholder="O que fazer?" required></textarea >
-                <textarea name="como" id="como" cols="30" rows="3" placeholder="Como fazer?" required></textarea >
-                <textarea name="quando" id="quando" cols="30" rows="3" placeholder="Quando fazer?" required></textarea >
-                <textarea name="onde" id="onde" cols="30" rows="3" placeholder="Onde fazer?" required></textarea >
+                <textarea name="oque" id="orientacao1" cols="30" rows="3" placeholder="O que fazer?" required></textarea >
+                <textarea name="como" id="orientacao2" cols="30" rows="3" placeholder="Como fazer?" required></textarea >
+                <textarea name="quando" id="orientacao3" cols="30" rows="3" placeholder="Quando fazer?" required></textarea >
+                <textarea name="onde" id="orientacao4" cols="30" rows="3" placeholder="Onde fazer?" required></textarea >
                 <div class="custom-select">
                     <select id="estagio" name="estagio" required class="select-progresso">
                         <option value="" disabled selected>Estágio de Progresso</option>
