@@ -11,7 +11,10 @@ axios
         const ul = document.createElement("ul");
         divRascunho.appendChild(ul);
 
-        const div = document.createElement("div");
+        ul.id = rascunho.id;
+        ul.classList.add ("rascunhoCard");
+
+        const div = document.createElement('div');
         ul.appendChild(div);
         div.classList.add("ul-img");
 

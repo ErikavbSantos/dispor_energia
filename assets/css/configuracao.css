@@ -40,5 +40,19 @@
     }
     .user_info h1 {
         text-align: center;
+        font-size: 26px;
+    }
+    .btns svg {
+        width: 26px;
+        height: fit-content;
+        margin-right: 20px;
+    }
+    .btns img {
+        width: 26px;
+        height: fit-content;
+        margin-right: 20px;
+    }
+    .btns h1 {
+        font-size: 24;
     }
 }
