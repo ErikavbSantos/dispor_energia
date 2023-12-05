@@ -46,7 +46,8 @@ axios
               .addEventListener("click", () => {
                 console.log("clicou em deletar");
 
-                //deleteRascunho(rascunho); // Supondo que exista uma função deleteRascunho
+                const rascunhoId = event.target.closest("ul").id;
+                deleteRascunho(rascunhoId);
                 modal.style.display = "none"; // Fecha o modal após a confirmação
               });
           }
@@ -109,6 +110,18 @@ axios
   .catch((err) => {
     console.log(err);
   });
+
+/*function deleteRascunho() { //MUITO redundante
+  const apiUrl = `http://localhost:8080/missao/${rascunhoId}`; //muito redundante
+  
+  axios.delete(apiUrl)
+    .then((response) => {
+      console.log("Rascunho deletado com sucesso!");
+      })
+    .catch((error) => {
+      console.error("Erro ao deletar rascunho:", error);
+    });
+  }*/
 
 //pesquisa
 

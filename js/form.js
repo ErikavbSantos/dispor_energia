@@ -13,7 +13,7 @@ document
       clickedButton.tagName === "BUTTON" &&
       clickedButton.id === "rascunho-btn"
     ) {
-      var valorRascunho = true;-
+      var valorRascunho = true;
     }
 
     let nome = document.getElementById("nome").value;
