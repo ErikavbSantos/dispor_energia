@@ -37,16 +37,23 @@
 
 #cards__missao ul {
     background-color: var(--verde_claro);
-    border-radius: 20px;
+    border-radius: 4px;
     padding: 16px;
     width: 300px;
     height: fit-content;
+    height: 170px;
 }
 #cards__missao ul li {
     list-style: none;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     font-size: 16px;
+    display: -webkit-box; /* Fallback para navegadores com suporte ao prefixo -webkit- */
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis;
+   
 }
 #cards__missao ul li:first-child {
     font-size: 18px;

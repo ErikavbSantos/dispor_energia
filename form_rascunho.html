@@ -18,7 +18,6 @@
     <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
         <a href="perfil.html">Perfil</a>
-        <a href="login.html"> Login</a>
         <a href="statusmissao.html"> Status</a>
         <a href="rascunho.html">Rascunho</a>
         <a href="listaMissoesAvaliador.html">Missões</a>
@@ -29,19 +28,27 @@
     </div>
     
     <header id="headform">
-        <span></span>
         <h1 class="titulo-missao">Rascunho</h1>
     </header>
 
     <main>
         <form class="forms-missao">
 
+            <div id="modal-aprovado">
+                <div class="modal-aprovado">
+                    <div class="titulo-close">
+                        <span id="close-aprovado"><img src="/assets/img/letra-x.png" alt="letra x"></span>
+                    </div>
+                    <p>Sua missão foi ATUALIZADA com sucesso!</p>
+                </div>
+            </div>
+
             <div class="form-container">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 <input type="text" name="categoria" id="categoria" placeholder="Categoria" required>
                 <textarea name="categoria" id="descricao" cols="30" rows="3" placeholder="Descrição da missão" required></textarea >
                 <input type="number" name="pontuacao" id="pontuacao" placeholder="Pontuação">
-                <label for="img-icone">Add ícone da missão</label>
+                <label for="img-icone" id="label-file">Add ícone da missão</label>
                 <input type="file" name="img-icone" id="img-icone" accept="image/*" required>
                 <input type="datetime" name="tempo" id="tempo" placeholder="Tempo limite" required>
 
@@ -100,8 +107,8 @@
                 
             </div>
             <div class="buttons-form">
-                <button class="rascunho-btn" type="submit">Rascunho</button>
-                <button class="cadastrar" type="submit">CADASTRAR</button>
+                <button class="rascunho-btn" id="rascunho-btn-form" type="submit">Rascunho</button>
+                <button class="cadastrar" id="cadastrar-btn-form" type="submit">CADASTRAR</button>
             </div>
             
             

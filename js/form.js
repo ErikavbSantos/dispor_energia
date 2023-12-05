@@ -8,11 +8,13 @@ document
       clickedButton.tagName === "BUTTON" &&
       clickedButton.id === "cadastrar-btn"
     ) {
+
       var valorRascunho = false;
     } else if (
       clickedButton.tagName === "BUTTON" &&
       clickedButton.id === "rascunho-btn"
-    ) {
+    ) 
+    {
       var valorRascunho = true;
     }
 
@@ -30,7 +32,6 @@ document
     let onde = document.getElementById("orientacao4").value;
     let estagioProgresso = document.getElementById("estagio").value;
 
-    const dataAtual = new Date();
 
     /*  if (tempo < dataAtual) {
       erroData.style.display = "block"; // Exibe a mensagem de erro
@@ -61,7 +62,12 @@ document
     axios
       .post("http://localhost:8080/missao/1", dados, {})
       .then(function (response) {
-        console.log(response);
+        const modal_aprovado = document.getElementById('modal-aprovado');
+        modal_aprovado.style.display = 'block';
+
+        document.getElementById('close-aprovado').addEventListener('click', () => {
+        modal_aprovado.style.display = 'none';
+        });
       });
   });
 

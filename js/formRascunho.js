@@ -13,6 +13,11 @@ const como = parametros.get("orientacao2");
 const quando = parametros.get("orientacao3");
 const onde = parametros.get("orientacao4");
 const estagio = parametros.get("estagio");
+const rascunhoId = parametros.get("id");
+const img = parametros.get("img");
+
+const inputImg = document.getElementById("img-icone");
+inputImg.src = img;
 
 const inputNome = document.getElementById("nome");
 inputNome.value = nome;
@@ -42,35 +47,61 @@ inputPontuacao.value = pontuacao; */
 
 
 
-const divBtn = document.querySelector(".buttons-form");
+//evento de update no form de rascunho
+const form = document.querySelector("form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // Prevenir o comportamento padrão do formulário
 
-axios
-  .get("http://localhost:8080/listaMissao")
-  .then((response) => {
-    const dataRascunho = response.data;
-    dataRascunho
-      .filter((rascunho) => rascunho.rascunho)
-    
-        const btn_rascunho = document.querySelector(".rascunho-btn");
-        const btn_cadastrar = document.querySelector(".cadastrar");
+  const clickedButton = event.submitter;
+  if (
+    clickedButton.tagName === "BUTTON" &&
+    clickedButton.id === "cadastrar-btn-form"
+  ) {
+    var valorRascunho = false;
+  } else if (
+    clickedButton.tagName === "BUTTON" &&
+    clickedButton.id === "rascunho-btn-form"
+  ) {
+    var valorRascunho = true;
+  }
+  const updatedData = {
+    nome_missao: inputNome.value,
+    categoria: inputCategoria.value,
+    descricao: inputDescricao.value,
+    pontuacao: pontuacao,
+    tempo_execucao: inputTempo.value,
+    dado: inputDado.value,
+    frequencia_reativacao: inputFrequencia.value,
+    orientacao1: inputOque.value,
+    orientacao2: inputComo.value,
+    orientacao3: inputQuando.value,
+    orientacao4: inputOnde.value,
+    progresso: inputEstagio.value,
+    img: inputImg.value,
+    rascunho: valorRascunho,
+    progresso_avaliacao: "",
+    pre_requisito: "",
+
+  };
+
+  axios
+    .put(`http://localhost:8080/missao/${rascunhoId}`, updatedData)
+    .then((response) => {
+      const modal_aprovado = document.getElementById('modal-aprovado');
+      modal_aprovado.style.display = 'block';
+
+      document.getElementById('close-aprovado').addEventListener('click', () => {
+        modal_aprovado.style.display = 'none';
+      });
+    })
+    .catch((error) => console.error(error));
+});
 
 
-        btn_rascunho.addEventListener("click", (event) => {
-         console.log("clicou no rascunho")
+document.getElementById("img-icone").addEventListener("change", function () {
+  const fileLabel = document.getElementById("label-file");
 
-            axios
-              .put(`http://localhost:8080/missao/${rascunho.id}`, rascunho)
-              .then((response) => console.log(response));
-                
-        });
-
-        btn_cadastrar.addEventListener("click", (event) => {
-          console.log("clicou no cadastrar")
- 
-             axios
-                .put(`http://localhost:8080/missao/${rascunho.id}`, rascunho)
-                .then((response) => console.log(response));
-        })
-  })
-
-
+  if (this.files.length > 0) {
+    fileLabel.textContent = "Arquivo selecionado";
+  }
+});

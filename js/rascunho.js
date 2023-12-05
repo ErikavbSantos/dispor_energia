@@ -11,10 +11,10 @@ axios
         const ul = document.createElement("ul");
         divRascunho.appendChild(ul);
 
-        ul.id = rascunho.id;
-        ul.classList.add ("rascunhoCard");
+        //ul.id = rascunho.id;
+        ul.classList.add("rascunhoCard");
 
-        const div = document.createElement('div');
+        const div = document.createElement("div");
         ul.appendChild(div);
         div.classList.add("ul-img");
 
@@ -32,32 +32,34 @@ axios
             const modal = document.getElementById("modal");
             modal.style.display = "block";
 
-            //adicionar a lógica
 
             document
               .getElementById("cancelDelete")
               .addEventListener("click", () => {
-                console.log("clicou em cancelar");
                 modal.style.display = "none";
               });
 
             document
               .getElementById("confirmDelete")
               .addEventListener("click", () => {
-                console.log("clicou em deletar");
+                
 
-                const rascunhoId = event.target.closest("ul").id;
+                const rascunhoId = rascunho.id;
                 deleteRascunho(rascunhoId);
+                window.location.reload(true)
+
                 modal.style.display = "none"; // Fecha o modal após a confirmação
               });
           }
         });
 
+        //criando botao editar
         const editarIcon = document.createElement("a");
         editarIcon.classList.add("icone-editar");
         editarIcon.id = "btn-editar";
         editarIcon.innerHTML = `<img src='/assets/img/icone editar.svg'>`;
 
+        //passando os parametros para o form do rascunho
         editarIcon.href = `form_rascunho.html?nome=${encodeURIComponent(
           rascunho.nome_missao
         )}&categoria=${encodeURIComponent(
@@ -82,21 +84,9 @@ axios
           rascunho.orientacao4
         )}&estagio=${encodeURIComponent(
           rascunho.progresso
-        )}&img-icone=${encodeURIComponent(rascunho.img)}`;
-
-        
-
-        /* editarIcon.addEventListener("click", () => {
-
-          
-
-          axios
-            .put(`http://localhost:8080/missao/${rascunho.id}`, rascunho)
-            .then((response) => console.log(response));
-        });
- */
-
-        // Corrigi o caminho da imagem
+        )}&img=${encodeURIComponent(rascunho.img)}&id=${encodeURIComponent(
+          rascunho.id
+        )}`;
 
         div.appendChild(editarIcon);
         div.appendChild(deleteIcon);
@@ -111,17 +101,20 @@ axios
     console.log(err);
   });
 
-/*function deleteRascunho() { //MUITO redundante
-  const apiUrl = `http://localhost:8080/missao/${rascunhoId}`; //muito redundante
-  
-  axios.delete(apiUrl)
+//função para deletar
+function deleteRascunho(rascunhoId) {
+  const apiUrl = `http://localhost:8080/missao/${rascunhoId}`;
+
+  axios
+    .delete(apiUrl)
     .then((response) => {
+
       console.log("Rascunho deletado com sucesso!");
-      })
+    })
     .catch((error) => {
       console.error("Erro ao deletar rascunho:", error);
     });
-  }*/
+}
 
 //pesquisa
 

@@ -3,6 +3,7 @@
     border-radius: 4px;
     list-style: none;
     width: 350px;
+    max-height: 250px;
     padding: 20px;
 }
 .ul-img img{
@@ -19,6 +20,11 @@
     margin-bottom: 20px;
     color: #04473A;
     font-weight: 600;
+    display: -webkit-box; /* Fallback para navegadores com suporte ao prefixo -webkit- */
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis;
 }
 .rascunho {
     display: flex;
