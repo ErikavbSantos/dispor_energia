@@ -1,61 +1,36 @@
 const express = require('express');
-const Joi = require('joi');
-const app = express();
-const router = express.Router();
+const bcrypt = require('bcrypt');
+const Usuario = require('./models/usuario');
 
-const tiposDeUsuario = {
-  admin: 'admin',
-  cliente: 'cliente',
-  negociador: 'negociador'
-};
+const authRouter = express.Router();
 
-// Middleware para verificar se o usuário é um administrador.
-function isAdmin(req, res, next) {
-  if (req.user && req.user.tipoUsuario === tiposDeUsuario.admin) {
-    next();
-  } else {
-    res.status(403).json({ message: 'Sou administrador.' });
-  }
-}
+authRouter.post('/login', async (req, res) => {
+    try {
+        // Encontre o usuário pelo e-mail
+        const usuario = await Usuario.findOne({
+            where: {
+                email: req.body.email,
+            },
+        });
 
-// Middleware para verificar se o usuário é um cliente.
-function isCliente(req, res, next) {
-  if (req.user && req.user.tipoUsuario === tiposDeUsuario.cliente) {
-    next();
-  } else {
-    res.status(403).json({ message: 'Sou cliente.' });
-  }
-}
+        // Verifique se o usuário foi encontrado
+        if (!usuario) {
+            return res.status(401).json({ error: 'Credenciais inválidas' });
+        }
 
-// Middleware para verificar se o usuário é um negociador.
-function isNegociador(req, res, next) {
-  if (req.user && req.user.tipoUsuario === tiposDeUsuario.negociador) {
-    next();
-  } else {
-    res.status(403).json({ message: 'Sou negociador.' });
-  }
-}
+        // Compare a senha fornecida com o hash armazenado
+        const senhaCorrespondente = await bcrypt.compare(req.body.senha, usuario.senha);
 
-// Rota para administradores.
-app.get('/admin', isAdmin, (req, res) => {
-  res.send('Página do administrador');
+        // Verifique se a senha corresponde
+        if (!senhaCorrespondente) {
+            return res.status(401).json({ error: 'Credenciais inválidas' });
+        }
+
+        res.status(200).json({ message: 'Login bem-sucedido' });
+    } catch (error) {
+        console.error('Erro ao autenticar o usuário:', error);
+        res.status(500).json({ error: 'Erro interno do servidor' });
+    }
 });
 
-// Rota para clientes.
-app.get('/cliente', isCliente, (req, res) => {
-  res.send('Página do cliente');
-});
-
-// Rota para negociadores.
-app.get('/negociador', isNegociador, (req, res) => {
-  res.send('Página do negociador');
-});
-
-// Rota para a página "home" acessível por todos.
-app.get('/home', (req, res) => {
-  res.send('Home');
-});
-
-app.listen(3000, () => {
-  console.log('Servidor em execução na porta 3000');
-});
+exports.authRouter = authRouter;

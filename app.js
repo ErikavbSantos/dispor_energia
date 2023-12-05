@@ -1,61 +1,40 @@
 const express = require('express');
 const app = express();
+const conexao = require('./dataBase/sequelize.js');
+const controller = require("./Controller/Missao/missaoController.js");
+const controllerUsuario = require("./Controller/Usuario/usuarioController.js");
+const { authRouter } = require('./auth.js');
+
 app.use(express.json());
 
-const missions = []; // Armazenamento em memória para as missões
-
-// Rota para criar uma nova missão
-app.post('/missions', (req, res) => { 
-    const { title, description } = req.body;
-    const newMission = { id: Date.now(), title, description };
-    missions.push(newMission);
-    res.status(201).json(newMission);
+conexao
+.authenticate()
+.then(() => {
+    console.log('Conectado ao banco de dados!');
+    // Sincronizando os modelos com o banco de dados
+    return conexao.sync();
+})
+.then(() => {
+    console.log('Modelos sincronizados com o banco de dados.');
+})
+.catch((error) => {
+    console.log('Erro de conexão:', error);
 });
 
-// Rota para listar todas as missões
-app.get('/listmissions', (req, res) => {
-    const title = "Title teste";
-    const description = "Description teste"
-    const newMission = { id: Date.now(), title, description };
-    missions.push(newMission);
-    res.status(201).json(newMission);
-});
-
-// Rota para obter uma missão pelo ID
-app.get('/missions/:id', (req, res) => {
-    const missionId = parseInt(req.params.id);
-    const mission = missions.find((m) => m.id === missionId);
-    if (!mission) {
-        return res.status(404).json({ message: 'Missão não encontrada' });
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    if (req.method === 'OPTIONS') {
+        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
+        return res.status(200).json({});
     }
-    res.json(mission);
+    next();
 });
 
-// Rota para atualizar uma missão pelo ID
-app.put('/attmissions/:id', (req, res) => {
-    const missionId = parseInt(req.params.id);
-    const { title, description } = req.body;
-    const mission = missions.find((m) => m.id === missionId);
-    if (!mission) {
-        return res.status(404).json({ message: 'Missão não encontrada' });
-    }
-    mission.title = title;
-    mission.description = description;
-    res.json(mission);
-});
+app.use("/", controller ,authRouter, controllerUsuario);
 
-// Rota para excluir uma missão pelo ID
-app.delete('/deletemissions/:id', (req, res) => {
-    const missionId = parseInt(req.params.id);
-    const index = missions.findIndex((m) => m.id === missionId);
-    if (index === -1) {
-        return res.status(404).json({ message: 'Missão não encontrada' });
-    }
-    missions.splice(index, 1);
-    res.json({ message: 'Missão excluída com sucesso' });
-});
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.log(`Servidor em execução na porta ${port}`);
+    console.log(`Servidor em execução na porta http://localhost:${port}/`);
 });
