@@ -22,7 +22,7 @@ document
     let categoria = document.getElementById("categoria").value;
     let descricao = document.getElementById("descricao").value;
     let pontuacao = document.getElementById("pontuacao").value;
-    let imgIcone = document.getElementById("img-icone").value;
+    let imgIcone = document.getElementById("picture__input").value;
     let tempo = document.getElementById("tempo").value;
     let dadoInteresse = document.getElementById("dado-interesse").value;
     let frequencia = document.getElementById("frequencia").value;
@@ -33,12 +33,6 @@ document
     let estagioProgresso = document.getElementById("estagio").value;
 
 
-    /*  if (tempo < dataAtual) {
-      erroData.style.display = "block"; // Exibe a mensagem de erro
-      setTimeout(function () {
-        erroData.style.display = "none"; // Esconde a mensagem após 3 segundos
-      }, 5000);
-    } else { */
     let dados = {
       frequencia_reativacao: frequencia,
       nome_missao: nome,
@@ -71,10 +65,33 @@ document
       });
   });
 
-document.getElementById("img-icone").addEventListener("change", function () {
-  const fileLabel = document.getElementById("label-file");
 
-  if (this.files.length > 0) {
-    fileLabel.textContent = "Arquivo selecionado";
+
+const inputFile = document.querySelector("#picture__input");
+const pictureImage = document.querySelector(".picture__image");
+pictureImage.innerText = "Choose a image";
+console.log(inputFile);
+
+inputFile.addEventListener("change", function (e) {
+  const inputTarget = e.target;
+  const file = inputTarget.files[0];
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.addEventListener("load", function (e) {
+      const readerTarget = e.target;
+
+      const img = document.createElement("img");
+      img.src = readerTarget.result;
+      img.classList.add("picture__img");
+
+      pictureImage.innerHTML = "";
+      pictureImage.appendChild(img);
+    });
+
+    reader.readAsDataURL(file);
+  } else {
+    pictureImage.innerHTML = "Choose a image";
   }
 });

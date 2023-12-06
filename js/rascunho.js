@@ -2,7 +2,7 @@ const divRascunho = document.getElementById("rascunho");
 
 axios
   .get("http://localhost:8080/listaMissao")
-  .then((response) => {
+  .then( async (response) => {
     const dataRascunho = response.data;
 
     dataRascunho
@@ -59,6 +59,29 @@ axios
         editarIcon.id = "btn-editar";
         editarIcon.innerHTML = `<img src='/assets/img/icone editar.svg'>`;
 
+
+       /*  const uint8 = new Uint8Array(rascunho.img.data);
+        const base64String = btoa(String.fromCharCode.apply(null, uint8));
+
+        console.log(base64String);
+
+        function base64ToPng(base64String) {
+          const base64WithoutHeader = base64String.replace(/^data:image\/(png|jpeg|jpg);base64,/, '');
+        
+          const buffer = Uint8Array.from(atob(base64WithoutHeader), c => c.charCodeAt(0)).buffer;
+        
+          const blob = new Blob([buffer], { type: 'image/png' });
+        
+          const blobUrl = URL.createObjectURL(blob);
+        
+          return blobUrl;
+        }
+        
+        
+        const pngUrl = base64ToPng(base64String); 
+        console.log(pngUrl); */
+
+
         //passando os parametros para o form do rascunho
         editarIcon.href = `form_rascunho.html?nome=${encodeURIComponent(
           rascunho.nome_missao
@@ -87,6 +110,7 @@ axios
         )}&img=${encodeURIComponent(rascunho.img)}&id=${encodeURIComponent(
           rascunho.id
         )}`;
+
 
         div.appendChild(editarIcon);
         div.appendChild(deleteIcon);

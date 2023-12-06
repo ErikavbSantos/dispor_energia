@@ -34,6 +34,9 @@ input:focus, textarea:focus, select:focus{
     border: 1px solid var(--verde_mais_escuro);
     background-color: var(--cinza-claro);
 }
+.forms-missao input, .forms-missao textarea{
+    color: black;
+}
 .cadastrar{
     border: none;
     padding: 0.5rem 3rem;
@@ -84,8 +87,8 @@ input:focus, textarea:focus, select:focus{
 input[type="file"]{
     display: none;
     
-}
-input[type="number"] + label{
+} 
+input[type="number"] + #label-file{
     padding: 16px 0px;
     margin-bottom: 1rem;
     color: var(--verde_escuro);
@@ -95,7 +98,7 @@ input[type="number"] + label{
     align-items: center;
     
 }
-input[type="number"] + label::before{
+input[type="number"] + #label-file::before{
     content: "";
     width: 35px;
     height: 28px;
@@ -110,7 +113,7 @@ input[type="number"] + label::before{
     padding: 0.4rem 20px;
     font-size: 1rem;
     background-color: white;
-    border: 1px solid var(--verde_claro);;
+    border: 1px solid var(--verde_claro);
     border-radius: 5px;
     color: var(--verde_claro);;
 }
@@ -126,6 +129,52 @@ input[type="number"] + label::before{
     font-size: 12px;
     margin-bottom: 2px;
 }
+
+#picture__input {
+    display: none;
+}
+  
+.picture {
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: 220px;
+    background: #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    overflow: hidden;
+    border: 1px solid var(--verde_claro);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.picture:hover {
+    color: #777;
+    background: #ccc;
+}
+  
+.picture__img {
+    max-width: 100%;
+}
+#previewContainer{
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: 220px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    overflow: hidden;
+    border: 1px solid var(--verde_claro);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
 
 @media (min-width: 600px){
     .buttons-form{

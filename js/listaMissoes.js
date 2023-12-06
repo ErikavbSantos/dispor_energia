@@ -4,7 +4,6 @@ axios
   .get("http://localhost:8080/listaMissao")
   .then((response) => {
     const datalistMissoes = response.data;
-    console.log(datalistMissoes);
     let selecionada = 0;
     datalistMissoes
       .filter((missao) => !missao.rascunho)
@@ -12,7 +11,7 @@ axios
         const ul = document.createElement("ul");
         cards.appendChild(ul);
 
-        ul.id = missao.id;
+        //ul.id = missao.id;
         ul.classList.add("missaocardindividual");
 
         //criando div do overlay
@@ -24,7 +23,7 @@ axios
 
         //adicionando botões na div
         div.innerHTML += `<div class='btn-overlay'>
-          <button id="btn-detalhes">Detalhes</button>
+          <a><button id="btn-detalhes">Detalhes</button></a>
           <button id="btn-selecionar">Selecionar</button></div>
       `;
 
@@ -50,8 +49,46 @@ axios
             }
             const seleciona = document.querySelector(".selecionada");
             seleciona.innerHTML = ` ${selecionada}`;
+          } else if (
+            clicked.tagName === "BUTTON" &&
+            clicked.id === "btn-detalhes"
+          ) {
+            console.log("clicou");
+
+            //const linkDetalhes = document.getElementById("btn-a");
+
+            const urlDetalhes = `avaliacaoMissao.html?nome=${encodeURIComponent(
+              missao.nome_missao
+            )}&categoria=${encodeURIComponent(
+              missao.categoria
+            )}&descricao=${encodeURIComponent(
+              missao.descricao
+            )}&pontuacao=${encodeURIComponent(
+              missao.pontuacao
+            )}&tempo=${encodeURIComponent(
+              missao.tempo_execucao
+            )}&dado=${encodeURIComponent(
+              missao.dado
+            )}&frequencia=${encodeURIComponent(
+              missao.frequencia_reativacao
+            )}&orientacao1=${encodeURIComponent(
+              missao.orientacao1
+            )}&orientacao2=${encodeURIComponent(
+              missao.orientacao2
+            )}&orientacao3=${encodeURIComponent(
+              missao.orientacao3
+            )}&orientacao4=${encodeURIComponent(
+              missao.orientacao4
+            )}&estagio=${encodeURIComponent(
+              missao.progresso
+            )}&img=${encodeURIComponent(missao.img)}&id=${encodeURIComponent(
+              missao.id
+            )}`;
+
+            window.location.href = urlDetalhes;
           }
         });
+        
       });
   })
   .catch((err) => {

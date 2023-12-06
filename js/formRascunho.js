@@ -16,8 +16,13 @@ const estagio = parametros.get("estagio");
 const rascunhoId = parametros.get("id");
 const img = parametros.get("img");
 
-const inputImg = document.getElementById("img-icone");
-inputImg.src = img;
+/* const imgElement = document.createElement('img');
+imgElement.src = img;
+
+const previewContainer = document.getElementById("previewContainer");
+previewContainer.appendChild(imgElement); */
+
+
 
 const inputNome = document.getElementById("nome");
 inputNome.value = nome;
@@ -44,6 +49,9 @@ const inputEstagio = document.getElementById("estagio");
 inputEstagio.value = estagio;
 /* const inputPontuacao = document.getElementById("pontuacao");
 inputPontuacao.value = pontuacao; */
+
+
+
 
 
 
@@ -105,3 +113,5 @@ document.getElementById("img-icone").addEventListener("change", function () {
     fileLabel.textContent = "Arquivo selecionado";
   }
 });
+
+
