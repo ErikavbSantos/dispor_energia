@@ -99,7 +99,7 @@ var enviar = document.getElementById('enviar')
   //Recebendo dados mocados e enviando para formulario do avaliador
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch('dadosMissoes.json')
+    fetch('/js/dadosMissoes.json')
         .then(response => response.json())
         .then(data => preencherFormulario(data))
         .catch(error => console.error('Erro ao carregar dados:', error));

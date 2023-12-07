@@ -99,7 +99,7 @@ td div {
 
 .modal-aprovado,  .modal-rejeitado{
     background-color: #fefefe;
-    margin: 30% auto;
+    margin: 20% auto;
     padding: 20px;
     border: 2px solid #787878;
     width: 400px;
@@ -110,7 +110,7 @@ td div {
 
 .modal-aprovadoR{
     background-color: #fefefe;
-    margin: 30% auto;
+    margin: 20% auto;
     padding: 20px;
     border: 2px solid #787878;
     width: 400px;
@@ -118,6 +118,21 @@ td div {
     border-radius: 10px;
 }
 
+.modal-aprovado-form{
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 2px solid #787878;
+    width: 400px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.modal-aprovado-form p{
+    font-size: 18px;
+    color: black;
+    margin-top: 25px;
+}
 .modal-aprovado h1, .modal-aprovadoR h1, .modal-rejeitado h1{
     font-size: 25px;
     color: black;
@@ -187,7 +202,11 @@ td div {
 }
 .titulo-close{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+}
+.titulo-close-form{
+    display: flex;
+    justify-content: flex-end;
 }
 .rejeitada{
     color: #DD3F3F;

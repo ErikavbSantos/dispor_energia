@@ -23,7 +23,8 @@ const previewContainer = document.getElementById("previewContainer");
 previewContainer.appendChild(imgElement); */
 
 
-
+const inputImg = document.getElementById('img-icone');
+inputImg.src = img;
 const inputNome = document.getElementById("nome");
 inputNome.value = nome;
 const inputCategoria = document.getElementById("categoria");
