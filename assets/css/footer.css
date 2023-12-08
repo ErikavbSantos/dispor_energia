@@ -1,0 +1,23 @@
+.navbar{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .navbar {
+        display: flex;
+        background-color: var(--verde_escuro);
+        padding: 20px 0px 20px 0px;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1000;
+        
+    }
+    
+    .icone__nav {
+        height: 24px;
+        width: fit-content;
+    }
+}

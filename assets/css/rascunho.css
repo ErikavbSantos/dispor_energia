@@ -1,0 +1,145 @@
+.rascunho ul{
+    border: 1.5px solid #DCDCDC;
+    border-radius: 4px;
+    list-style: none;
+    width: 350px;
+    max-height: 250px;
+    padding: 20px;
+}
+.ul-img img{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.ul-img{
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+}
+.rascunho ul li{
+    margin-bottom: 20px;
+    color: #04473A;
+    font-weight: 600;
+    display: -webkit-box; /* Fallback para navegadores com suporte ao prefixo -webkit- */
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis;
+}
+.rascunho {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 40px;
+    margin-top: 40px;  
+}
+.rascunho ul li span{
+    color: black;
+    font-weight: 400;
+}
+.rascunho-main{
+    padding: 37px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 47%);
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 2px solid #787878;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+.modal-content h1{
+    font-size: 25px;
+    color: black;
+}
+.modal-content p{
+    font-size: 18px;
+    color: black;
+    margin-top: 12px;
+}
+.btn-modal-r{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+#cancelDelete, #confirmDelete{
+    border: none;
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+}
+#cancelDelete{
+    background-color: var(--verde_claro);
+}
+#confirmDelete{
+    background-color: #DD3F3F;
+}
+
+
+
+
+@media (max-width: 600px){
+    .rascunho-main{
+        padding: 25px;
+    }
+    .rascunho {
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .rascunho ul{
+        width: initial;
+    }
+    .modal-content{
+        margin: 50% auto;
+        width: 265px;
+        height: 170px;
+        padding: 15px;
+    }
+    .modal-content p{
+        font-size: 15px;
+        color: black;
+        margin-top: 12px;
+    }
+    .btn-modal-r{
+        gap: 20px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    #cancelDelete, #confirmDelete{
+        border: none;
+        padding: 13px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: white;
+    }
+}
+@media (max-width: 770px ){
+    .rascunho {
+        justify-content: center;
+    }
+    .rascunho ul{
+        width: 400px;
+        padding: 20px;
+    }
+}
+@media (min-width: 760px) and (max-width: 800px){
+    .modal-content{
+        margin: 35% auto;
+    }
+}

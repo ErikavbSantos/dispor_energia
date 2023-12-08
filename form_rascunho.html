@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="./assets/img/logo__dispor__favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     
-    <title>Dispor — Adicione uma missão</title>
+    <title>Dispor — Rascunhos</title>
     
     
     <!-- Fontes usadas no projeto -->
@@ -25,39 +25,32 @@
     </div>
     
     <header id="headform">
-        <span></span>
-        <h1 class="titulo-missao">Nova missão</h1>
-        <h2 class="subtitulo-missao">Insira os detalhes:</h2>
+        <h1 class="titulo-missao">Rascunho</h1>
     </header>
 
     <main>
-        <form class="forms-missao" id="forms-missao" method="POST">
+        <form class="forms-missao">
 
             <div id="modal-aprovado">
                 <div class="modal-aprovado-form">
                     <div class="titulo-close-form">
                         <span id="close-aprovado"><img src="/assets/img/letra-x.png" alt="letra x"></span>
                     </div>
-                    <p>Sua missão foi SUBMETIDA com sucesso!</p>
+                    <p>Sua missão foi ATUALIZADA com sucesso!</p>
                 </div>
             </div>
-
 
             <div class="form-container">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 <input type="text" name="categoria" id="categoria" placeholder="Categoria" required>
-                <textarea name="descricao" id="descricao" cols="30" rows="3" placeholder="Descrição da missão" required></textarea >
+                <textarea name="categoria" id="descricao" cols="30" rows="3" placeholder="Descrição da missão" required></textarea >
                 <input type="number" name="pontuacao" id="pontuacao" placeholder="Pontuação">
 
-                <label class="picture" for="picture__input" tabIndex="0">
-                    <span class="picture__image"></span>
-                </label>
-                <input type="file" name="picture__input" id="picture__input">
+            
+                <label for="img-icone" id="label-file">Add ícone da missão</label>
+                <input type="file" name="img-icone" id="img-icone" accept="image/*" required>
 
-
-                <p id="erroData" style="display: none; color: red;">A data não pode ser anterior à data de hoje.</p>
                 <input type="datetime" name="tempo" id="tempo" placeholder="Tempo limite" required>
-                
 
                 <div class="custom-select">
                     <select id="dado-interesse" name="dado" required class="select-progresso">
@@ -96,6 +89,7 @@
                 <textarea name="como" id="orientacao2" cols="30" rows="3" placeholder="Como fazer?" required></textarea >
                 <textarea name="quando" id="orientacao3" cols="30" rows="3" placeholder="Quando fazer?" required></textarea >
                 <textarea name="onde" id="orientacao4" cols="30" rows="3" placeholder="Onde fazer?" required></textarea >
+
                 <div class="custom-select">
                     <select id="estagio" name="estagio" required class="select-progresso">
                         <option value="" disabled selected>Estágio de Progresso</option>
@@ -113,8 +107,8 @@
                 
             </div>
             <div class="buttons-form">
-                <button class="rascunho-btn" id="rascunho-btn" type="submit">Rascunho</button>
-                <button class="cadastrar" id="cadastrar-btn" type="submit">CADASTRAR</button>
+                <button class="rascunho-btn" id="rascunho-btn-form" type="submit">Rascunho</button>
+                <button class="cadastrar" id="cadastrar-btn-form" type="submit">CADASTRAR</button>
             </div>
             
             
@@ -128,6 +122,6 @@
         <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
         <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
     </div>
-    <script src="/js/form.js" defer></script>
+    <script src="/js/formRascunho.js" defer></script>
 </body>
 </html>

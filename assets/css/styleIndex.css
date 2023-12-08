@@ -1,0 +1,513 @@
+
+
+
+@media screen and (max-width: 440px ) {
+.footpoints {
+    position: absolute;
+    width: 100% !important;
+    bottom: 0;
+    background-color: var(--verde_escuro);
+    margin: 0%;
+    height: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding: 5px 0px 10px 0px;
+    text-overflow: ellipsis;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    
+ 
+    
+}
+.footpoints p{
+    color: #ffffff;
+    padding: 6px 50px 10px 50px ;
+    
+}
+
+
+
+.foot_ambientes {
+    position: absolute;
+    width: 100% !important;
+    bottom: 0;
+    background-color: var(--verde_escuro);
+    margin: 0%;
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+.header_ambientes{
+    position: absolute;
+    width: 100% !important;
+    top: 0;
+    background-color: #C8E5D7;
+    margin: 0%;
+    height: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    padding: 0px 0px 20px 0px;
+    text-overflow: ellipsis;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    width: 307px;
+}
+
+.dropdown_ambientes{
+display: flex;
+margin: 26px 26px 0px 26px;
+width: 308px;
+height: 168px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 2px solid #0B8E74;
+position: relative;
+font-size: 10pt;
+border-radius: 0px 0px 10px 10px;
+}
+.footico{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    
+   
+
+}
+
+#tam_ico{
+    width: 40px;
+    height: 30px;
+    background-color: #04473A;
+    align-items: center;
+    align-content: center;
+    margin: 0 30 0 0;
+    z-index: 100;
+    position: fixed;
+    padding: 10 0 0 0;
+    
+}
+
+#tam_ico_ambiente{
+    width: 20px;
+    height: 27px;
+    background-color: #04473A;
+    align-items: center;
+    align-content: center;
+    margin: 19 0 0 15;
+    z-index: 100;
+    position: relative;
+    padding: 10 10 5 10;
+    border-radius: 2;
+    
+}
+.cabeca{
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 10px 10px;
+
+}
+
+.cabeca h4{
+    margin: 0 2 4 5  !important;
+    padding:  0 0 0 0;
+}
+*/
+.missoes{
+    line-height: normal;
+    padding: 1px 1px 0 0;
+    font-family: Inter;
+    font-size: 16px;
+    margin: 0 26 30 26;
+    width: 360px;
+    height: 188px;
+    display: flex;
+}
+
+.missoes p{
+    margin: 10 10;
+}
+
+.points {
+    display: flex;
+    margin: 0 26 30 26;
+    
+    height: 168px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #0B8E74;
+    position: relative;
+    font-size: 10pt;
+    color: white;
+}
+   
+    #card__ambientes{
+        border: 2px solid var(--verde_escuro);
+        margin: 0 26 30 26;
+        border-top: 2px solid var(--verde_escuro);
+        border-radius: 0px 0px 12px 12px;
+       
+       
+    }
+
+
+/* Estilos específicos para a linha vertical em dispositivos pequenos */
+.vertical-line {
+    width: 2px !important; /* Largura da linha vertical */
+    border: 2px !important;
+    height: 95px; /* Altura da linha vertical (ajuste conforme necessário) */
+    background-color: var(--verde_escuro); /* Cor da linha vertical */
+    margin: 25px 20px 20px 20px ; /* Margens horizontais para espaçamento entre a linha e as imagens */
+    align-items: center;
+    text-indent: 100%;
+
+}
+
+/* Estilos para .icocart */
+.icocart {
+width: 50px;
+height: 50px;
+flex-shrink: 0;
+padding: 10;
+}
+
+/* Estilos para .icopoint */
+.icopoint {
+    width: 70px;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+     /* Centraliza o texto horizontalmente */
+     white-space: nowrap;
+     line-height: 0.2;
+     height: fit-content;
+
+     
+   
+}
+.icopoint p{
+    padding-top: 10px;
+}
+
+/* Estilos para a linha vertical */
+.vertical-line {
+    width: 1px; /* Largura da linha vertical */
+    height: 90px; /* Altura da linha vertical (ajuste conforme necessário) */
+    background-color: var(--verde_escuro); /* Cor da linha vertical */
+    margin: 20px 20px; /* Margens horizontais para espaçamento entre a linha e as imagens */
+}
+
+/* Estilos para as divs dentro de .points, excluindo .vertical-line */
+.points > .icopoint,
+.points > div:not(.vertical-line) {
+    flex-grow: 1; /* Faz com que apenas as divs ocupem o mesmo espaço horizontalmente */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px; /* Adiciona espaço interno para o conteúdo */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas igualmente espaçadas */
+    gap: 10px; /* Espaçamento entre os itens do grid */
+    margin: 5px 0px 70px 7px;
+    grid-column-start: initial;
+    
+}
+
+.grid-item {
+    background-color: var(--verde_claro);
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    margin: 50  10 16 0;
+    width: 100px;
+    height: 109px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: flex; /* Alterado para flex para dispor os itens lado a lado */
+    justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+/* Estilos para os itens do grid */
+.grid-item-ambiente {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    flex-grow: 1; /* Permite que os itens cresçam para preencher o espaço disponível */
+}
+}
+
+/* Estilos para dispositivos com largura máxima de 412px */
+@media screen and (min-width: 441px ) {
+    .footpoints {
+        position: absolute;
+        width: 100% !important;
+        bottom: 0;
+        background-color: var(--verde_escuro);
+        margin: 0%;
+        height: 20px;
+        color: white;
+        text-align: center;
+        align-content: center;
+        padding: 5px 0px 10px 0px;
+        text-overflow: ellipsis;
+        justify-content: center;
+        align-items: center;
+    
+        
+     
+        
+    }
+    .footpoints p{
+        color: #ffffff;
+        padding: 6px 50px 10px 50px ;
+        
+    }
+    
+    
+    
+    .foot_ambientes {
+        position: absolute;
+        width: 100% !important;
+        bottom: 0;
+        background-color: var(--verde_escuro);
+        margin: 0%;
+        height: 20px;
+        color: white;
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: row;
+    }
+    
+    .header_ambientes{
+        position: absolute;
+        width: 100% !important;
+        top: 0;
+        background-color: #C8E5D7;
+        margin: 0%;
+        height: 20px;
+        color: white;
+        text-align: center;
+        align-content: center;
+        padding: 0px 0px 20px 0px;
+        text-overflow: ellipsis;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: row;
+        width: 307px;
+    }
+    
+    .dropdown_ambientes{
+    display: flex;
+    margin: 26px 26px 0px 26px;
+    width: 308px;
+    height: 168px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #0B8E74;
+    position: relative;
+    font-size: 10pt;
+    border-radius: 0px 0px 10px 10px;
+    }
+    .footico{
+        width: 5%; /* Largura em porcentagem */
+        height: auto; /* A altura ajustará automaticamente para manter a proporção */
+        margin: 0;
+        padding: 0;
+        
+       
+    
+    }
+    
+    #tam_ico{
+    width: 10%; /* Largura em porcentagem */
+    height: 5%; /* Altura em porcentagem */
+    background-color: #04473A;
+    align-items: center;
+    align-content: center;
+    margin: 0 5%; /* Margens em porcentagem */
+    z-index: 100;
+    position: fixed;
+    padding: 1%; /* Padding em porcentagem */
+    border-radius: 2%; /* Arredondamento de borda em porcentagem */
+        
+    }
+    
+    #tam_ico_ambiente{
+        width: 5%; /* Largura em porcentagem */
+        height: 5%; /* Altura em porcentagem */
+        background-color: #04473A;
+        align-items: center;
+        align-content: center;
+        margin: 2% 2%; /* Margens em porcentagem */
+        z-index: 100;
+        position: relative;
+        padding: 2%; /* Padding em porcentagem */
+        border-radius: 2%; /* Arredondamento de borda em porcentagem */
+    }
+    .cabeca {
+        font-size: 2em; /* Use 'em' para definir o tamanho da fonte em relação ao elemento pai */
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 1em 1em; /* Use 'em' para margens */
+    }
+    
+    .cabeca h4{
+        margin: 0 2 4 5  !important;
+        padding:  0 0 0 0;
+    }
+    */
+    .missoes{
+        line-height: normal;
+        padding: 0.1em 0.1em 0 0; /* Use 'em' para padding */
+        font-family: Inter;
+        font-size: 1em; /* Tamanho de fonte relativo */
+        margin: 2.5% 1% 2.5% 2.5%;
+        width: 100%; /* Use 100% para que o elemento ocupe a largura total do pai */
+        height: auto; /* Deixe a altura se ajustar ao conteúdo */
+        display: flex;
+    }
+    
+    .missoes p{
+        margin: 10 10;
+    }
+    
+    .points {
+        display: flex;
+        margin: 26px 26px 0px 26px;
+       
+        height: 168px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 2px solid #0B8E74;
+        position: relative;
+        font-size: 10pt;
+        color: white;
+    }
+       
+        #card__ambientes{
+            border: 2px solid var(--verde_escuro);
+            margin: 0 26 30 26;
+            border-top: 2px solid var(--verde_escuro);
+            border-radius: 0px 0px 12px 12px;
+            
+           
+        }
+    
+    
+    /* Estilos específicos para a linha vertical em dispositivos pequenos */
+    .vertical-line {
+        width: 2px !important; /* Largura da linha vertical */
+        border: 2px !important;
+        height: 95px; /* Altura da linha vertical (ajuste conforme necessário) */
+        background-color: var(--verde_escuro); /* Cor da linha vertical */
+        margin: 25px 20px 20px 20px ; /* Margens horizontais para espaçamento entre a linha e as imagens */
+        align-items: center;
+        text-indent: 100%;
+    
+    }
+    
+    /* Estilos para .icocart */
+    .icocart {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    padding: 10;
+    }
+    
+    /* Estilos para .icopoint */
+    .icopoint {
+        width: 70px;
+        justify-content: center; /* Centraliza verticalmente o conteúdo */
+         /* Centraliza o texto horizontalmente */
+         white-space: nowrap;
+         line-height: 0.2;
+         height: fit-content;
+    
+         
+       
+    }
+    .icopoint p{
+        padding-top: 10px;
+    }
+    
+    /* Estilos para a linha vertical */
+    .vertical-line {
+        width: 1px; /* Largura da linha vertical */
+        height: 90px; /* Altura da linha vertical (ajuste conforme necessário) */
+        background-color: var(--verde_escuro); /* Cor da linha vertical */
+        margin: 20px 20px; /* Margens horizontais para espaçamento entre a linha e as imagens */
+    }
+    
+    /* Estilos para as divs dentro de .points, excluindo .vertical-line */
+    .points > .icopoint,
+    .points > div:not(.vertical-line) {
+        flex-grow: 1; /* Faz com que apenas as divs ocupem o mesmo espaço horizontalmente */
+        text-align: center; /* Centraliza o conteúdo horizontalmente */
+        padding: 10px; /* Adiciona espaço interno para o conteúdo */
+        justify-content: center; /* Centraliza verticalmente o conteúdo */
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas igualmente espaçadas */
+        gap: 10px; /* Espaçamento entre os itens do grid */
+        margin: 5px 0px 70px 7px;
+        grid-column-start: initial;
+        
+    }
+    
+    .grid-item {
+        background-color: var(--verde_claro);
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        margin: 50  10 16 0;
+        height: 109px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .grid-container {
+        display: flex; /* Alterado para flex para dispor os itens lado a lado */
+        justify-content: space-between; /* Distribui os itens igualmente */
+    }
+    
+    /* Estilos para os itens do grid */
+    .grid-item-ambiente {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        flex-grow: 1; /* Permite que os itens cresçam para preencher o espaço disponível */
+    }
+    
+}

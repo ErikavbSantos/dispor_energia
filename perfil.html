@@ -2,10 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/logo__dispor__favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="stylePerfil.css">
-    <title>Dispor — Perfil</title>
-    <script src="script.js"></script>
+    <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Perfil</title>
+    
 
     <!-- Fontes usadas no projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,32 +14,251 @@
 </head>
 <body>
    
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="perfil.html">Perfil</a>
+        <a href="statusmissao.html"> Status</a>
+        <a href="rascunho.html">Rascunho</a>
+        <a href="listaMissoesAvaliador.html">Missões</a>
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
     <div class="head">
         <div class="nome__foto">
-            <img src="/assets/foto__perfil__placeholder.png" alt="foto de perfil">
-            <p>Maria<br>Albelinda</p>
+            <img src="./assets/img/profile_image_placeholder.png" alt="foto de perfil">
+            <p>Nome do<br>Usuário</p>
         </div>
         <div class="nivel__ganhos">
             <p class="nivel">Iniciante</p>
-            <img src="/assets/barra__nível__perfil.svg" alt="barra de nível"/>
+            <img src="./assets/img/barra__nível__perfil.svg" alt="barra de nível"/>
             <p class="nivel__mensagem">Nível de consumo consciente</p>
             <p class="ganho"> Ganhou 00 PW</p>
         </div>
     </div>
 
-    <div class="card__missao">
-        <div class="nome__icone">
-            <p class="nome__missao">Local Inicial</p>
-            <img src="/assets/moeda_home.svg" alt="icone da missão(placeholder)">
-        </div>
-        <div class="detalhes">
-            <div class="premio">
-                <p class="valor__premio">15 PW</p>
-                <img src="/assets/moeda__card__missao.svg" alt="icone moeda">
+    <div class="wrapper">
+        <div class="card__ambientes">
+            <div class="topo">
+                <img class="pin" src="./assets/img/pin__card__local.svg" alt="pin">
+                <p>Selecione um local</p>
+                <img class="triangulo" src="./assets/img/dropdown__triangulo.svg" alt="triangulo">
             </div>
-            <p class="descriçao">Adicione o seu principal local de consumo</p>
-            <p class="duraçao">Tempo restante: 10 min</p>
+    
+            <div class="ambientes">
+                <div class="ambiente">
+                    <img src="./assets/img/plus__icon__local.svg" alt="icone +">
+                    <p>Ambiente 1</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider">
+                            <div class="circle">
+                                <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path data-original="#000-000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                                    </g>
+                                </svg>
+                                <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </label>          
+                </div>
+        
+                <div class="ambiente">
+                    <img src="./assets/img/plus__icon__local.svg" alt="icone +">
+                    <p>Ambiente 2</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider">
+                            <div class="circle">
+                                <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                                    </g>
+                                </svg>
+                                <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </label> 
+                </div>
+        
+                <div class="ambiente">
+                    <img src="./assets/img/plus__icon__local.svg" alt="icone +">
+                    <p>Ambiente 3</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="slider">
+                            <div class="circle">
+                                <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                                    </g>
+                                </svg>
+                                <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </label>   
+                </div>
+            </div>
+    
+            <div class="base">
+                <img src="./assets/img/barras__icon.svg" alt="barras">
+                <p>R$ 0,00 de consumo estimado</p>
+            </div>
         </div>
+        <a class="nova__missao" href="form.html">Sugerir nova missão ＋<br><br><img src="/assets/img/moeda_home.svg" alt="coin"></a>
     </div>
+
+    <section class="main__section">
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__missao">
+            <div class="nome__icone">
+                <p class="nome__missao">Local Inicial</p>
+                <img src="./assets/img/moeda_home.svg" alt="icone da missão(placeholder)">
+            </div>
+            <div class="detalhes">
+                <div class="premio">
+                    <p class="valor__premio">15 PW</p>
+                    <img src="./assets/img/moeda__card__missao.svg" alt="icone moeda">
+                </div>
+                <p class="descriçao">Adicione o seu principal local de consumo</p>
+                <p class="duraçao">Tempo restante: 10 min</p>
+            </div>
+            </div>
+        </div>
+      </section>
+    
+      <div class="navbar">
+        <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
+        <a href="perfil.html"><img class="icone__nav" src="./assets/img/pessoa__nav.svg" alt="icone de mapa"></a>
+        <a href="statusmissao.html"><img class="icone__nav" src="/assets/img/missions-icon.svg" alt="icone missões icon"></a>
+        <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
+        <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
+    </div>
+
+    <script src="/js/script.js" defer></script>
 </body>
 </html>

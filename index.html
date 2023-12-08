@@ -2,26 +2,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/logo__dispor__favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="styleIndex.css">
-    <title>Dispor Energia</title>
-    <script src="script.js"></script>
+    <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Home</title>
+    
 
     <!-- Fontes usadas no projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
    
-    <div>  
+    <div class="topnav" id="myTopnav">
+        <a href="perfil.html">Perfil</a>
+        <a href="statusmissao.html"> Status</a>
+        <a href="rascunho.html">Rascunho</a>
+        <a href="listaMissoesAvaliador.html">Missões</a>
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <div class="cabeca">  
         <h2>Olá, Maria!</h2>
         <h4>Sua joranada sustentável começou.</h4>
     </div>
  
     <section class='points'>
         <div class="icopoint">
-            <img class="icocart" src="/assets/moeda_home.svg" alt=""> 
+            <img class="icocart" src="./assets/img/moeda_home.svg" alt=""> 
             <p>R$0,00</p>
             <p>do game</p>
         </div>
@@ -29,25 +38,131 @@
         <div class="vertical-line"></div>
         
         <div class="icopoint">
-            <img class="icocart"  src="/assets/arvores__home.svg" alt="">
+            <img class="icocart"  src="./assets/img/arvores__home.svg" alt="">
            <p>0 árvores</p>
            <p>pouparam esforço</p>
         </div>
+        <footer class="footpoints" onclick="">
+          
+            <p>Realize misssões e gere ganhos!</p>
+           
+       </footer>
+   
         
-        <section class="footpoints" onclick="">
-            <div class="text-footer-points">
-                <p>Realize misssões e gere ganhos!</p>
-            </div>
-        </section>
     </section>
+    
+    <br>
+    <div id="card__ambientes" id="card-amb">
+        <div class="topo">
+            <img class="pin" src="./assets/img/pin__card__local.svg" alt="pin">
+            <p>Selecione um local</p>
+            <img class="triangulo" src="./assets/img/dropdown__triangulo.svg" alt="triangulo">
+        </div>
+
+        <div class="ambientes">
+            <div class="ambiente">
+                <img src="./assets/img/plus__icon__local.svg" alt="icone +">
+                <p>Ambiente 1</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider">
+                        <div class="circle">
+                            <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                                </g>
+                            </svg>
+                            <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </label>          
+            </div>
+    
+            <div class="ambiente">
+                <img src="./assets/img/plus__icon__local.svg" alt="icone +">
+                <p>Ambiente 2</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider">
+                        <div class="circle">
+                            <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                                </g>
+                            </svg>
+                            <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </label> 
+            </div>
+    
+            <div class="ambiente">
+                <img src="./assets/img/plus__icon__local.svg" alt="icone +">
+                <p>Ambiente 3</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="slider">
+                        <div class="circle">
+                            <svg class="cross" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 365.696 365.696" y="0" x="0" height="6" width="6" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path data-original="#000000" fill="currentColor" d="M243.188 182.86 356.32 69.726c12.5-12.5 12.5-32.766 0-45.247L341.238 9.398c-12.504-12.503-32.77-12.503-45.25 0L182.86 122.528 69.727 9.374c-12.5-12.5-32.766-12.5-45.247 0L9.375 24.457c-12.5 12.504-12.5 32.77 0 45.25l113.152 113.152L9.398 295.99c-12.503 12.503-12.503 32.769 0 45.25L24.48 356.32c12.5 12.5 32.766 12.5 45.247 0l113.132-113.132L295.99 356.32c12.503 12.5 32.769 12.5 45.25 0l15.081-15.082c12.5-12.504 12.5-32.77 0-45.25zm0 0"></path>
+                                </g>
+                            </svg>
+                            <svg class="checkmark" xml:space="preserve" style="enable-background:new 0 0 512 512" viewBox="0 0 24 24" y="0" x="0" height="10" width="10" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path class="" data-original="#000000" fill="currentColor" d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </label>   
+            </div>
+        </div>
+
+        <div class="base">
+            <img src="./assets/img/barras__icon.svg" alt="barras">
+            <p>R$ 0,00 de consumo estimado</p>
+        </div>
+    </div>
+
+
+    <div class="missoes">   
+    <p>
+    <strong> Missões</strong> 0 de 6 feitas
+    </p>
+
+    <div class="grid">
+        <div class="grid-item">
+         Submete missão
+        </div>
+
+        <div class="grid-item">
+           missão
+        </div>
+
+        <div class="grid-item">
+            missão
+        </div>
+    </div>
+
+    </div>
+
 
     <div class="navbar">
-        <a href=""><img class="icone__casa" src="/assets/casa__nav.svg" alt="icone de casa"></a>
-        <a href="perfil.html"><img class="icone__mapa" src="/assets/mapa__nav.svg" alt="icone de mapa"></a>
-        <img class="icone__logo" src="/assets/logo__dispor__nav.svg" alt="icone logo dispor">
-        <img class="icone__carteira" src="/assets/carteira__nav.svg" alt="icone carteira">
-        <img class="icone__pessoa" src="/assets/pessoa__nav.svg" alt="icone pessoa">
+        <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
+        <a href="perfil.html"><img class="icone__nav" src="./assets/img/pessoa__nav.svg" alt="icone de mapa"></a>
+        <a href="statusmissao.html"><img class="icone__nav" src="/assets/img/missions-icon.svg" alt="icone missões icon"></a>
+        <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
+        <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
     </div>
-    
+    <script src="/js/script.js" defer></script>
 </body>
 </html>

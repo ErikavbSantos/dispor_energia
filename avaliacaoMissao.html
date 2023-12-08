@@ -1,0 +1,238 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Avaliação de missão</title>
+
+
+    <!-- Fontes usadas no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="topnav" id="myTopnav">
+        <a href="perfil.html">Perfil</a>
+        <a href="statusmissao.html"> Status</a>
+        <a href="rascunho.html">Rascunho</a>
+        <a href="listaMissoesAvaliador.html">Missões</a>
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<body>
+    <div class="form-validacao" >
+        <form action="/" method="post" class="avaliacaoForm">
+
+            <!-- Início itens da esquerda-->
+            <div class="campos-esquerda">
+
+            
+
+                        <div class="campo">
+                            <input class="inputtext"  type="text" id="nome-ava" name="Nome" placeholder="Nome" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_name" value="Aprovado" > <br>
+                                   
+                                    <input class="radio_ressalvas" type="radio" name="status_name" value="Aprovado com ressalvas"><br>
+
+                                    <input class="radio_rejeitado" type="radio" name="status_name" value="Rejeitado"><br>
+                            </div>
+                        </div>
+                  
+
+                   
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" id="categoria-ava" name="categoria" placeholder="Categoria" disabled="true" >
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_categoria" value="Aprovado" > <br>
+                                   
+                                    <input class="radio_ressalvas" type="radio" name="status_categoria" value="Aprovado com ressalvas"><br>
+
+                                    <input class="radio_rejeitado" type="radio" name="status_categoria" value="Rejeitado"><br>
+                            </div>
+                        </div>
+                   
+
+                    
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" id="tempo-ava" name="Tempo-limite" placeholder="Tempo limite" disabled="true" >
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_tempo" value="Aprovado" > <br>
+                                   
+                                    <input class="radio_ressalvas" type="radio" name="status_tempo" value="Aprovado com ressalvas"><br>
+
+                                    <input class="radio_rejeitado" type="radio" name="status_tempo" value="Rejeitado"><br>
+                            </div>
+                        </div>
+                 
+
+
+                    
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" id="dado-ava" name="dado-interesse" placeholder="dado de interesse" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_dado" value="Aprovado" > <br>
+                                   
+                                <input class="radio_ressalvas" type="radio" name="status_dado" value="Aprovado com ressalvas"><br>
+
+                                <input class="radio_rejeitado" type="radio" name="status_dado" value="Rejeitado"><br>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" id="frequencia-ava" name="frequencia" placeholder="Frequência de reativação" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_frequencia" value="Aprovado" > <br>
+                                   
+                                <input class="radio_ressalvas" type="radio" name="status_frequencia" value="Aprovado com ressalvas"><br>
+
+                                <input class="radio_rejeitado" type="radio" name="status_frequencia" value="Rejeitado"><br>
+                            </div>
+                        </div>
+
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" id="estagio-ava" name="frequencia" placeholder="Estágio de progresso" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_estagio" value="Aprovado" > <br>
+                                   
+                                <input class="radio_ressalvas" type="radio" name="status_estagio" value="Aprovado com ressalvas"><br>
+
+                                <input class="radio_rejeitado" type="radio" name="status_estagio" value="Rejeitado"><br>
+                            </div>
+                        </div>  
+
+
+                    
+
+                        <div class="campo">
+                            <input class="inputtext" type="text" id="pontuacao-ava" name="pontuacao" placeholder="Pontuação" disabled="true">
+
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_pontuacao" value="Aprovado" > <br>
+                                   
+                                <input class="radio_ressalvas" type="radio" name="status_pontuacao" value="Aprovado com ressalvas"><br>
+
+                                <input class="radio_rejeitado" type="radio" name="status_pontuacao" value="Rejeitado"><br>
+                            </div>
+                        </div>
+                        <div class="input-check">
+                            <input class="inputtext-direita input-oq" type="text" id="orien1-ava" name="oqfzr" placeholder="O que fazer?" disabled="true">
+                            <div class="checkbox-group">
+                                <input class="radio_aprovado" type="radio" name="status_oqfzr" value="Aprovado" data-tooltip="Aprovado"> <br>
+                               
+                                <input class="radio_ressalvas" type="radio" name="status_oqfzr"  value="Aprovado com ressalvas"><br>
+                                <input class="radio_rejeitado" type="radio" name="status_oqfzr" value="Rejeitado"><br>
+                            </div>
+                        </div>
+
+                   
+
+                        
+                    
+
+            </div>
+<!--Final dos itens da esquerda-->
+
+
+<!--Início itens da direita-->
+            <div class="campos-direita">
+
+               
+
+                            
+
+                            <div class="input-check">
+                                <input class="inputtext-direita"  type="text" id="orien2-ava" name="ComoFzr" placeholder="Como fazer?" disabled="true">
+        
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_comofzr" value="Aprovado" > <br>
+                                   
+                                    <input class="radio_ressalvas"  type="radio" name="status_comofzr" value="Aprovado com ressalvas"><br>
+
+                                    <input class="radio_rejeitado" type="radio" name="status_comofzr" value="Rejeitado"><br>
+
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="input-check">
+                                <input class="inputtext-direita" type="text" id="orien3-ava" name="ondeFzr" placeholder="Onde fazer?" disabled="true">
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_ondefzr" value="Aprovado" > <br>
+                                    <input class="radio_ressalvas" type="radio" name="status_ondefzr" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_ondefzr" value="Rejeitado"><br>
+                                </div>
+                            </div>
+
+                            <div class="input-check">
+                                <input class="inputtext-direita" type="text" id="orien4-ava" name="quandoFzr"  placeholder="Quando fazer ?" disabled="true">
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_quandofzr" value="Aprovado" > <br>
+                                    <input class="radio_ressalvas" type="radio" name="status_quandofzr" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_quandofzr" value="Rejeitado"><br>
+                                </div>
+                            </div>
+
+                            <div class="campo campo-img">
+                                <!-- <input type="text" id="imageLinkInput">
+                                <img src="" id="previewImage" alt="Preview Image"> -->
+                                <input class="inputtext-img" type="image" id="img-ava" contenteditable="icone" name="icone" placeholder="Icone" disabled="true">
+    
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_icone" value="Aprovado" > <br>
+                                    
+                                    <input class="radio_ressalvas" type="radio" name="status_icone" value="Aprovado com ressalvas"><br>
+    
+                                    <input class="radio_rejeitado" type="radio" name="status_icone" value="Rejeitado"><br>
+                                </div>
+                            </div>
+                            
+                            <div class="input-check">
+                                <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" placeholder="Descrição da missão" disabled="true">
+                                <div class="checkbox-group">
+                                    <input class="radio_aprovado" type="radio" name="status_descrição" value="Aprovado" > <br>
+                                   
+                                    <input class="radio_ressalvas" type="radio" name="status_descrição" value="Aprovado com ressalvas"><br>
+                                    <input class="radio_rejeitado" type="radio" name="status_descrição" value="Rejeitado"><br>
+                                </div>
+                            </div>
+
+                            
+
+                            
+            </div>
+            <button class="btn-validar">Validar</button>
+                
+           
+            </div>
+            
+      <!--Fim itens da direita-->
+        </form>
+
+        <div class="navbar">
+            <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
+            <a href="perfil.html"><img class="icone__nav" src="./assets/img/pessoa__nav.svg" alt="icone de mapa"></a>
+            <a href="statusmissao.html"><img class="icone__nav" src="/assets/img/missions-icon.svg" alt="icone missões icon"></a>
+            <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
+            <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
+        </div>
+
+    </div>
+    <script src="/js/avaliacao.js" defer></script>
+    </body>
+
+</html>

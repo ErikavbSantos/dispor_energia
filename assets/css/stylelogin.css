@@ -1,0 +1,196 @@
+#login{
+    background: linear-gradient(to right, rgba(132, 195, 130, 1), rgba(60, 167, 144, 1));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+.img-dispor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.imglogo{
+    height: 100px;
+}
+#disporlogo h1{
+    margin-top: 25px;
+}
+
+#disporlogo h1 span{
+    color: white;
+}
+
+#formlogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.imgformlogin1{
+    height: 89px;
+    position: absolute;
+    left: -32px;
+    top: -18px;
+}
+.imgformlogin2{
+    height: 95px;
+    position: absolute;
+    left: -50px;
+    top: -25px;
+   
+}
+.imgformlogin3{
+    height: 96px;
+    position: absolute;
+    left: -36px;
+    top: -22px;
+    
+    
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+}
+
+
+#formlogin button{
+    border: none;
+    background-color: aliceblue;
+    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px;
+    color: #0B8E74;
+    width: 295px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+#formlogin button:hover{
+    background-color: #84de81;
+}
+
+ 
+#formlogin input {
+    border: 1px solid white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px;
+    background-color: rgb(131, 194, 154);
+    color: white;
+    width: 320px;
+    height: 55px;
+    opacity:1;
+    padding-left: 35px;
+}
+
+#formlogin input::placeholder{
+    color: white;
+    font-size: 16px;
+}
+#formlogin select{
+    background-color: rgb(131, 194, 154);
+    color: white;
+    width: 320px;
+    height: 58px;
+    border: 1px solid white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 20px;
+    text-align: left;
+    padding-left: 35px; 
+    font-size: 16px;
+}
+.p-senha{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+    
+
+
+@media (max-width: 600px) {
+    .imglogo{
+        height: 80px;
+    }
+    .imglogo-nome{
+        height: 60px;
+    }
+    #disporlogo h1{
+        margin-top: 20px;
+        font-size: 27px;
+        text-align: center;
+    }
+    #formlogin input {
+        width: 280px;
+        height: 45px;
+        
+    }
+    #formlogin select{
+        width: 280px;
+        height: 45px;
+        
+    }
+    #formlogin button{
+        width: 290px;
+        height: 45px;
+    }
+    #formlogin .imgformlogin1{
+        height: 73px;
+        position: absolute;
+        top: -15px;
+        left: -20px;
+    }
+    #formlogin .imgformlogin2{
+        height: 76px;
+        position: absolute;
+        top: -20px;
+        left: -32px;
+    }
+
+    #formlogin .imgformlogin3{
+        height: 75px;
+        position: absolute;
+        left: -18px;
+        top: -18px;
+    }
+
+
+}
+@media (max-width: 770px){
+    #formlogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .input-container{
+        margin-left: 20px;
+    }
+    #formlogin select{
+        margin-right: 4px;
+    }
+    .imgformlogin3{
+        height: 97px;
+        top: -23px;
+    }
+}

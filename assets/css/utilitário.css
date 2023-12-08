@@ -1,0 +1,16 @@
+:root {
+    --verde_mais_escuro: #04473A;
+    --verde_escuro: #0B8E74;
+    --verde: #3BA790;
+    --verde_claro: #84C382;
+    --verde_pastel: #C8E5D7;
+    --amarelo: #DBC86C;
+    --vermelho: #B97788;
+    --cinza-claro: #F3F3F3;
+    --cinza-escuro: #787878;
+    --inter: font-family: 'Inter', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Login</title>
+    
+
+    <!-- Fontes usadas no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="login">
+    <main>
+        <header id="loginlogos">
+            <div id="imgs">
+                <div id="disporlogo">
+                    <div class="img-dispor">
+                        <img class='imglogo' src="assets/img/logo__dispor__favicon.svg" alt="">
+                        <img class='imglogo-nome' src="/assets/img/disporenergia.svg" alt="">
+                    </div>
+                    
+                    <h1>Submissão de <span>Missões</span></h1>
+                </div>
+              
+            </div>
+        </header>
+    
+    
+        <section>
+            <form onsubmit="validar(); return false" id="formlogin">
+                
+                    <div class="input-container">
+                        <img class='imgformlogin1' src="assets/img/user.png">
+                        <input type="text" id="username" name="username" placeholder="E-mail">
+                    </div>
+                
+                    <div class="input-container">
+                        <img class='imgformlogin2' src="assets/img/senha.png">
+                        <input type="password" id="password" name="password"  placeholder="Senha" required>
+                    </div>
+                
+                    <div class="input-container">
+                        <img class='imgformlogin3' src="assets/img/tipo-user.png">
+                        <select id="role" name="role">
+                            <option value="default">Categoria de usuário</option>
+                            <option value="user">Cliente</option>
+                            <option value="admin">Avaliador</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                
+                    <button>LOGIN</button>
+            </form>
+            <p class="p-senha">Esqueceu a senha?</p>
+        </section>
+    </main>
+    
+    <script src="/js/script.js" defer></script>
+</body>
+</html>

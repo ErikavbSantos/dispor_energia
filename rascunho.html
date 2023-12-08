@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/logo__dispor__favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Em elaboração</title>
+
+    <!-- Fontes usadas no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="perfil.html">Perfil</a>
+        <a href="statusmissao.html"> Status</a>
+        <a  class="active" href="rascunho.html">Rascunho</a>
+        <a href="listaMissoesAvaliador.html">Missões</a>
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h1 id="titulo-status">Em elaboração</h1>
+
+    <main class="rascunho-main">
+        <div class="filter">
+            <input type="search" name="filter-rascunho" id="filter-rascunho" placeholder="Pesquisar">
+        </div>
+        <div class="rascunho" id="rascunho">
+            <div id="modal">
+
+                <div class="modal-content">
+                  <h1>Confirmação</h1>
+                  <p>Você tem certeza que deseja excluir?</p>
+                  <div class="btn-modal-r">
+                    <button id="cancelDelete">Cancelar</button>
+                    <button id="confirmDelete">Deletar</button>
+                  </div>
+                  
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="navbar">
+        <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
+        <a href="perfil.html"><img class="icone__nav" src="./assets/img/pessoa__nav.svg" alt="icone de mapa"></a>
+        <a href="statusmissao.html"><img class="icone__nav" src="/assets/img/missions-icon.svg" alt="icone missões icon"></a>
+        <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
+        <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
+    </div>
+    <script src="/js/rascunho.js" defer></script>
+</body>
+</html>

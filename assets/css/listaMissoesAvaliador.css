@@ -1,0 +1,113 @@
+.top__menu {
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    border-bottom: 1px solid var(--cinza-escuro);
+    width: 100%;
+    padding: 16px 30px;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+}
+
+.top__menu button {
+    width: 130px;
+    height: 38px;
+    border-radius: 6px;
+    color: white;
+    background-color: var(--verde_claro);
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.top__menu button:hover {
+    background-color: var(--verde);
+}
+
+#cards__missao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+#cards__missao ul {
+    background-color: var(--verde_claro);
+    border-radius: 4px;
+    padding: 16px;
+    width: 300px;
+    height: fit-content;
+    height: 170px;
+}
+#cards__missao ul li {
+    list-style: none;
+    color: black;
+    margin-bottom: 16px;
+    font-size: 16px;
+    display: -webkit-box; /* Fallback para navegadores com suporte ao prefixo -webkit- */
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    text-overflow: ellipsis;
+   
+}
+#cards__missao ul li:first-child {
+    font-size: 18px;
+}
+
+#cards__missao ul{
+    position: relative;
+}
+/* overlay  */
+.overlay {
+    position: absolute;
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: rgba(217, 217, 217, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
+/* div que engloba os botoes */
+.btn-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 22px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.overlay:hover .btn-overlay {
+    opacity: 1;
+}
+/* estilização dos botoes */
+#btn-detalhes, #btn-selecionar {
+    border: none;
+    background-color: rgba(132, 195, 130, 1);
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+#btn-detalhes:hover, #btn-selecionar:hover {
+    color: black;
+}
+
+.bordaAtivada {
+    border: 2px solid black;
+}

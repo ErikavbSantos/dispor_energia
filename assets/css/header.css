@@ -1,0 +1,38 @@
+.topnav {
+    display: flex;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    background: var(--verde);
+    z-index: 1000;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    height: 60px;
+}
+  
+.topnav a {
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.5s;
+}
+  
+.topnav .active {
+    background-color: #04473A;
+}
+  
+@media (max-width: 770px) {
+    .topnav {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+/* NAVBAR */
+.topnav {
+    display: none;
+}
+}
