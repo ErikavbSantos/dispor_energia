@@ -36,7 +36,6 @@ textarea:focus,
 select:focus {
   outline: none;
   border: 1px solid var(--verde_mais_escuro);
-  background-color: var(--cinza-claro);
 }
 .forms-missao input,
 .forms-missao textarea {
@@ -65,7 +64,6 @@ select:focus {
 }
 
 .custom-select select {
-  background-color: var(--cinza-claro);
   position: relative;
 }
 .custom-select select:invalid {
@@ -137,20 +135,19 @@ input[type="number"] + #label-file::before {
   width: 100%;
   aspect-ratio: 1/1;
   height: 220px;
-  background: #dfdfdf;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: color 300ms ease-in-out, background 300ms ease-in-out;
   overflow: hidden;
-  border: 1px solid var(--verde_claro);
+  border: 1px solid var(--verde_escuro);
   margin-bottom: 10px;
   border-radius: 5px;
 }
 .picture:hover {
   color: #777;
-  background: #ccc;
+  background: var(--verde_pastel);
 }
 
 .picture__img {
@@ -173,6 +170,20 @@ input[type="number"] + #label-file::before {
   margin-bottom: 10px;
   border-radius: 5px;
 }
+label {
+  z-index: 1;
+  font-size: 0.75rem;
+  font-family: Inter;
+  color: var(--verde_escuro);
+  font-weight: 600;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: white;
+  width: fit-content;
+}
+
 
 @media (min-width: 600px) {
   .buttons-form {
