@@ -25,10 +25,8 @@
 <body>
     <div class="form-validacao" >
         <form action="/" method="post" class="avaliacaoForm">
-
             <!-- Início itens da esquerda-->
             <div class="campos-esquerda">
-            
                 <label for="input" class="text">Nome</label>
                 <div class="campo">
                     <input class="inputtext"  type="text" id="nome-ava" name="Nome" disabled="true">
@@ -53,120 +51,97 @@
                     <input class="inputtext" type="text" id="tempo-ava" name="Tempo-limite" disabled="true" >
                     <div class="checkbox-group">
                         <input class="radio_aprovado" type="radio" name="status_tempo" value="Aprovado" > <br>                       
-                                    <input class="radio_ressalvas" type="radio" name="status_tempo" value="Aprovado com ressalvas"><br>
+                        <input class="radio_ressalvas" type="radio" name="status_tempo" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_tempo" value="Rejeitado"><br>
+                    </div>
+                </div>
 
-                                    <input class="radio_rejeitado" type="radio" name="status_tempo" value="Rejeitado"><br>
-                            </div>
+                <label for="input" class="text">Dado de interesse</label>
+                <div class="campo">
+                    <input class="inputtext" type="text" id="dado-ava" name="dado-interesse" disabled="true">
+                    <div class="checkbox-group">
+                        <input class="radio_aprovado" type="radio" name="status_dado" value="Aprovado" > <br>  
+                        <input class="radio_ressalvas" type="radio" name="status_dado" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_dado" value="Rejeitado"><br>
+                    </div>
+                </div>
+
+                <label for="input" class="text">Frequência de reativação</label>
+                <div class="campo">
+                    <input class="inputtext" type="text" id="frequencia-ava" name="frequencia" disabled="true">
+                    <div class="checkbox-group">
+                        <input class="radio_aprovado" type="radio" name="status_frequencia" value="Aprovado" > <br>   
+                        <input class="radio_ressalvas" type="radio" name="status_frequencia" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_frequencia" value="Rejeitado"><br>
+                    </div>
+                </div>
+
+                <label for="input" class="text">Estágio de progresso</label>
+                <div class="campo">
+                    <input class="inputtext" type="text" id="estagio-ava" name="frequencia" disabled="true">
+                    <div class="checkbox-group">
+                        <input class="radio_aprovado" type="radio" name="status_estagio" value="Aprovado" > <br>    
+                        <input class="radio_ressalvas" type="radio" name="status_estagio" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_estagio" value="Rejeitado"><br>
+                    </div>
+                </div>  
+
+                <label for="input" class="text">O que fazer?</label>
+                    <div class="input-check">
+                        <input class="inputtext-direita input-oq" type="text" id="orien1-ava" name="oqfzr" disabled="true">
+                        <div class="checkbox-group">
+                            <input class="radio_aprovado" type="radio" name="status_oqfzr" value="Aprovado" data-tooltip="Aprovado"> <br>                               
+                            <input class="radio_ressalvas" type="radio" name="status_oqfzr"  value="Aprovado com ressalvas"><br>
+                            <input class="radio_rejeitado" type="radio" name="status_oqfzr" value="Rejeitado"><br>
                         </div>
-                 
-
-
-                    
-                        <label for="input" class="text">Dado de interesse</label>
-                        <div class="campo">
-                            <input class="inputtext" type="text" id="dado-ava" name="dado-interesse" disabled="true">
-
-                            <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status_dado" value="Aprovado" > <br>
-                                   
-                                <input class="radio_ressalvas" type="radio" name="status_dado" value="Aprovado com ressalvas"><br>
-
-                                <input class="radio_rejeitado" type="radio" name="status_dado" value="Rejeitado"><br>
-                            </div>
-                        </div>
-
-                        <label for="input" class="text">Frequência de reativação</label>
-                        <div class="campo">
-                            <input class="inputtext" type="text" id="frequencia-ava" name="frequencia" disabled="true">
-
-                            <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status_frequencia" value="Aprovado" > <br>
-                                   
-                                <input class="radio_ressalvas" type="radio" name="status_frequencia" value="Aprovado com ressalvas"><br>
-
-                                <input class="radio_rejeitado" type="radio" name="status_frequencia" value="Rejeitado"><br>
-                            </div>
-                        </div>
-
-                        <label for="input" class="text">Estágio de progresso</label>
-                        <div class="campo">
-                            <input class="inputtext" type="text" id="estagio-ava" name="frequencia" disabled="true">
-
-                            <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status_estagio" value="Aprovado" > <br>
-                                   
-                                <input class="radio_ressalvas" type="radio" name="status_estagio" value="Aprovado com ressalvas"><br>
-
-                                <input class="radio_rejeitado" type="radio" name="status_estagio" value="Rejeitado"><br>
-                            </div>
-                        </div>  
-
-                        <label for="input" class="text">O que fazer?</label>
-                        <div class="input-check">
-                            <input class="inputtext-direita input-oq" type="text" id="orien1-ava" name="oqfzr" disabled="true">
-                            <div class="checkbox-group">
-                                <input class="radio_aprovado" type="radio" name="status_oqfzr" value="Aprovado" data-tooltip="Aprovado"> <br>
-                               
-                                <input class="radio_ressalvas" type="radio" name="status_oqfzr"  value="Aprovado com ressalvas"><br>
-                                <input class="radio_rejeitado" type="radio" name="status_oqfzr" value="Rejeitado"><br>
-                            </div>
-                        </div>
-
-                   
-
-                        
-                    
-
+                    </div>
             </div>
-<!--Final dos itens da esquerda-->
+            <!--Final dos itens da esquerda-->
 
-
-<!--Início itens da direita-->
+            <!--Início itens da direita-->
             <div class="campos-direita">
                 <label for="text" class="text">Como fazer?</label>
-                    <div class="input-check">
-                        <input class="inputtext-direita"  type="text" id="orien2-ava" name="ComoFzr" disabled="true">
-                        <div class="checkbox-group">
-                            <input class="radio_aprovado" type="radio" name="status_comofzr" value="Aprovado" > <br>
-                            <input class="radio_ressalvas"  type="radio" name="status_comofzr" value="Aprovado com ressalvas"><br>
-                            <input class="radio_rejeitado" type="radio" name="status_comofzr" value="Rejeitado"><br>
-
-                        </div>
+                <div class="input-check">
+                    <input class="inputtext-direita"  type="text" id="orien2-ava" name="ComoFzr" disabled="true">
+                    <div class="checkbox-group">
+                        <input class="radio_aprovado" type="radio" name="status_comofzr" value="Aprovado" > <br>
+                        <input class="radio_ressalvas"  type="radio" name="status_comofzr" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_comofzr" value="Rejeitado"><br>
                     </div>
- 
+                </div>
+        
                 <label for="input" class="text">Onde fazer?</label>
-                    <div class="input-check">
-                        <input class="inputtext-direita" type="text" id="orien3-ava" name="ondeFzr" disabled="true">
-                        <div class="checkbox-group">
-                            <input class="radio_aprovado" type="radio" name="status_ondefzr" value="Aprovado" > <br>
-                            <input class="radio_ressalvas" type="radio" name="status_ondefzr" value="Aprovado com ressalvas"><br>
-                            <input class="radio_rejeitado" type="radio" name="status_ondefzr" value="Rejeitado"><br>
-                        </div>
+                <div class="input-check">
+                    <input class="inputtext-direita" type="text" id="orien3-ava" name="ondeFzr" disabled="true">
+                    <div class="checkbox-group">
+                        <input class="radio_aprovado" type="radio" name="status_ondefzr" value="Aprovado" > <br>
+                        <input class="radio_ressalvas" type="radio" name="status_ondefzr" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_ondefzr" value="Rejeitado"><br>
                     </div>
+                </div>
 
                 <label for="inputtext-direita" class="text">Quando fazer?</label>
-                    <div class="input-check">
-                        <input class="inputtext-direita" type="text" id="orien4-ava" name="quandoFzr" disabled="true">
-                        <div class="checkbox-group">
-                            <input class="radio_aprovado" type="radio" name="status_quandofzr" value="Aprovado" > <br>
-                            <input class="radio_ressalvas" type="radio" name="status_quandofzr" value="Aprovado com ressalvas"><br>
-                            <input class="radio_rejeitado" type="radio" name="status_quandofzr" value="Rejeitado"><br>
-                        </div>
+                <div class="input-check">
+                    <input class="inputtext-direita" type="text" id="orien4-ava" name="quandoFzr" disabled="true">
+                    <div class="checkbox-group">
+                        <input class="radio_aprovado" type="radio" name="status_quandofzr" value="Aprovado" > <br>
+                        <input class="radio_ressalvas" type="radio" name="status_quandofzr" value="Aprovado com ressalvas"><br>
+                        <input class="radio_rejeitado" type="radio" name="status_quandofzr" value="Rejeitado"><br>
                     </div>
+                </div>
 
                 <label for="campo campo-img" class="text">Icone da missão</label>
                 <div class="campo campo-img">
                     <!-- <input type="text" id="imageLinkInput">
                     <img src="" id="previewImage" alt="Preview Image"> -->
                     <input class="inputtext-img" type="image" id="img-ava" contenteditable="icone" name="icone" disabled="true">
-    
                     <div class="checkbox-group">
                         <input class="radio_aprovado" type="radio" name="status_icone" value="Aprovado" > <br>
                         <input class="radio_ressalvas" type="radio" name="status_icone" value="Aprovado com ressalvas"><br>
                         <input class="radio_rejeitado" type="radio" name="status_icone" value="Rejeitado"><br>
                     </div>
                 </div>
-                            
+                                    
                 <label for="input" class="text">Como fazer?</label>
                 <div class="input-check">
                     <input class="inputtext-direitaa" type="text" id="desc-missao" name="desc-missao" disabled="true">
@@ -175,30 +150,22 @@
                         <input class="radio_ressalvas" type="radio" name="status_descrição" value="Aprovado com ressalvas"><br>
                         <input class="radio_rejeitado" type="radio" name="status_descrição" value="Rejeitado"><br>
                     </div>
-                </div>
-
-                            
-
-                            
+                </div>           
             </div>
-            <button class="btn-validar">Validar</button>
-                
-           
-            </div>
-            
-      <!--Fim itens da direita-->
+            <!--Fim itens da direita-->
         </form>
-
-        <div class="navbar">
-            <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
-            <a href="perfil.html"><img class="icone__nav" src="./assets/img/pessoa__nav.svg" alt="icone de mapa"></a>
-            <a href="statusmissao.html"><img class="icone__nav" src="/assets/img/missions-icon.svg" alt="icone missões icon"></a>
-            <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
-            <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
-        </div>
-
+        
+        <button class="btn-validar">Validar</button>
     </div>
-    <script src="/js/avaliacao.js" defer></script>
-    </body>
 
+    <div class="navbar">
+        <a href="index.html"><img class="icone__nav" src="./assets/img/casa__nav.svg" alt="icone de casa"></a>
+        <a href="perfil.html"><img class="icone__nav" src="./assets/img/pessoa__nav.svg" alt="icone de mapa"></a>
+        <a href="statusmissao.html"><img class="icone__nav" src="/assets/img/missions-icon.svg" alt="icone missões icon"></a>
+        <a href="rascunho.html"><img class="icone__nav" src="/assets/img/rascunhos-icon.svg" alt="icone racunho"></a>
+        <a href="configuracao.html"><img  class="icone__nav" src="./assets/img/config-icon.svg" alt="icone configuração"></a>
+    </div>
+
+    <script src="/js/avaliacao.js" defer></script>
+</body>
 </html>

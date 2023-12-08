@@ -42,18 +42,18 @@
                 </div>
             </div>
 
-
             <div class="form-container">
                 <label for="input" class="text">Name</label>
                 <input type="text" name="nome" id="nome" required>
+
                 <label for="input" class="text">Categoria</label>
                 <input type="text" name="categoria" id="categoria" required>
+
                 <label for="textarea" class="text">Descrição da missão</label>
                 <textarea name="descricao" id="descricao" cols="30" rows="3" required></textarea>
 
                 <label class="picture" for="picture__input" tabIndex="0">Escolha uma imagem</label>
                 <input type="file" name="picture__input" id="picture__input">
-
 
                 <p id="erroData" style="display: none; color: black;">A data não pode ser anterior à data de hoje.</p>
                 <label for="input" class="text">Tempo limite</label>
@@ -74,9 +74,7 @@
                     </select>
                 
                 </div>
-
             </div>
-            
             
             <div class="form-container">
                 <label for="custom-select" class="text">Frequência de reativação</label>
@@ -97,12 +95,16 @@
                 </div>
                 <label for="textarea" class="text">O que fazer?</label>
                 <textarea name="oque" id="orientacao1" cols="30" rows="3" required></textarea >
+                
                 <label for="textarea" class="text">Como fazer?</label>
                 <textarea name="como" id="orientacao2" cols="30" rows="3" required></textarea >
+                
                 <label for="textarea" class="text">Quando fazer?</label>
                 <textarea name="quando" id="orientacao3" cols="30" rows="3" required></textarea >
+                
                 <label for="textarea" class="text">Onde fazer?</label>
                 <textarea name="onde" id="orientacao4" cols="30" rows="3" required></textarea >
+                
                 <label for="custom-select" class="text">Estágio de progresso</label>
                 <div class="custom-select">
                     <select id="estagio" name="estagio" required class="select-progresso">
@@ -116,16 +118,14 @@
                         <option value="guru">Guru</option>
                         <option value="embaixador">Embaixador</option>
                     </select>
-                    
                 </div>
-                
             </div>
+
             <div class="buttons-form">
                 <button class="rascunho-btn" id="rascunho-btn" type="submit">Rascunho</button>
                 <button class="cadastrar" id="cadastrar-btn" type="submit">CADASTRAR</button>
             </div>
-            
-            
+    
         </form>
     </main>
     
