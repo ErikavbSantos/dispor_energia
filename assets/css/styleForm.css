@@ -95,6 +95,8 @@ input[type="number"] + #label-file {
   border: 1px solid var(--verde_escuro);
   display: flex;
   align-items: center;
+  width: auto;
+  margin-left: 0;
 }
 input[type="number"] + #label-file::before {
   content: "";
@@ -143,10 +145,10 @@ input[type="number"] + #label-file::before {
   overflow: hidden;
   border: 1px solid var(--verde_escuro);
   margin-bottom: 10px;
+  margin-left: 0;
   border-radius: 5px;
 }
 .picture:hover {
-  color: #777;
   background: var(--verde_pastel);
 }
 

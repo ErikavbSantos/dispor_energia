@@ -47,7 +47,6 @@
 .campos-direita{
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .campo-img{
     height: 130px;
