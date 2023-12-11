@@ -87,7 +87,7 @@ select:focus {
 input[type="file"] {
   display: none;
 }
-input[type="number"] + #label-file {
+#label-file {
   padding: 16px 0px;
   margin-bottom: 1rem;
   color: var(--verde_escuro);
@@ -98,7 +98,7 @@ input[type="number"] + #label-file {
   width: auto;
   margin-left: 0;
 }
-input[type="number"] + #label-file::before {
+#label-file::before {
   content: "";
   width: 35px;
   height: 28px;

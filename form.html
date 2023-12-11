@@ -52,7 +52,9 @@
                 <label for="textarea" class="text">Descrição da missão</label>
                 <textarea name="descricao" id="descricao" cols="30" rows="3" required></textarea>
 
-                <label class="picture" for="picture__input" tabIndex="0">Escolha uma imagem</label>
+                <label class="picture" for="picture__input" tabIndex="0">
+                    <span class="picture__image"></span>
+                </label>
                 <input type="file" name="picture__input" id="picture__input">
 
                 <p id="erroData" style="display: none; color: black;">A data não pode ser anterior à data de hoje.</p>
