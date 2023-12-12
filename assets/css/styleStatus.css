@@ -86,10 +86,11 @@ td div {
     color: white;
     font-size: 13px;
 }
+
 #modal-aprovado, #modal-aprovadoR, #modal-rejeitado {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
@@ -214,6 +215,8 @@ td div {
 .aprovadaR{
     color: #FFD300;
 }
+
+
 @media (min-width: 760px) and (max-width: 800px){
     .modal-aprovado, .modal-aprovadoR, .modal-rejeitado{
         margin: 30% auto;

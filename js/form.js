@@ -21,7 +21,6 @@ document
     let nome = document.getElementById("nome").value;
     let categoria = document.getElementById("categoria").value;
     let descricao = document.getElementById("descricao").value;
-    let pontuacao = document.getElementById("pontuacao").value;
     let imgIcone = document.getElementById("picture__input").value;
     let tempo = document.getElementById("tempo").value;
     let dadoInteresse = document.getElementById("dado-interesse").value;
@@ -70,7 +69,7 @@ document
 const inputFile = document.querySelector("#picture__input");
 const pictureImage = document.querySelector(".picture__image");
 pictureImage.innerText = "Choose a image";
-console.log(inputFile);
+
 
 inputFile.addEventListener("change", function (e) {
   const inputTarget = e.target;
