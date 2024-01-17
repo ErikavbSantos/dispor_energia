@@ -17,7 +17,7 @@ Este projeto consiste em um sistema de submissão desenvolvido durante a residê
 - MySQL Databases
 
 ## Artefatos
-  - <a href="" >Slide Explicativo</a>
+  - <a href="https://www.canva.com/design/DAF6FAzAkXU/8Knyyuv3UAl3kaS1FW3ODw/view?utm_content=DAF6FAzAkXU&utm_campaign=designshare&utm_medium=link&utm_source=editor" >Slide Explicativo</a>
   - <a href="https://www.figma.com/file/9Rs72mqz3Ok1cJ7pBuy77q/Prot%C3%B3tipo-Dispor?type=design&node-id=0%3A1&mode=design&t=IESZ41kOlORjSAdO-1" >Prototipação</a>
   - <a href="" >Modelagem do banco de dados</a>
 
